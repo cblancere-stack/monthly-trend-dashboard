@@ -30,6 +30,8 @@ jobs:
           mkdir -p public
           cp index.html public/
           cp -r assets data public/
+          rm -rf public/assets/provided-original
+          rm -f public/data/provided-report.json public/data/provided-overview.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
