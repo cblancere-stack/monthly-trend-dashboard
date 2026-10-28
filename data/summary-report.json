@@ -658,32 +658,46 @@
       "sourceSlide": 7,
       "category": "ai",
       "verification": "source_checked",
-      "deltaText": "8월 1개월 수익률 · 연초 이후 +27.18%",
-      "title": "Indxx AI·빅데이터 · 월간 수익률",
-      "valueText": "+8.23%",
-      "meaning": "AI·빅데이터 지수의 수익률. 운용사 팩트시트에서 ETF의 NAV·시장가격과 구분된 Index 행을 인용.",
-      "impact": "AI 관련 상장기업에 대한 시장 평가를 추적. 실제 인프라 투자액·매출 성장률과는 다른 지표.",
-      "basis": "2026.08.31 · Global X AIQ 팩트시트의 Index 행",
+      "deltaText": "▲ 1.32% 전월 말 대비 · 전월 9,708.32 pt",
+      "title": "Indxx AI·빅데이터 지수",
+      "valueText": "9,836.20 pt",
+      "meaning": "AI·빅데이터 관련 글로벌 상장기업의 주가 흐름을 보여주는 지수.",
+      "impact": "AI 관련 기업에 대한 시장 기대를 추적하며, 실제 투자액·매출·생산량과는 구분합니다.",
+      "basis": "2026-09-30 · 월말 종가 · IAIQP · USD · Price Return",
       "priorTitle": "Indxx AI·빅데이터 지수",
-      "period": "2026-08-31",
+      "period": "2026-09-30",
       "frequency": "monthly",
       "source": {
-        "name": "Global X · Indxx 기초지수 수익률 공시",
-        "url": "https://assets.globalxetfs.com/funds/documents/aiq/Fact-Sheet_AIQ.pdf",
-        "title": "Global X · Indxx 기초지수 수익률 공시 관련 기사·자료",
-        "kind": "참고자료"
+        "name": "Indxx",
+        "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index",
+        "title": "Indxx Artificial Intelligence & Big Data Index · IAIQP 일별 지수",
+        "kind": "통계 시계열"
       },
-      "definitionChange": "9월 말 지수 포인트 대신 기준일이 명시된 8월 말 지수 월간 수익률을 인용. ETF 수익률로 대체한 것이 아님.",
       "checkedAt": "2026-10-28",
-      "displayNote": "9월 말 지수 포인트 대신 기준일이 명시된 8월 말 지수 월간 수익률을 인용. ETF 수익률로 대체한 것이 아님.",
+      "displayNote": "현지 마지막 거래일 종가. 같은 USD Price Return 계열의 전월 말 종가와 비교.",
       "sources": [
         {
-          "name": "Global X · Indxx 기초지수 수익률 공시",
-          "url": "https://assets.globalxetfs.com/funds/documents/aiq/Fact-Sheet_AIQ.pdf",
-          "title": "Global X · Indxx 기초지수 수익률 공시 관련 기사·자료",
-          "kind": "참고자료"
+          "name": "Indxx",
+          "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index",
+          "title": "Indxx Artificial Intelligence & Big Data Index · IAIQP 일별 지수",
+          "kind": "통계 시계열"
         }
-      ]
+      ],
+      "numericValue": 9836.2,
+      "unit": "pt",
+      "published": "2026-10-01",
+      "dataStatus": "available",
+      "marketClose": {
+        "seriesCode": "IAIQP",
+        "currency": "USD",
+        "returnType": "price",
+        "date": "2026-09-30",
+        "close": 9836.2,
+        "previousDate": "2026-08-31",
+        "previousClose": 9708.32,
+        "changePct": 1.3172206931786556,
+        "cutoffPolicy": "local_month_end_close"
+      }
     },
     {
       "id": "provided-m-7-26",
@@ -4384,8 +4398,8 @@
           "$0.72"
         ],
         [
-          "Indxx · 8월 월간 수익률",
-          "+8.23%"
+          "Indxx · 월말 종가",
+          "9,836.20 pt"
         ],
         [
           "ROBO · 9월 말 최근 3개월",
@@ -4451,12 +4465,16 @@
     }
   ],
   "editorialPolicy": "항목은 유지하고 항목별 문장을 요약합니다. 동일 내용을 반복하는 종합 설명만 통합하며 원본 기재값을 독립 검증값으로 바꾸지 않습니다.",
-  "revisionNote": "AI·로봇 4개 지표를 기준일과 공식 근거가 있는 수치로 정비. 지표 정의 변경은 개별 카드에 명시.",
+  "revisionNote": "Indxx를 공식 IAIQP 월말 종가와 전월 말 대비 증감률로 정정. 다른 월 보고서 유지.",
   "revisedAt": "2026-10-28",
   "revisions": [
     {
       "date": "2026-10-28",
       "note": "AI·로봇 4개 지표를 기준일과 공식 근거가 있는 수치로 정비. 지표 정의 변경은 개별 카드에 명시."
+    },
+    {
+      "date": "2026-10-28",
+      "note": "Indxx를 공식 IAIQP 월말 종가와 전월 말 대비 증감률로 정정. 다른 월 보고서 유지."
     }
   ],
   "references": [
@@ -4683,18 +4701,6 @@
       ],
       "usedBy": [
         "ROBO 지수 · 최근 3개월 수익률"
-      ]
-    },
-    {
-      "name": "Global X · Indxx 기초지수 수익률 공시",
-      "url": "https://assets.globalxetfs.com/funds/documents/aiq/Fact-Sheet_AIQ.pdf",
-      "title": "Global X · Indxx 기초지수 수익률 공시 관련 기사·자료",
-      "kind": "참고자료",
-      "categories": [
-        "ai"
-      ],
-      "usedBy": [
-        "Indxx AI·빅데이터 · 월간 수익률"
       ]
     },
     {
@@ -5756,6 +5762,19 @@
       ],
       "usedBy": [
         "2026 파리 모터쇼"
+      ]
+    },
+    {
+      "name": "Indxx",
+      "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index",
+      "title": "Indxx Artificial Intelligence & Big Data Index · IAIQP 일별 지수",
+      "kind": "통계 시계열",
+      "categories": [
+        "ai"
+      ],
+      "observationDate": "2026-09-30",
+      "usedBy": [
+        "Indxx AI·빅데이터 지수"
       ]
     }
   ],

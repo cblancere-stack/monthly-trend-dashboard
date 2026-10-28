@@ -1,0 +1,24 @@
+{
+  "source": {
+    "name": "Indxx",
+    "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index"
+  },
+  "seriesCode": "IAIQP",
+  "currency": "USD",
+  "returnType": "price",
+  "retrievedAt": "2026-10-28",
+  "observations": [
+    {
+      "date": "2026-07-31",
+      "close": 8971.98
+    },
+    {
+      "date": "2026-08-31",
+      "close": 9708.32
+    },
+    {
+      "date": "2026-09-30",
+      "close": 9836.2
+    }
+  ]
+}

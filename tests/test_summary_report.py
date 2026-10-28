@@ -34,7 +34,7 @@ class SummaryReportTests(unittest.TestCase):
    self.assertNotIn('검증 보류',metric['valueText']);self.assertNotIn('reviewNote',metric)
    self.assertTrue(metric['displayNote']);self.assertTrue(metric['period'].startswith(('2026-08','2026-09')))
   values={m['id']:m for m in repaired}
-  self.assertEqual(values['provided-m-7-25']['period'],'2026-08-31')
+  self.assertEqual(values['provided-m-7-25']['period'],'2026-09-30')
   self.assertIn('모델 간 비교',values['provided-m-7-26']['deltaText'])
   self.assertIn('단일 모델',values['provided-m-7-27']['meaning'])
 if __name__=='__main__':unittest.main()

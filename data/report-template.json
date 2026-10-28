@@ -75,7 +75,8 @@
         "about.fb.com",
         "nvidianews.nvidia.com",
         "artificialanalysis.ai",
-        "arena.ai"
+        "arena.ai",
+        "indxx.com"
       ]
     },
     {
@@ -94,7 +95,8 @@
         "nvidianews.nvidia.com",
         "unitree.com",
         "sec.gov",
-        "ifr.org"
+        "ifr.org",
+        "vettafi.com"
       ]
     },
     {
@@ -243,14 +245,20 @@
     {
       "id": "provided-m-7-24",
       "category": "robotics",
-      "title": "ROBO 지수 · 최근 3개월 수익률",
-      "priorTitle": "ROBO 로봇·자동화 지수"
+      "title": "ROBO 로봇·자동화 지수",
+      "priorTitle": "ROBO 로봇·자동화 지수",
+      "measurement": "월말 지수 종가(pt)",
+      "comparison": "동일 통화·동일 수익률 계열의 전월 말 종가 대비 (%)",
+      "monthEndPolicy": "현지 마지막 거래일 종가. 한국 시간 익월 확정 허용. ETF 가격 대체 금지."
     },
     {
       "id": "provided-m-7-25",
       "category": "ai",
-      "title": "Indxx AI·빅데이터 · 월간 수익률",
-      "priorTitle": "Indxx AI·빅데이터 지수"
+      "title": "Indxx AI·빅데이터 지수",
+      "priorTitle": "Indxx AI·빅데이터 지수",
+      "measurement": "월말 지수 종가(pt)",
+      "comparison": "동일 통화·동일 수익률 계열의 전월 말 종가 대비 (%)",
+      "monthEndPolicy": "현지 마지막 거래일 종가. 한국 시간 익월 확정 허용. ETF 가격 대체 금지."
     },
     {
       "id": "provided-m-7-26",

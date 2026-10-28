@@ -9,6 +9,24 @@ def _source(item):
  u=urlparse(source.get('url',''))
  return bool(source.get('name') and u.scheme=='https' and u.hostname and not u.username and not u.password)
 
+def _month_end_close(item,asof):
+ """Only designated index closes may become available on the following KST day."""
+ m=item.get('marketClose',{})
+ series={
+  'provided-m-7-25':('IAIQP','www.indxx.com'),
+  'provided-m-7-24':('ROBO','www.vettafi.com'),
+ }
+ expected=series.get(item.get('id'))
+ if not expected or m.get('cutoffPolicy')!='local_month_end_close':return False
+ try:
+  observed=date.fromisoformat(m['date']);published=date.fromisoformat(item['published'])
+  last=(observed.replace(day=28)+timedelta(days=4)).replace(day=1)-timedelta(days=1)
+  return (m.get('seriesCode')==expected[0] and urlparse(item.get('source',{}).get('url','')).hostname==expected[1]
+   and m.get('currency')=='USD' and m.get('returnType')=='price'
+   and observed.isoformat()==item.get('period') and observed<=asof and last==asof
+   and 0<=(last-observed).days<=7 and published==observed+timedelta(days=1))
+ except (KeyError,ValueError,TypeError):return False
+
 def validate_summary(report,template):
  if report.get('kind')!='summary' or report.get('origin')!='independent':raise ValueError('Independent summary required')
  if not re.fullmatch(r'\d{4}-\d{2}',report.get('month','')):raise ValueError('Report month required')
@@ -24,7 +42,7 @@ def validate_summary(report,template):
   if m.get('dataStatus') in ('not_released','unavailable'):
    if not m.get('missingReason') or not m.get('checkedSources'):raise ValueError('Unexplained missing value')
   elif not _source(m) or not m.get('period') or not m.get('published'):raise ValueError('Metric source and dates required')
-  elif date.fromisoformat(m['published'])>asof:raise ValueError('Metric source after cutoff')
+  elif date.fromisoformat(m['published'])>asof and not _month_end_close(m,asof):raise ValueError('Metric source after cutoff')
  required={m['id'] for m in template['requiredMetricSlots']}
  if not required.issubset(covered):raise ValueError('Missing tracked indicator slots')
  cats={s['id'] for s in template['sectors']}
@@ -42,7 +60,7 @@ def validate_summary(report,template):
  # Nested citations and event announcements must respect the same cutoff.
  def check_dates(value):
   if isinstance(value,dict):
-   if value.get('published') and date.fromisoformat(value['published'])>asof:raise ValueError('Nested source after report cutoff')
+   if value.get('published') and date.fromisoformat(value['published'])>asof and not _month_end_close(value,asof):raise ValueError('Nested source after report cutoff')
    for child in value.values():check_dates(child)
   elif isinstance(value,list):
    for child in value:check_dates(child)

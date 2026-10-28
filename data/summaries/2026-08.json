@@ -521,38 +521,65 @@
     {
       "id": "provided-m-7-24",
       "category": "robotics",
-      "title": "ROBO 지수 · 최근 3개월 수익률",
-      "valueText": "당시 공시본 확보 중",
-      "basis": "8.31 이전 공개된 지수 원문 필요",
+      "title": "ROBO 로봇·자동화 지수",
+      "valueText": "월말 종가 확보 중",
+      "basis": "2026.08 · 현지 월말 마지막 거래일 · USD Price Return",
       "meaning": "로봇·자동화 또는 AI·빅데이터 상장기업의 자본시장 흐름.",
       "impact": "주가 수익률은 실제 설비투자·출하량과 구분해야 합니다.",
-      "deltaText": "자료의 공개일과 기준일을 고정한 후 전월 비교",
+      "deltaText": "7월 말 종가 확보 후 전월 대비 계산",
       "period": "2026-08",
-      "frequency": "snapshot",
+      "frequency": "monthly",
       "dataStatus": "unavailable",
-      "missingReason": "같은 URL의 PDF가 최신판으로 교체됩니다. 8월 말 수익률이 표시돼도 한국 시간 8월 31일 이전 공개됐는지 확인되지 않아 소급 인용하지 않았습니다.",
+      "missingReason": "공식 ROBO Price Return 일별 시계열의 다운로드가 차단되어 7월·8월 마지막 거래일 종가를 확보하지 못했습니다.",
       "checkedSources": [
-        "https://index-docs.vettafi.com/Factsheets/ROBO%20Factsheet.pdf"
+        "https://www.vettafi.com/indexing/index/robo",
+        "https://vettafi-assets.b-cdn.net/JSON/robo_performance.json"
       ],
-      "displayNote": "같은 URL의 PDF가 최신판으로 교체됩니다. 8월 말 수익률이 표시돼도 한국 시간 8월 31일 이전 공개됐는지 확인되지 않아 소급 인용하지 않았습니다."
+      "displayNote": "공식 ROBO Price Return 일별 시계열의 다운로드가 차단되어 7월·8월 마지막 거래일 종가를 확보하지 못했습니다."
     },
     {
       "id": "provided-m-7-25",
       "category": "ai",
-      "title": "Indxx AI·빅데이터 · 월간 수익률",
-      "valueText": "당시 공시본 확보 중",
-      "basis": "8.31 이전 공개된 지수 원문 필요",
-      "meaning": "로봇·자동화 또는 AI·빅데이터 상장기업의 자본시장 흐름.",
-      "impact": "주가 수익률은 실제 설비투자·출하량과 구분해야 합니다.",
-      "deltaText": "자료의 공개일과 기준일을 고정한 후 전월 비교",
-      "period": "2026-08",
-      "frequency": "snapshot",
-      "dataStatus": "unavailable",
-      "missingReason": "같은 URL의 PDF가 최신판으로 교체됩니다. 8월 말 수익률이 표시돼도 한국 시간 8월 31일 이전 공개됐는지 확인되지 않아 소급 인용하지 않았습니다.",
-      "checkedSources": [
-        "https://assets.globalxetfs.com/funds/documents/aiq/Fact-Sheet_AIQ.pdf"
+      "title": "Indxx AI·빅데이터 지수",
+      "valueText": "9,708.32 pt",
+      "basis": "2026-08-31 · 월말 종가 · IAIQP · USD · Price Return",
+      "meaning": "AI·빅데이터 관련 글로벌 상장기업의 주가 흐름을 보여주는 지수.",
+      "impact": "AI 관련 기업에 대한 시장 기대를 추적하며, 실제 투자액·매출·생산량과는 구분합니다.",
+      "deltaText": "▲ 8.21% 전월 말 대비 · 전월 8,971.98 pt",
+      "period": "2026-08-31",
+      "frequency": "monthly",
+      "dataStatus": "available",
+      "displayNote": "현지 마지막 거래일 종가. 같은 USD Price Return 계열의 전월 말 종가와 비교.",
+      "numericValue": 9708.32,
+      "unit": "pt",
+      "published": "2026-09-01",
+      "source": {
+        "name": "Indxx",
+        "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index",
+        "title": "Indxx Artificial Intelligence & Big Data Index · IAIQP 일별 지수",
+        "kind": "통계 시계열"
+      },
+      "sources": [
+        {
+          "name": "Indxx",
+          "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index",
+          "title": "Indxx Artificial Intelligence & Big Data Index · IAIQP 일별 지수",
+          "kind": "통계 시계열"
+        }
       ],
-      "displayNote": "같은 URL의 PDF가 최신판으로 교체됩니다. 8월 말 수익률이 표시돼도 한국 시간 8월 31일 이전 공개됐는지 확인되지 않아 소급 인용하지 않았습니다."
+      "verification": "source_checked",
+      "checkedAt": "2026-10-28",
+      "marketClose": {
+        "seriesCode": "IAIQP",
+        "currency": "USD",
+        "returnType": "price",
+        "date": "2026-08-31",
+        "close": 9708.32,
+        "previousDate": "2026-07-31",
+        "previousClose": 8971.98,
+        "changePct": 8.207107015396819,
+        "cutoffPolicy": "local_month_end_close"
+      }
     },
     {
       "id": "provided-m-7-26",
@@ -2327,7 +2354,7 @@
     "9월 이후 발표된 8월 실적과 사후 개정치는 사용하지 않았습니다. 미국 시장은 한국 시간 기준일 내 확인 가능한 8월 28일 종가를 사용합니다.",
     "비교값이 확보된 경우에만 전월 대비를 표시하며, 전년 대비·전일 대비·모델 간 비교를 구분합니다."
   ],
-  "revisionNote": "사용자 요청에 따른 8월 말 기준 과거 보고서 신규 작성 및 월별 보존·출처·기준일 검사",
+  "revisionNote": "Indxx를 공식 IAIQP 월말 종가와 전월 말 대비 증감률로 정정. 다른 월 보고서 유지.",
   "references": [
     {
       "name": "관세청",
@@ -2933,12 +2960,25 @@
         "ai",
         "robotics"
       ]
+    },
+    {
+      "name": "Indxx",
+      "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index",
+      "title": "Indxx Artificial Intelligence & Big Data Index · IAIQP 일별 지수",
+      "kind": "통계 시계열",
+      "categories": [
+        "ai"
+      ],
+      "observationDate": "2026-08-31",
+      "usedBy": [
+        "Indxx AI·빅데이터 지수"
+      ]
     }
   ],
   "researchAudit": {
     "researchedAt": "2026-10-28",
     "historicalCutoff": "2026-08-31",
-    "numericMetricCount": 30,
+    "numericMetricCount": 29,
     "missingMetrics": [
       {
         "id": "provided-m-6-21",
@@ -2951,18 +2991,11 @@
       },
       {
         "id": "provided-m-7-24",
-        "title": "ROBO 지수 · 최근 3개월 수익률",
-        "reason": "같은 URL의 PDF가 최신판으로 교체됩니다. 8월 말 수익률이 표시돼도 한국 시간 8월 31일 이전 공개됐는지 확인되지 않아 소급 인용하지 않았습니다.",
+        "title": "ROBO 로봇·자동화 지수",
+        "reason": "공식 ROBO Price Return 일별 시계열의 다운로드가 차단되어 7월·8월 마지막 거래일 종가를 확보하지 못했습니다.",
         "checkedSources": [
-          "https://index-docs.vettafi.com/Factsheets/ROBO%20Factsheet.pdf"
-        ]
-      },
-      {
-        "id": "provided-m-7-25",
-        "title": "Indxx AI·빅데이터 · 월간 수익률",
-        "reason": "같은 URL의 PDF가 최신판으로 교체됩니다. 8월 말 수익률이 표시돼도 한국 시간 8월 31일 이전 공개됐는지 확인되지 않아 소급 인용하지 않았습니다.",
-        "checkedSources": [
-          "https://assets.globalxetfs.com/funds/documents/aiq/Fact-Sheet_AIQ.pdf"
+          "https://www.vettafi.com/indexing/index/robo",
+          "https://vettafi-assets.b-cdn.net/JSON/robo_performance.json"
         ]
       },
       {
@@ -3017,6 +3050,10 @@
       "date": "2026-10-28",
       "phase": "initial",
       "note": "사용자 요청에 따른 8월 말 기준 과거 보고서 신규 작성 및 월별 보존·출처·기준일 검사"
+    },
+    {
+      "date": "2026-10-28",
+      "note": "Indxx를 공식 IAIQP 월말 종가와 전월 말 대비 증감률로 정정. 다른 월 보고서 유지."
     }
   ]
 }
