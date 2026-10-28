@@ -1,10 +1,7 @@
 name: Collect and publish monthly report
 on:
-  schedule:
-    # Korea time: first three days of every month, 09:17. Publish previous month.
-    - cron: '17 0 1-3 * *'
-    # Capture month-end AA observations at 23:45 KST; gate skips non-last days.
-    - cron: '45 14 28-31 * *'
+  # Monthly production is now handled by the ChatGPT scheduled task.
+  # Keep this Gemini-backed collector manual-only to prevent duplicate API usage.
   workflow_dispatch:
     inputs:
       month:
