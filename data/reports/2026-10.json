@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "month": "2026-10",
-  "cutoff": "2026-10-26",
-  "reviewedAt": "2026-10-26",
+  "cutoff": "2026-10-28",
+  "reviewedAt": "2026-10-28",
   "provisional": true,
-  "headline": "수도권 가격 상승과 거래 관망세의 공존. AI는 업무 실행으로, 휴머노이드는 생산·현장 실증으로.",
+  "headline": "수출·생산의 업종별 온도 차와 금융비용을 점검하고, AI·로봇은 실제 비용과 현장 적용 성과를 확인합니다.",
   "metrics": [
     {
       "id": "sale",
@@ -123,30 +123,6 @@
       "note": "Gemini 4 Argon (High) · 1,517 ±7점. 전월 원자료 미확인."
     },
     {
-      "id": "aa_cost",
-      "title": "Artificial Analysis AI 비용",
-      "category": "ai",
-      "source": {
-        "name": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/trends"
-      },
-      "period": null,
-      "current": null,
-      "previous": null,
-      "previousPeriod": null,
-      "unit": "USD/task",
-      "digits": 2,
-      "signed": false,
-      "deltaType": "percent",
-      "comparable": false,
-      "status": "unverified",
-      "fresh": true,
-      "scope": "글로벌",
-      "meaning": "고정된 성능 기준을 충족하는 AI의 평가 과제당 비용. 토큰 단가·총소유비용과 구분합니다.",
-      "impact": "성능 문턱·평가 버전이 같아야 비용 하락을 비교할 수 있습니다.",
-      "note": "성능 기준별 원자료 연결 대기. 단일 모델 가격을 시장 평균으로 대체하지 않습니다."
-    },
-    {
       "id": "robo",
       "title": "ROBO 로봇·자동화 지수",
       "category": "robotics",
@@ -168,7 +144,8 @@
       "scope": "글로벌",
       "meaning": "글로벌 로봇·자동화 상장기업의 주가 흐름. 휴머노이드 생산량이나 직접 자금 유입을 뜻하지 않습니다.",
       "impact": "관련 산업에 대한 시장 평가와 투자 기대의 변화를 보여줍니다.",
-      "note": "같은 수익률 유형의 월말 원지수 값 연결 대기. ETF 가격으로 대체하지 않습니다."
+      "note": "공식 9월 말 팩트시트의 3개월 수익률은 별도 카드에 연결했습니다. 원지수 포인트와 두 달 월말값은 미확보 상태입니다.",
+      "placement": "connection"
     },
     {
       "id": "indxx",
@@ -192,7 +169,327 @@
       "scope": "글로벌",
       "meaning": "AI 소프트웨어·서비스·하드웨어 관련 상장기업의 시장 평가를 추적합니다.",
       "impact": "주가 변화는 기대를 반영하며 실제 설비투자·수주 실적과 구분해 읽어야 합니다.",
-      "note": "기준일이 확인된 최신 원지수 값 연결 대기. 과거 페이지 값을 최신값으로 사용하지 않습니다."
+      "note": "공식 페이지의 IAIQP 표시값은 확인했으나 기준일·8월 말·9월 말 원자료가 미확인입니다. 최신값으로 임의 기재하지 않습니다.",
+      "placement": "connection"
+    },
+    {
+      "id": "exports",
+      "title": "한국 수출액",
+      "category": "macro",
+      "current": 1209.4,
+      "previous": null,
+      "previousPeriod": null,
+      "unit": "억 달러",
+      "period": "2026-09",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172254/view"
+      },
+      "meaning": "통관 기준 국내 상품 수출 실적. 글로벌 전체 수출액과 구분합니다.",
+      "impact": "반도체 편중과 비반도체 수출을 나누어 거래처의 수요를 점검합니다.",
+      "digits": 1,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": false,
+      "status": "verified",
+      "fresh": true,
+      "frequency": "monthly",
+      "checkedAt": "2026-10-28",
+      "published": "2026-10-01",
+      "reportedChange": 83.5,
+      "reportedChangeLabel": "전년 동월 대비",
+      "note": "잠정치. 전월 발표의 8월 값은 이후 수정 가능성이 있어 이번 비교에서 제외합니다.",
+      "scope": "대한민국"
+    },
+    {
+      "id": "bok_rate",
+      "title": "한국은행 기준금리",
+      "category": "macro",
+      "current": 3,
+      "previous": null,
+      "previousPeriod": null,
+      "unit": "%",
+      "period": "2026-10-22",
+      "source": {
+        "name": "한국은행 · KDI 전재",
+        "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=288401"
+      },
+      "meaning": "한국은행 금융통화위원회가 결정하는 정책금리입니다.",
+      "impact": "대출·회사채 조달비용은 정책금리 외에 가산금리와 시장금리도 확인해야 합니다.",
+      "digits": 2,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": false,
+      "status": "verified",
+      "fresh": true,
+      "frequency": "decision",
+      "checkedAt": "2026-10-28",
+      "published": "2026-10-22",
+      "note": "10월 22일 결정: 3.00% 유지. 직전 결정 대비 동결이며 전월 통계 증감률이 아닙니다.",
+      "scope": "대한민국"
+    },
+    {
+      "id": "auto_exports",
+      "title": "자동차 수출액",
+      "category": "mobility",
+      "current": 60.5,
+      "previous": 38.5,
+      "previousPeriod": "2026-08",
+      "unit": "억 달러",
+      "period": "2026-09",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172302/view"
+      },
+      "meaning": "신차·중고차 등의 통관 기준 수출금액입니다. 신차 수출 대수와 범위가 다릅니다.",
+      "impact": "수출금액 감소와 신차 물량 회복을 구분해 가격·차종 구성을 점검합니다.",
+      "digits": 1,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": true,
+      "status": "verified",
+      "fresh": true,
+      "frequency": "monthly",
+      "checkedAt": "2026-10-28",
+      "previousSource": {
+        "name": "산업통상부 · 8월 발표",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172213/view"
+      },
+      "published": "2026-10-19",
+      "reportedChange": -5.5,
+      "reportedChangeLabel": "전년 동월 대비",
+      "note": "전월비는 각 월 공식 발표값 기준. 정정 시 비교값도 다시 확인합니다.",
+      "scope": "대한민국"
+    },
+    {
+      "id": "auto_domestic",
+      "title": "자동차 내수판매",
+      "category": "mobility",
+      "current": 13.5,
+      "previous": 11,
+      "previousPeriod": "2026-08",
+      "unit": "만 대",
+      "period": "2026-09",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172302/view"
+      },
+      "meaning": "산업부가 발표한 전체 자동차 내수판매의 반올림 수치입니다.",
+      "impact": "휴일·영업일수 영향을 함께 보며 내수 수요와 재고를 점검합니다.",
+      "digits": 1,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": true,
+      "status": "verified",
+      "fresh": true,
+      "frequency": "monthly",
+      "checkedAt": "2026-10-28",
+      "previousSource": {
+        "name": "산업통상부 · 8월 발표",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172213/view"
+      },
+      "published": "2026-10-19",
+      "reportedChange": -14.3,
+      "reportedChangeLabel": "전년 동월 대비",
+      "note": "만 대 단위 반올림값끼리 비교. 정확한 대수 기반 증감률과 차이가 날 수 있습니다.",
+      "scope": "대한민국"
+    },
+    {
+      "id": "auto_production",
+      "title": "자동차 생산량",
+      "category": "mobility",
+      "current": 34.7,
+      "previous": 20.6,
+      "previousPeriod": "2026-08",
+      "unit": "만 대",
+      "period": "2026-09",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172302/view"
+      },
+      "meaning": "국내 완성차 생산량. 해외 공장 생산량은 포함하지 않습니다.",
+      "impact": "휴가·파업에 따른 전월 생산 차질과 기저효과를 함께 확인합니다.",
+      "digits": 1,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": true,
+      "status": "verified",
+      "fresh": true,
+      "frequency": "monthly",
+      "checkedAt": "2026-10-28",
+      "previousSource": {
+        "name": "산업통상부 · 8월 발표",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172213/view"
+      },
+      "published": "2026-10-19",
+      "reportedChange": 3.7,
+      "reportedChangeLabel": "전년 동월 대비",
+      "note": "만 대 단위 반올림값 기반 전월 비교입니다.",
+      "scope": "대한민국"
+    },
+    {
+      "id": "hanwha_backlog",
+      "title": "한화 지상방산 수주잔고",
+      "category": "defense",
+      "current": 38.3,
+      "previous": null,
+      "previousPeriod": null,
+      "unit": "조 원",
+      "period": "2026-Q2",
+      "source": {
+        "name": "한화그룹 · 회사 발표",
+        "url": "https://www.hanwha.co.kr/newsroom/media_center/news/news_view.do?seq=16046"
+      },
+      "meaning": "한화에어로스페이스 지상방산 부문의 수주잔고. 국내 방산 전체 합계가 아닙니다.",
+      "impact": "수주잔고는 향후 매출 기반이며 실제 매출 전환은 납품 일정과 계약 조건에 달려 있습니다.",
+      "digits": 1,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": false,
+      "status": "verified",
+      "fresh": false,
+      "frequency": "quarterly",
+      "checkedAt": "2026-10-28",
+      "published": "2026-07-31",
+      "note": "2026년 2분기 회사 발표의 약 38.3조 원을 유지합니다. 3분기 실적을 추정해 채우지 않습니다.",
+      "scope": "한화 지상방산"
+    },
+    {
+      "id": "robo_return",
+      "title": "ROBO 최근 3개월 수익률",
+      "category": "robotics",
+      "current": -5.4,
+      "previous": null,
+      "previousPeriod": null,
+      "unit": "%",
+      "period": "2026-09-30",
+      "source": {
+        "name": "VettaFi · 공식 팩트시트",
+        "url": "https://index-docs.vettafi.com/Factsheets/ROBO%20Factsheet.pdf"
+      },
+      "meaning": "ROBO 원지수 가격수익률형의 최근 3개월 누적 수익률입니다. ETF 가격이 아닙니다.",
+      "impact": "산업에 대한 자본시장 평가를 보여주며 로봇 생산량과 구분합니다.",
+      "digits": 1,
+      "signed": true,
+      "deltaType": "percent",
+      "comparable": false,
+      "status": "verified",
+      "fresh": false,
+      "frequency": "monthly",
+      "checkedAt": "2026-10-28",
+      "published": "2026-09-30",
+      "scope": "글로벌 · Price Return",
+      "returnType": "price_return",
+      "note": "2026.09.30 기준 3개월 -5.4%, 연초 이후 +16.3%. 전월 대비 -5.4%라는 뜻이 아닙니다."
+    },
+    {
+      "id": "aa_cost_sol",
+      "title": "AI 과제당 비용 · Sol (max)",
+      "category": "ai",
+      "current": 0.72,
+      "previous": null,
+      "previousPeriod": null,
+      "unit": "USD/task",
+      "period": "2026-10-28",
+      "source": {
+        "name": "Artificial Analysis",
+        "url": "https://artificialanalysis.ai/leaderboards/models"
+      },
+      "meaning": "AA가 평가한 GPT-6.1 Sol (max)의 과제당 비용. 글로벌 평균 비용이 아닙니다.",
+      "impact": "추론 설정과 평가 버전이 바뀌면 같은 모델이라도 직접 비교할 수 없습니다.",
+      "digits": 2,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": false,
+      "status": "verified",
+      "fresh": true,
+      "frequency": "snapshot",
+      "checkedAt": "2026-10-28",
+      "scope": "단일 모델 · GPT-6.1 Sol (max)",
+      "model": "GPT-6.1 Sol (max)",
+      "note": "10월 28일 공개 표 확인값. 모델·추론 설정을 고정한 별도 시계열입니다. 평가 버전 미확인으로 증감 비교를 하지 않습니다."
+    },
+    {
+      "id": "humanoid_sales",
+      "title": "글로벌 휴머노이드 판매",
+      "category": "robotics",
+      "current": 7000,
+      "previous": null,
+      "previousPeriod": null,
+      "unit": "대",
+      "period": "2025",
+      "source": {
+        "name": "국제로봇연맹 IFR",
+        "url": "https://ifr.org/ifr-press-releases/news/global-sales-of-professional-service-robots-surge-24-percent"
+      },
+      "meaning": "2025년 전 세계 140cm 초과 대형 휴머노이드 판매 약 7,000대. 연구·오락용은 제외한 범위입니다.",
+      "impact": "연간 시장 규모의 참고값으로, 월별 출하량이나 실제 공장 가동 대수를 뜻하지 않습니다.",
+      "digits": 0,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": false,
+      "status": "verified",
+      "fresh": false,
+      "frequency": "annual",
+      "checkedAt": "2026-10-28",
+      "published": "2026-09-30",
+      "scope": "글로벌 · 140cm 초과 · 상업·전문 용도",
+      "note": "연간 통계 최신값 유지. 새로운 연간 통계 발표 전에는 전월비를 표시하지 않습니다."
+    },
+    {
+      "id": "battery_exports",
+      "title": "이차전지 수출액",
+      "category": "battery",
+      "current": 7.2,
+      "previous": null,
+      "previousPeriod": null,
+      "unit": "억 달러",
+      "period": "2026-09",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172254/view"
+      },
+      "meaning": "국내 이차전지 품목 수출금액. 한국 기업의 해외 공장 매출 전체와 다릅니다.",
+      "impact": "ESS 수요와 수출단가 변화가 반영되므로 금액 증가를 EV 수요 증가와 동일시하지 않습니다.",
+      "digits": 1,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": false,
+      "status": "verified",
+      "fresh": true,
+      "frequency": "monthly",
+      "checkedAt": "2026-10-28",
+      "published": "2026-10-01",
+      "reportedChange": 14,
+      "reportedChangeLabel": "전년 동월 대비",
+      "note": "산업부 발표 전년 동월 대비 +14.0%. 검증된 전월 정밀값이 없어 전월비는 보류합니다.",
+      "scope": "대한민국"
+    },
+    {
+      "id": "smp",
+      "title": "통합 SMP · 월별",
+      "category": "energy",
+      "current": 119.02,
+      "previous": 148.39,
+      "previousPeriod": "2026-08",
+      "unit": "원/kWh",
+      "period": "2026-09",
+      "source": {
+        "name": "전력거래소",
+        "url": "https://www.kpx.or.kr/smpMonthly.es?device=pc&mid=a10606080300"
+      },
+      "meaning": "월별 통합 계통한계가격. 별도 통계인 가중평균 SMP와 구분합니다.",
+      "impact": "전력시장 가격의 변화이며 기업의 실제 소매 전기요금과 동일하지 않습니다.",
+      "digits": 2,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": true,
+      "status": "verified",
+      "fresh": true,
+      "frequency": "monthly",
+      "checkedAt": "2026-10-28",
+      "note": "통합 SMP 표의 8월·9월 값 비교. 월말 종가나 전력거래량 가중평균 값이 아닙니다.",
+      "scope": "대한민국"
     }
   ],
   "news": [
@@ -218,7 +515,8 @@
         "url": "https://kbthink.com/realestate/insights/research/261015-2.html"
       },
       "review": "manual",
-      "verification": "source_reviewed"
+      "verification": "source_reviewed",
+      "reviewedAt": "2026-10-26"
     },
     {
       "id": "re-rent",
@@ -242,7 +540,8 @@
         "url": "https://kbthink.com/realestate/insights/research/261015-4.html"
       },
       "review": "manual",
-      "verification": "source_reviewed"
+      "verification": "source_reviewed",
+      "reviewedAt": "2026-10-26"
     },
     {
       "id": "re-presales",
@@ -266,7 +565,8 @@
         "url": "https://kbthink.com/realestate/insights/research/261015-6.html"
       },
       "review": "manual",
-      "verification": "source_reviewed"
+      "verification": "source_reviewed",
+      "reviewedAt": "2026-10-26"
     },
     {
       "id": "re-finance",
@@ -290,7 +590,8 @@
         "url": "https://kbthink.com/realestate/insights/research/261015-7.html"
       },
       "review": "manual",
-      "verification": "source_reviewed"
+      "verification": "source_reviewed",
+      "reviewedAt": "2026-10-26"
     },
     {
       "id": "ai-duet",
@@ -314,7 +615,8 @@
         "url": "https://claude.com/resources/articles/claude-duet"
       },
       "review": "manual",
-      "verification": "source_reviewed"
+      "verification": "source_reviewed",
+      "reviewedAt": "2026-10-26"
     },
     {
       "id": "ai-cloud",
@@ -338,7 +640,8 @@
         "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers"
       },
       "review": "manual",
-      "verification": "source_reviewed"
+      "verification": "source_reviewed",
+      "reviewedAt": "2026-10-26"
     },
     {
       "id": "robot-tesla",
@@ -362,7 +665,8 @@
         "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf"
       },
       "review": "manual",
-      "verification": "source_reviewed"
+      "verification": "source_reviewed",
+      "reviewedAt": "2026-10-26"
     },
     {
       "id": "robot-agco",
@@ -386,7 +690,170 @@
         "url": "https://www.agilityrobotics.com/content/agco-and-agility-robotics-advance-smart-manufacturing-with-humanoid-robot-pilot-in-hesston-kansas-facility"
       },
       "review": "manual",
-      "verification": "source_reviewed"
+      "verification": "source_reviewed",
+      "reviewedAt": "2026-10-26"
+    },
+    {
+      "id": "macro-trade",
+      "category": "macro",
+      "tag": "수출",
+      "published": "2026-10-01",
+      "stage": "잠정 통계",
+      "headline": "9월 수출 확대, 반도체 집중도도 함께 점검",
+      "facts": [
+        "수출 1,209.4억 달러, 전년 동월 대비 83.5% 증가.",
+        "반도체 수출은 603.0억 달러로 증가."
+      ],
+      "analysis": [
+        "전체 수출 호조와 개별 업종의 수요는 구분해 판단해야 합니다."
+      ],
+      "track": "수출 확정치·비반도체 업종 수요",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172254/view"
+      }
+    },
+    {
+      "id": "macro-rate",
+      "category": "macro",
+      "tag": "통화정책",
+      "published": "2026-10-22",
+      "stage": "정책 결정",
+      "headline": "한국은행, 기준금리 3.00% 유지",
+      "facts": [
+        "금융통화위원회가 기준금리를 3.00%로 유지.",
+        "한국은행은 중동 정세와 금융시장 변동성 등 위험요인을 점검할 필요가 있다고 설명."
+      ],
+      "analysis": [
+        "차입 투자는 기준금리 동결 여부뿐 아니라 실제 조달금리와 만기 구조를 확인해야 합니다."
+      ],
+      "track": "다음 통화정책 결정·시장 조달금리",
+      "source": {
+        "name": "한국은행 · KDI 전재",
+        "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=288401"
+      }
+    },
+    {
+      "id": "mobility-trade",
+      "category": "mobility",
+      "tag": "생산·판매",
+      "published": "2026-10-19",
+      "stage": "통계 발표",
+      "headline": "자동차 수출금액 감소, 신차 물량·생산은 회복",
+      "facts": [
+        "9월 자동차 수출액 60.5억 달러, 전년 동월 대비 5.5% 감소.",
+        "내수 13.5만 대, 생산 34.7만 대로 집계."
+      ],
+      "analysis": [
+        "수출액·신차 대수는 통계 범위가 다르므로 금액 감소를 곧바로 전체 물량 감소로 해석하기 어렵습니다."
+      ],
+      "track": "수출 차종·지역 구성과 영업일수 효과",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172302/view"
+      }
+    },
+    {
+      "id": "defense-nuri",
+      "category": "defense",
+      "tag": "우주항공",
+      "published": "2026-10-07",
+      "stage": "발사 일정 공지",
+      "headline": "우주항공청, 누리호 5차 발사 일정 공지",
+      "facts": [
+        "우주항공청이 10월 7일 12시 25분 누리호 5차 발사 일정을 안내."
+      ],
+      "analysis": [
+        "일정 공지만으로 발사 성공과 위성 임무 달성을 확정할 수 없습니다. 결과 발표를 별도 확인해야 합니다."
+      ],
+      "track": "발사 결과·위성 교신·후속 발사 일정",
+      "source": {
+        "name": "우주항공청 · 정책브리핑",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973131"
+      }
+    },
+    {
+      "id": "defense-support",
+      "category": "defense",
+      "tag": "방산 수출지원",
+      "published": "2026-10-07",
+      "stage": "모집 공고",
+      "headline": "방산 유망수출품목 발굴 지원사업 참여기업 모집",
+      "facts": [
+        "국방기술진흥연구소가 유망수출품목 발굴 지원사업의 참여기업 모집 공고를 게시."
+      ],
+      "analysis": [
+        "지원사업은 기업의 해외 진출 준비를 돕는 제도이며 수출계약 체결 실적과 구분해야 합니다."
+      ],
+      "track": "공고 원문·연장 여부·선정 결과",
+      "source": {
+        "name": "국방기술진흥연구소",
+        "url": "https://dtims.krit.re.kr/vps/OINF_selectNotiInfoByPubl.do?wiselog=NOTI20261007090733477"
+      }
+    },
+    {
+      "id": "battery-trade",
+      "category": "battery",
+      "tag": "수출·ESS",
+      "published": "2026-10-01",
+      "stage": "잠정 통계",
+      "headline": "이차전지 수출 증가, ESS와 가격 효과를 구분",
+      "facts": [
+        "9월 이차전지 수출 7.2억 달러, 전년 동월 대비 14.0% 증가.",
+        "산업부는 ESS 시장 확대와 수출단가 개선을 설명."
+      ],
+      "analysis": [
+        "수출금액 증가가 국내 배터리 기업 전체의 수익성 개선을 보장하지는 않습니다."
+      ],
+      "track": "EV·ESS 구성과 기업별 출하·수익성",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172254/view"
+      }
+    },
+    {
+      "id": "energy-ets",
+      "category": "energy",
+      "tag": "ESG·탄소시장",
+      "published": "2026-10-13",
+      "stage": "통계 정정",
+      "headline": "탄소시장 통계, KAU26 기준 전환과 정정 이력 확인",
+      "facts": [
+        "한국환경공단이 10월 ETS-INSIGHT를 발간하고 10월 16일 평균가격 일부 정정을 안내.",
+        "9월 통계부터 지표배출권 KAU26과 새 계획기간 업체 기준을 적용한다고 명시."
+      ],
+      "analysis": [
+        "이행연도가 다른 배출권 가격을 연속 시계열로 바로 연결하면 잘못된 증감이 생길 수 있습니다."
+      ],
+      "track": "수정본 평균가격·KAU26 거래량·연속 비교 가능성",
+      "source": {
+        "name": "한국환경공단",
+        "url": "https://www.keco.or.kr/web/lay1/bbs/S1T164C1417/A/275/view.do?article_seq=100749"
+      }
+    },
+    {
+      "id": "energy-grid",
+      "category": "energy",
+      "tag": "전력망·ESS",
+      "published": "2026-10-24",
+      "stage": "정부 설명자료",
+      "headline": "전력계통 안정화, 설비 확충과 그리드포밍 ESS 추진",
+      "facts": [
+        "정부는 계통 안정화 설비 확충과 ESS 그리드포밍 기술 도입을 추진한다고 설명."
+      ],
+      "analysis": [
+        "추진 계획을 현재 설치 실적으로 계산하지 않고 입찰·계약·준공 단계별로 추적해야 합니다."
+      ],
+      "track": "계통 안정화 설비·ESS 입찰과 준공",
+      "source": {
+        "name": "기후에너지환경부 · 정책브리핑",
+        "url": "https://www.korea.kr/briefing/actuallyView.do?newsId=148974259"
+      }
     }
+  ],
+  "dataNotes": [
+    "10월 28일 검토본. 산업별 자료의 실적 기간과 발표일이 다릅니다.",
+    "AI 비용은 기존의 미검증 평균가 시리즈를 종료하고 AA의 단일 모델 과제당 비용으로 새로 시작했습니다.",
+    "ROBO 원지수 포인트 연결은 보류하고 공식 팩트시트의 3개월 가격수익률을 별도 제공합니다."
   ]
 }

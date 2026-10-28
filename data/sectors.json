@@ -1,0 +1,124 @@
+[
+  {
+    "id": "macro",
+    "label": "경제·정책",
+    "newsLimit": 2,
+    "hosts": [
+      "bok.or.kr",
+      "motir.go.kr",
+      "kostat.go.kr",
+      "mods.go.kr",
+      "korea.kr",
+      "eiec.kdi.re.kr"
+    ]
+  },
+  {
+    "id": "realestate",
+    "label": "부동산",
+    "newsLimit": 4,
+    "hosts": [
+      "kbthink.com",
+      "kbfg.com",
+      "molit.go.kr",
+      "reb.or.kr",
+      "korea.kr",
+      "bok.or.kr",
+      "eiec.kdi.re.kr"
+    ]
+  },
+  {
+    "id": "mobility",
+    "label": "자동차",
+    "newsLimit": 2,
+    "hosts": [
+      "motir.go.kr",
+      "kama.or.kr",
+      "hyundai.com",
+      "kia.com",
+      "korea.kr"
+    ]
+  },
+  {
+    "id": "defense",
+    "label": "항공우주·방산",
+    "newsLimit": 2,
+    "hosts": [
+      "kasa.go.kr",
+      "kari.re.kr",
+      "dapa.go.kr",
+      "krit.re.kr",
+      "dtaq.re.kr",
+      "hanwhaaerospace.com",
+      "hanwha.co.kr",
+      "koreaaero.com",
+      "korea.kr"
+    ]
+  },
+  {
+    "id": "ai",
+    "label": "AI",
+    "newsLimit": 2,
+    "hosts": [
+      "openai.com",
+      "anthropic.com",
+      "claude.com",
+      "blog.google",
+      "cloud.google.com",
+      "deepmind.google",
+      "ai.google.dev",
+      "ai.meta.com",
+      "about.fb.com",
+      "nvidianews.nvidia.com",
+      "artificialanalysis.ai",
+      "arena.ai"
+    ]
+  },
+  {
+    "id": "robotics",
+    "label": "휴머노이드·로봇",
+    "newsLimit": 2,
+    "hosts": [
+      "agilityrobotics.com",
+      "figure.ai",
+      "tesla.com",
+      "bostondynamics.com",
+      "hyundai.com",
+      "newsroom.toyota.eu",
+      "global.toyota",
+      "apptronik.com",
+      "agcocorp.com",
+      "nvidianews.nvidia.com",
+      "unitree.com",
+      "sec.gov",
+      "ifr.org"
+    ]
+  },
+  {
+    "id": "battery",
+    "label": "2차전지",
+    "newsLimit": 2,
+    "hosts": [
+      "motir.go.kr",
+      "me.go.kr",
+      "mcee.go.kr",
+      "korea.kr",
+      "lgensol.com",
+      "samsungsdi.com",
+      "skon.com"
+    ]
+  },
+  {
+    "id": "energy",
+    "label": "에너지·ESG",
+    "newsLimit": 2,
+    "hosts": [
+      "motir.go.kr",
+      "me.go.kr",
+      "mcee.go.kr",
+      "korea.kr",
+      "kpx.or.kr",
+      "keco.or.kr",
+      "krx.co.kr"
+    ]
+  }
+]

@@ -62,6 +62,18 @@ class ReportTests(unittest.TestCase):
         with self.assertRaises(ValueError):validate_news(n,date(2026,10,1),date(2026,10,28),text)
     def test_no_placeholder_examples(self):
         metrics={x["id"]:x for x in json.loads((ROOT/"data/reports/2026-10.json").read_text())["metrics"]}
-        for key in ("robo","indxx","aa_cost"):
+        for key in ("robo","indxx"):
             self.assertIsNone(metrics[key]["current"]);self.assertFalse(metrics[key]["comparable"])
+    def test_extended_industry_coverage(self):
+        report=json.loads((ROOT/"data/reports/2026-10.json").read_text())
+        self.assertEqual({n["category"] for n in report["news"]},{"macro","realestate","mobility","defense","ai","robotics","battery","energy"})
+        metrics={m["id"]:m for m in report["metrics"]}
+        self.assertEqual(metrics["aa_cost_sol"]["scope"],"단일 모델 · GPT-6.1 Sol (max)")
+        self.assertFalse(metrics["aa_cost_sol"]["comparable"])
+        self.assertEqual(metrics["robo_return"]["unit"],"%")
+        self.assertEqual(metrics["humanoid_sales"]["frequency"],"annual")
+    def test_dedicated_metrics_cannot_be_changed_by_generated_proposals(self):
+        report=json.loads((ROOT/"data/reports/2026-10.json").read_text())
+        m=next(m for m in report["metrics"] if m["id"]=="aa_cost_sol")
+        with self.assertRaises(ValueError):validate_metric_proposal({"id":m["id"]},m,"",date(2026,10,28))
 if __name__=="__main__":unittest.main()
