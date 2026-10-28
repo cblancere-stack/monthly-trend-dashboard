@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "month": "2026-09",
+  "cutoff": "2026-09-30",
+  "reviewedAt": "2026-09-30",
+  "provisional": false,
+  "headline": "주택가격 상승폭은 둔화, 거래량은 감소. 지역별 수요와 재고 위험을 구분해 확인할 필요.",
+  "metrics": [
+    {
+      "id": "sale",
+      "title": "주택 매매가격 변동률",
+      "category": "realestate",
+      "source": {
+        "name": "KB국민은행",
+        "url": "https://kbthink.com/realestate/insights/research/260916-2.html"
+      },
+      "period": "2026-08",
+      "current": 0.27,
+      "previous": 0.29,
+      "previousPeriod": "2026-07",
+      "unit": "%",
+      "digits": 2,
+      "signed": true,
+      "deltaType": "pp",
+      "comparable": true,
+      "status": "verified",
+      "fresh": true,
+      "scope": "전국 · 전체 주택",
+      "meaning": "전국 주택 매매가격의 월간 변화율. 가격 방향과 상승 속도를 추적합니다.",
+      "impact": "가격 상승은 이어지지만 상승 속도는 둔화했습니다. 지역별 거래 확인이 필요합니다."
+    },
+    {
+      "id": "transactions",
+      "title": "주택 매매거래량",
+      "category": "realestate",
+      "source": {
+        "name": "국토교통부",
+        "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783581"
+      },
+      "period": "2026-08",
+      "current": 48359,
+      "previous": 63185,
+      "previousPeriod": "2026-07",
+      "unit": "건",
+      "digits": 0,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": true,
+      "status": "verified",
+      "fresh": true,
+      "scope": "전국 · 전체 주택",
+      "meaning": "신고된 주택 매매 건수로 실제 거래 활동과 시장 유동성을 추적합니다.",
+      "impact": "거래 부진이 이어지면 부동산 매각과 투자금 회수에 시간이 더 걸릴 수 있습니다."
+    },
+    {
+      "id": "rent",
+      "title": "주택 전세가격 변동률",
+      "category": "realestate",
+      "source": {
+        "name": "KB국민은행",
+        "url": "https://kbthink.com/realestate/insights/research/260916-4.html"
+      },
+      "period": "2026-08",
+      "current": 0.3,
+      "previous": 0.34,
+      "previousPeriod": "2026-07",
+      "unit": "%",
+      "digits": 2,
+      "signed": true,
+      "deltaType": "pp",
+      "comparable": true,
+      "status": "verified",
+      "fresh": true,
+      "scope": "전국 · 전체 주택",
+      "meaning": "전국 주택 전세가격의 월간 변화율. 임대시장 수급 변화를 추적합니다.",
+      "impact": "신규·갱신 계약의 보증금 부담과 지역별 임대 수요를 함께 점검할 필요가 있습니다."
+    },
+    {
+      "id": "unsold_completed",
+      "title": "준공 후 미분양",
+      "category": "realestate",
+      "source": {
+        "name": "국토교통부",
+        "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783581"
+      },
+      "period": "2026-08",
+      "current": 28080,
+      "previous": 29152,
+      "previousPeriod": "2026-07",
+      "unit": "호",
+      "digits": 0,
+      "signed": false,
+      "deltaType": "percent",
+      "comparable": true,
+      "status": "verified",
+      "fresh": true,
+      "scope": "전국 · 전체 주택",
+      "meaning": "완공 이후에도 팔리지 않은 주택 수. 완공 주택의 재고 위험을 추적합니다.",
+      "impact": "재고 감소는 긍정적이나 지역·사업별 분양대금 회수 위험은 별도로 확인해야 합니다."
+    }
+  ],
+  "news": [
+    {
+      "id": "re-sale-sep",
+      "category": "realestate",
+      "tag": "매매가격·거래",
+      "published": "2026-09-30",
+      "stage": "통계 발표",
+      "headline": "8월 가격 상승과 거래 감소, 시장 흐름 차별화",
+      "facts": [
+        "KB 기준 8월 전국 주택 매매가격 +0.27%, 수도권 +0.59%, 서울 +0.75%.",
+        "국토교통부 기준 8월 주택 매매거래 48,359건, 전월 대비 -23.5%."
+      ],
+      "analysis": [
+        "가격 상승을 거래 회복으로 확대 해석하지 않아야 합니다."
+      ],
+      "track": "지역별 실거래가격·거래 빈도",
+      "source": {
+        "name": "국토교통부",
+        "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783581"
+      },
+      "review": "manual",
+      "verification": "source_reviewed"
+    },
+    {
+      "id": "re-rent-sep",
+      "category": "realestate",
+      "tag": "전세시장",
+      "published": "2026-09-16",
+      "stage": "통계 발표",
+      "headline": "전세 상승폭 둔화에도 수도권 임차 부담 지속",
+      "facts": [
+        "8월 전국 전세가격 +0.30%, 수도권 +0.53%, 서울 +0.68%.",
+        "KB전세가격전망지수는 8월 120.5."
+      ],
+      "analysis": [
+        "전국 상승폭은 둔화했지만 수도권 전세가격 상승 압력은 지속됩니다."
+      ],
+      "track": "전세 매물·이사철 수요",
+      "source": {
+        "name": "KB경영연구소",
+        "url": "https://kbthink.com/realestate/insights/research/260916-4.html"
+      },
+      "review": "manual",
+      "verification": "source_reviewed"
+    },
+    {
+      "id": "re-supply-sep",
+      "category": "realestate",
+      "tag": "공급·미분양",
+      "published": "2026-09-30",
+      "stage": "공식 통계",
+      "headline": "미분양 재고와 준공 감소가 동시에 진행",
+      "facts": [
+        "8월 말 전체 미분양 69,134호, 전월 대비 +1.3%.",
+        "준공 후 미분양 28,080호, 전월 대비 -3.7%.",
+        "1~8월 누적 준공은 전년 동기 대비 -27.2%."
+      ],
+      "analysis": [
+        "미분양과 준공 후 미분양은 구분하고 입지별 공급을 살펴야 합니다."
+      ],
+      "track": "재고 해소·준공·착공",
+      "source": {
+        "name": "국토교통부",
+        "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156783581"
+      },
+      "review": "manual",
+      "verification": "source_reviewed"
+    },
+    {
+      "id": "re-finance-sep",
+      "category": "realestate",
+      "tag": "주택금융",
+      "published": "2026-09-16",
+      "stage": "통계 발표",
+      "headline": "8월 주담대 증가, 거래와 대출의 시차 확인 필요",
+      "facts": [
+        "8월 은행권 주택담보대출 잔액 952.5조 원, 월 증가액 4.0조 원.",
+        "8월 전세자금대출 잔액 162.1조 원, 전월 대비 0.7조 원 감소."
+      ],
+      "analysis": [
+        "대출 증가에는 앞선 거래의 잔금·입주자금 수요가 반영됩니다."
+      ],
+      "track": "금리·대출 증가액·입주",
+      "source": {
+        "name": "KB경영연구소",
+        "url": "https://kbthink.com/realestate/insights/research/260916-7.html"
+      },
+      "review": "manual",
+      "verification": "source_reviewed"
+    }
+  ]
+}

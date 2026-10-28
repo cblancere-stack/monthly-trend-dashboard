@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "reports": [
+    {
+      "month": "2026-10",
+      "label": "2026년 10월 · 잠정",
+      "path": "data/reports/2026-10.json"
+    },
+    {
+      "month": "2026-09",
+      "label": "2026년 9월",
+      "path": "data/reports/2026-09.json"
+    }
+  ]
+}
