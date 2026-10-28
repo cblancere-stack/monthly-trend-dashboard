@@ -7,7 +7,7 @@ async function fetchJSON(path){
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
  try{const response=await fetch(path,{cache:'no-store',signal:controller.signal});if(!response.ok)throw new Error(`HTTP ${response.status}`);return await response.json();}finally{clearTimeout(timer);}
 }
-function showLoadError(message){const box=el('error');box.hidden=false;box.replaceChildren(node('p',message));const link=node('a','최신 화면 다시 열기');const url=new URL(location.href);url.searchParams.set('v','20261028-r5');link.href=url.href;link.className='quiet-button';box.append(link);}
+function showLoadError(message){const box=el('error');box.hidden=false;box.replaceChildren(node('p',message));const link=node('a','최신 화면 다시 열기');const url=new URL(location.href);url.searchParams.set('v','20261028-r6');link.href=url.href;link.className='quiet-button';box.append(link);}
 
 const frequencyNames={monthly:'월간',annual:'연간',quarterly:'분기',snapshot:'확인 시점',decision:'정책 결정'};
 function node(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
@@ -37,15 +37,15 @@ function renderSectorHome(){const provided=report.kind==='summary';const groups=
  el('sector-home-note').textContent=provided?'분야별 핵심 흐름과 주요 지표를 한눈에 확인하고, 각 분야에서 상세 요약을 살펴보세요.':'해당 월 공식자료 조사 결과의 요약입니다. 분야별 지표·뉴스와 출처를 확인하세요.';
 }
 
-function summaryMetric(m){const card=node('article',undefined,'metric-card');const top=node('div',undefined,'card-top');top.append(node('span',labels()[m.category],'category-label'),node('span','월간 지표','state'));card.append(top,node('h3',m.title),node('div',m.basis,'metric-meta'),node('div',m.valueText,'metric-value provided-value'));
+function summaryMetric(m){const card=node('article',undefined,'metric-card');const top=node('div',undefined,'card-top');top.append(node('span',labels()[m.category],'category-label'),node('span',m.frequency?({monthly:'월간 지표',quarterly:'분기 지표',annual:'연간 지표',snapshot:'시점 지표',forecast:'전망'}[m.frequency]||'주요 지표'):'월간 지표','state'));card.append(top,node('h3',m.title),node('div',m.basis,'metric-meta'),node('div',m.valueText,'metric-value provided-value'));
  if(m.deltaText)card.append(node('div',m.deltaText,'provided-delta'));
  if(m.reviewNote)card.append(node('p','지수 정의와 원문 수치 확인 전까지 활용을 보류합니다.','provided-warning'));
  for(const [label,text] of [['의미',m.meaning],['파급',m.impact]])if(text){const block=node('p',undefined,'meaning');block.append(node('b',label),document.createTextNode(text));card.append(block);}
- card.append(node('small',`자료: 제공 월간보고서 ${m.sourceSlide}쪽`,'metric-meta'));return card;}
-function summaryNews(n,policy=false){const card=node('article',undefined,'news-card');const top=node('div',undefined,'card-top');top.append(node('span',policy?'정부정책':n.tag||labels()[n.category],'news-tag'),node('span',n.dateLabel||'정책 요약','news-date'),node('span','제공자료 요약','news-stage'));card.append(top,node('h3',n.headline));
+ if(m.source){const link=sourceLink(m.source,'공식 원문 ↗');link.className='metric-source';card.append(link);}else if(m.sourceSlide)card.append(node('small',`자료: 제공 월간보고서 ${m.sourceSlide}쪽`,'metric-meta'));return card;}
+function summaryNews(n,policy=false){const card=node('article',undefined,'news-card');const top=node('div',undefined,'card-top');top.append(node('span',policy?'정부정책':n.tag||labels()[n.category],'news-tag'),node('span',n.dateLabel||'정책 요약','news-date'),node('span',report.origin==='independent'?(n.stage||'월간 조사'):'제공자료 요약','news-stage'));card.append(top,node('h3',n.headline));
  if(policy)card.append(newsSection('내용',n.content),newsSection('해석',n.analysis,true));
  else card.append(newsSection('사실',n.facts),newsSection('해석·시사점',n.analysis,true),newsSection('추적 포인트',n.track));
- card.append(node('div',`제공 월간보고서 ${n.sourceSlide}쪽`,'news-bottom'));return card;}
+ const bottom=node('div',undefined,'news-bottom');if(n.source)bottom.append(sourceLink(n.source,'공식 원문 ↗'));else if(n.sourceSlide)bottom.append(node('span',`제공 월간보고서 ${n.sourceSlide}쪽`));card.append(bottom);return card;}
 function renderSummary(){const metrics=report.metrics.filter(m=>m.category===category),news=report.news.filter(n=>n.category===category),policies=report.policies.filter(n=>n.category===category),supplements=report.supplements.filter(s=>s.categories.includes(category));
  el('metric-grid').replaceChildren(...metrics.map(summaryMetric));el('news-grid').replaceChildren(...news.map(n=>summaryNews(n)));el('metric-count').textContent=metrics.length;el('news-count').textContent=news.length;
  el('metric-notice').textContent='지표별 수치와 비교 기준, 의미와 영향을 함께 확인하세요.';el('pending-panel').hidden=true;
@@ -54,8 +54,8 @@ function renderSummary(){const metrics=report.metrics.filter(m=>m.category===cat
  el('provided-extra').hidden=false;el('policy-count').textContent=policies.length;el('policy-grid').replaceChildren(...policies.map(n=>summaryNews(n,true)));el('provided-policy').hidden=!policies.length;
  el('supplement-section').hidden=!supplements.length;el('supplement-list').replaceChildren();for(const s of supplements){const card=node('article',undefined,'news-card');card.append(node('h3',s.title));const list=node('ul');for(const text of s.points)list.append(node('li',text));card.append(list);el('supplement-list').append(card);}
  el('calendar-table').replaceChildren();const table=node('table');const head=node('tr');['일자','분야','일정','관전 포인트'].forEach(t=>head.append(node('th',t)));const thead=node('thead');thead.append(head);table.append(thead);const tbody=node('tbody');const calendar=report.calendar.filter(item=>item.categories.includes(category));for(const item of calendar){const row=node('tr');[item.date,item.sector,item.event,item.watch].forEach(t=>row.append(node('td',t)));tbody.append(row);}table.append(tbody);el('calendar-section').hidden=!calendar.length;el('calendar-table').append(table);
- el('source-table').replaceChildren(node('p',report.sourceName,'source-filename'),node('p','항목별 실적 기준월과 발표일은 지표에 표시합니다.'));
- el('data-notes').replaceChildren(node('li','제공자료는 9월 보고서이지만 작성일은 10월 16일입니다. 항목마다 실적 기준월과 발표일을 확인하세요.'));
+ el('source-table').replaceChildren(node('p',report.sourceName||(report.origin==='independent'?'공식기관·기업 발표자료 직접 조사':''),'source-filename'),node('p','항목별 실적 기준월과 발표일은 지표에 표시합니다.'));if(report.origin==='independent'){for(const item of [...metrics,...news,...policies]){if(!item.source)continue;const row=node('div',undefined,'source-row');row.append(sourceLink(item.source,item.title||item.headline),node('span',item.period||'해당 월 사건'),node('span',item.published||item.dateLabel||''),node('span',item.source.name));el('source-table').append(row);}}
+ el('data-notes').replaceChildren(...(report.origin==='independent'?(report.dataNotes||['통계의 실적 기준월과 발표일을 구분합니다.']):['제공자료는 9월 보고서이지만 작성일은 10월 16일입니다. 항목마다 실적 기준월과 발표일을 확인하세요.']).map(t=>node('li',t)));
 }
 
 function metricCard(m){
@@ -98,7 +98,7 @@ async function loadReport(path){
  el('loading').hidden=false;el('error').hidden=true;
  try{const priorKind=report?.kind;report=await fetchJSON(path);if(!Array.isArray(report.metrics)||!Array.isArray(report.news))throw new Error('보고서 형식 오류');
  const provided=report.kind==='summary';document.querySelector('.hero-description').textContent=provided?'모든 지표와 이슈를 항목별로 짧게 정리합니다.':'경제와 주요 산업의 변화, 수치와 공식 발표로 확인합니다.';if(priorKind!==report.kind||!report)category='home';
- const [y,m]=report.month.split('-');el('report-title').textContent=`${y}년 ${Number(m)}월 ${provided?'월간 요약보고서':'동향 브리핑'}`;el('edition').textContent=provided?'항목별 요약보고서':report.provisional?'월간 요약 · 잠정':'월간 요약 · 자동 갱신';el('cutoff-label').textContent=provided?'원본 작성일':'자료 확인 기준';el('cutoff').textContent=report.cutoff.replaceAll('-','.');el('updated-at').textContent=provided?'원본 기준월·작성일 구분':`${report.reviewedAt?'자료 검토 '+report.reviewedAt.replaceAll('-','.'):'자동 수집 자료'}${report.checkedAt?' · 자동 확인 '+report.checkedAt.slice(0,10).replaceAll('-','.') : ''}`;el('headline').textContent=report.headline;
+ const [y,m]=report.month.split('-');el('report-title').textContent=`${y}년 ${Number(m)}월 ${provided?'월간 요약보고서':'동향 브리핑'}`;el('edition').textContent=provided?(report.origin==='independent'?(report.phase==='enriched'?'보강판':'1차 보고서'):'항목별 요약보고서'):report.provisional?'월간 요약 · 잠정':'월간 요약 · 자동 갱신';el('cutoff-label').textContent=provided&&report.origin!=='independent'?'원본 작성일':'작성 기준일';el('cutoff').textContent=report.cutoff.replaceAll('-','.');el('updated-at').textContent=provided?(report.origin==='independent'?(report.phase==='enriched'?'10일 보강판':'5일 1차 보고서'):'원본 기준월·작성일 구분'):`${report.reviewedAt?'자료 검토 '+report.reviewedAt.replaceAll('-','.'):'자동 수집 자료'}${report.checkedAt?' · 자동 확인 '+report.checkedAt.slice(0,10).replaceAll('-','.') : ''}`;el('headline').textContent=report.headline;
  const available=new Set([...report.news,...report.metrics].map(x=>x.category));
  const stats=provided?[['대표 지표',report.metrics.length,'개'],['뉴스·현안',report.news.length,'개'],['정부정책',report.policies.length,'개'],['수록 분야',available.size,'개']]:[['수록 산업',available.size,'개'],['주요 뉴스',report.news.length,'건'],['확인된 수치',report.metrics.filter(x=>x.current!==null).length,'개'],['연결 대기',report.metrics.filter(x=>x.current===null).length,'개']];
  el('overview-counts').replaceChildren();for(const [label,val,unit] of stats){const box=node('div',undefined,'overview-stat');const v=node('strong',String(val));v.append(node('small',unit));box.append(node('span',label),v);el('overview-counts').append(box);}

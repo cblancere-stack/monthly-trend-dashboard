@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    "sectorSummaries",
+    "metrics",
+    "news",
+    "policies",
+    "supplements",
+    "calendar"
+  ],
+  "sectors": [
+    {
+      "id": "macro",
+      "label": "경제·사회·규제·정치",
+      "hosts": [
+        "bok.or.kr",
+        "motir.go.kr",
+        "kostat.go.kr",
+        "mods.go.kr",
+        "korea.kr",
+        "eiec.kdi.re.kr"
+      ]
+    },
+    {
+      "id": "realestate",
+      "label": "부동산",
+      "hosts": [
+        "kbthink.com",
+        "kbfg.com",
+        "molit.go.kr",
+        "reb.or.kr",
+        "korea.kr",
+        "bok.or.kr",
+        "eiec.kdi.re.kr"
+      ]
+    },
+    {
+      "id": "mobility",
+      "label": "자동차",
+      "hosts": [
+        "motir.go.kr",
+        "kama.or.kr",
+        "hyundai.com",
+        "kia.com",
+        "korea.kr"
+      ]
+    },
+    {
+      "id": "defense",
+      "label": "항공우주·방산",
+      "hosts": [
+        "kasa.go.kr",
+        "kari.re.kr",
+        "dapa.go.kr",
+        "krit.re.kr",
+        "dtaq.re.kr",
+        "hanwhaaerospace.com",
+        "hanwha.co.kr",
+        "koreaaero.com",
+        "korea.kr"
+      ]
+    },
+    {
+      "id": "ai",
+      "label": "AI",
+      "hosts": [
+        "openai.com",
+        "anthropic.com",
+        "claude.com",
+        "blog.google",
+        "cloud.google.com",
+        "deepmind.google",
+        "ai.google.dev",
+        "ai.meta.com",
+        "about.fb.com",
+        "nvidianews.nvidia.com",
+        "artificialanalysis.ai",
+        "arena.ai"
+      ]
+    },
+    {
+      "id": "robotics",
+      "label": "휴머노이드·로봇",
+      "hosts": [
+        "agilityrobotics.com",
+        "figure.ai",
+        "tesla.com",
+        "bostondynamics.com",
+        "hyundai.com",
+        "newsroom.toyota.eu",
+        "global.toyota",
+        "apptronik.com",
+        "agcocorp.com",
+        "nvidianews.nvidia.com",
+        "unitree.com",
+        "sec.gov",
+        "ifr.org"
+      ]
+    },
+    {
+      "id": "battery",
+      "label": "2차전지",
+      "hosts": [
+        "motir.go.kr",
+        "me.go.kr",
+        "mcee.go.kr",
+        "korea.kr",
+        "lgensol.com",
+        "samsungsdi.com",
+        "skon.com"
+      ]
+    },
+    {
+      "id": "energy",
+      "label": "에너지·ESG",
+      "hosts": [
+        "motir.go.kr",
+        "me.go.kr",
+        "mcee.go.kr",
+        "korea.kr",
+        "kpx.or.kr",
+        "keco.or.kr",
+        "krx.co.kr"
+      ]
+    }
+  ],
+  "requiredMetricSlots": [
+    {
+      "id": "provided-m-4-1",
+      "category": "macro",
+      "title": "수출액"
+    },
+    {
+      "id": "provided-m-4-2",
+      "category": "macro",
+      "title": "코스피"
+    },
+    {
+      "id": "provided-m-4-3",
+      "category": "macro",
+      "title": "원/달러 환율"
+    },
+    {
+      "id": "provided-m-4-4",
+      "category": "macro",
+      "title": "한은 경제전망"
+    },
+    {
+      "id": "provided-m-4-5",
+      "category": "macro",
+      "title": "산업활동"
+    },
+    {
+      "id": "provided-m-4-6",
+      "category": "macro",
+      "title": "한·미 기준금리"
+    },
+    {
+      "id": "provided-m-4-7",
+      "category": "macro",
+      "title": "美 10년물 국채금리"
+    },
+    {
+      "id": "provided-m-4-8",
+      "category": "macro",
+      "title": "美 PCE 물가"
+    },
+    {
+      "id": "provided-m-4-9",
+      "category": "macro",
+      "title": "나스닥 종합지수"
+    },
+    {
+      "id": "provided-m-4-10",
+      "category": "macro",
+      "title": "국제유가 (WTI)"
+    },
+    {
+      "id": "provided-m-5-11",
+      "category": "realestate",
+      "title": "주택 매매가격"
+    },
+    {
+      "id": "provided-m-5-12",
+      "category": "realestate",
+      "title": "주택 매매 거래량"
+    },
+    {
+      "id": "provided-m-5-13",
+      "category": "realestate",
+      "title": "주택 전세가격"
+    },
+    {
+      "id": "provided-m-5-14",
+      "category": "realestate",
+      "title": "준공 후 미분양"
+    },
+    {
+      "id": "provided-m-6-15",
+      "category": "mobility",
+      "title": "월간 자동차 수출액"
+    },
+    {
+      "id": "provided-m-6-16",
+      "category": "mobility",
+      "title": "국내 신차 전체 판매량"
+    },
+    {
+      "id": "provided-m-6-17",
+      "category": "mobility",
+      "title": "중국 NEV 시장 침투율"
+    },
+    {
+      "id": "provided-m-6-18",
+      "category": "defense",
+      "title": "글로벌 우주 경제 규모"
+    },
+    {
+      "id": "provided-m-6-19",
+      "category": "defense",
+      "title": "상업 위성 지상 장비 시장"
+    },
+    {
+      "id": "provided-m-6-20",
+      "category": "defense",
+      "title": "韓 우주개발 R&D 정부예산"
+    },
+    {
+      "id": "provided-m-6-21",
+      "category": "defense",
+      "title": "천궁-II UAE 실전 요격률"
+    },
+    {
+      "id": "provided-m-6-22",
+      "category": "defense",
+      "title": "국내 방산 4사 합산 수주잔고"
+    },
+    {
+      "id": "provided-m-6-23",
+      "category": "defense",
+      "title": "방산 부문 합산 영업이익률"
+    },
+    {
+      "id": "provided-m-7-24",
+      "category": "robotics",
+      "title": "ROBO 로봇·자동화 지수"
+    },
+    {
+      "id": "provided-m-7-25",
+      "category": "ai",
+      "title": "Indxx AI·빅데이터 지수"
+    },
+    {
+      "id": "provided-m-7-26",
+      "category": "ai",
+      "title": "Arena AI 응답 평가점수"
+    },
+    {
+      "id": "provided-m-7-27",
+      "category": "ai",
+      "title": "Artificial Analysis AI 비용"
+    },
+    {
+      "id": "provided-m-8-28",
+      "category": "battery",
+      "title": "탄산리튬 가격"
+    },
+    {
+      "id": "provided-m-8-29",
+      "category": "battery",
+      "title": "양극재 수출액"
+    },
+    {
+      "id": "provided-m-8-30",
+      "category": "battery",
+      "title": "이차전지 수출액"
+    },
+    {
+      "id": "provided-m-8-31",
+      "category": "energy",
+      "title": "두바이유 가격"
+    },
+    {
+      "id": "provided-m-8-32",
+      "category": "energy",
+      "title": "LNG 가격"
+    },
+    {
+      "id": "provided-m-8-33",
+      "category": "energy",
+      "title": "계통한계가격"
+    },
+    {
+      "id": "provided-m-8-34",
+      "category": "energy",
+      "title": "국내 배출권 가격"
+    },
+    {
+      "id": "provided-m-8-35",
+      "category": "energy",
+      "title": "EU 배출권 가격"
+    },
+    {
+      "id": "provided-m-8-36",
+      "category": "energy",
+      "title": "국내 RE100 기업 수"
+    }
+  ],
+  "overviewGroups": [
+    {
+      "title": "경제·사회·규제·정치",
+      "categories": [
+        "macro"
+      ]
+    },
+    {
+      "title": "부동산",
+      "categories": [
+        "realestate"
+      ]
+    },
+    {
+      "title": "자동차·항공·우주·방산",
+      "categories": [
+        "mobility",
+        "defense"
+      ]
+    },
+    {
+      "title": "AI·휴머노이드·로보틱스",
+      "categories": [
+        "ai",
+        "robotics"
+      ]
+    },
+    {
+      "title": "2차전지·에너지·ESG",
+      "categories": [
+        "battery",
+        "energy"
+      ]
+    }
+  ],
+  "rules": {
+    "newsLimit": null,
+    "preservePastMonths": true,
+    "sourceRequired": true,
+    "initialDay": 5,
+    "enrichmentDay": 10
+  }
+}
