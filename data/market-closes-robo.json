@@ -1,0 +1,41 @@
+{
+  "seriesCode": "ROBO",
+  "instrumentType": "ETF",
+  "instrumentName": "ROBO Global Robotics and Automation Index ETF",
+  "currency": "USD",
+  "returnType": "price",
+  "priceField": "unadjusted_close",
+  "retrievedAt": "2026-10-28",
+  "source": {
+    "name": "Investing.com",
+    "title": "ROBO Global Robotics and Automation Index ETF · 과거 종가",
+    "url": "https://kr.investing.com/etfs/global-robotics-and-automation-historical-data",
+    "kind": "통계 시계열"
+  },
+  "crossCheckSources": [
+    {
+      "name": "Yahoo Finance",
+      "title": "ROBO · Historical Prices · Close",
+      "url": "https://ca.finance.yahoo.com/quote/ROBO/history/",
+      "kind": "통계 시계열"
+    },
+    {
+      "name": "Quiver Quantitative",
+      "url": "https://www.quiverquant.com/stock/ROBO/historical-prices/"
+    }
+  ],
+  "observations": [
+    {
+      "date": "2026-07-31",
+      "close": 79.25
+    },
+    {
+      "date": "2026-08-31",
+      "close": 80.44
+    },
+    {
+      "date": "2026-09-30",
+      "close": 80.46
+    }
+  ]
+}

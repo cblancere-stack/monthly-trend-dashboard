@@ -1,4 +1,4 @@
-"""Month-end observations must use the same underlying index, not ETF prices."""
+"""Month-end observations preserve each configured instrument and price series."""
 import copy,json,sys,unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -20,6 +20,24 @@ class MarketCloseTests(unittest.TestCase):
    self.assertEqual(close['previousClose'],values[close['previousDate']])
    self.assertAlmostEqual(close['changePct'],(close['close']/close['previousClose']-1)*100)
    self.assertIn('pt',metric['valueText'])
+ def test_robo_close_and_change_are_consistent_in_both_months_and_overview(self):
+  archive=json.loads((ROOT/'data/market-closes-robo.json').read_text())
+  values={x['date']:x['close'] for x in archive['observations']}
+  for path in ['data/summaries/2026-08.json','data/summary-report.json']:
+   report=json.loads((ROOT/path).read_text())
+   metric=next(m for m in report['metrics'] if m['id']=='provided-m-7-24')
+   close=metric['marketClose']
+   self.assertEqual(metric['title'],'ROBO')
+   self.assertEqual(close['instrumentType'],'ETF')
+   self.assertEqual(metric['numericValue'],values[close['date']])
+   expected=(values[close['date']]/values[close['previousDate']]-1)*100
+   self.assertAlmostEqual(close['changePct'],expected)
+   self.assertIn(f'{expected:.2f}%',metric['deltaText'])
+   self.assertNotIn('3개월',metric['deltaText'])
+   self.assertNotIn('missingReason',metric)
+   stats=[stat for group in report['sectorSummaries'] for stat in group['stats'] if 'ROBO' in stat[0]]
+   self.assertEqual(stats,[['ROBO · 월말 종가',metric['valueText']]])
+   self.assertFalse(any(x['id']==metric['id'] for x in report.get('researchAudit',{}).get('missingMetrics',[])))
  def test_next_day_market_close_allowed_but_news_still_rejected(self):
   validate_summary(self.report,self.template)
   self.report['news'][0]['published']='2026-09-01'

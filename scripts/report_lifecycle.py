@@ -13,15 +13,15 @@ def _month_end_close(item,asof):
  """Only designated index closes may become available on the following KST day."""
  m=item.get('marketClose',{})
  series={
-  'provided-m-7-25':('IAIQP','www.indxx.com'),
-  'provided-m-7-24':('ROBO','www.vettafi.com'),
+  'provided-m-7-25':('IAIQP',{'www.indxx.com'}),
+  'provided-m-7-24':('ROBO',{'kr.investing.com','finance.yahoo.com','ca.finance.yahoo.com'}),
  }
  expected=series.get(item.get('id'))
  if not expected or m.get('cutoffPolicy')!='local_month_end_close':return False
  try:
   observed=date.fromisoformat(m['date']);published=date.fromisoformat(item['published'])
   last=(observed.replace(day=28)+timedelta(days=4)).replace(day=1)-timedelta(days=1)
-  return (m.get('seriesCode')==expected[0] and urlparse(item.get('source',{}).get('url','')).hostname==expected[1]
+  return (m.get('seriesCode')==expected[0] and urlparse(item.get('source',{}).get('url','')).hostname in expected[1]
    and m.get('currency')=='USD' and m.get('returnType')=='price'
    and observed.isoformat()==item.get('period') and observed<=asof and last==asof
    and 0<=(last-observed).days<=7 and published==observed+timedelta(days=1))

@@ -96,7 +96,10 @@
         "unitree.com",
         "sec.gov",
         "ifr.org",
-        "vettafi.com"
+        "vettafi.com",
+        "kr.investing.com",
+        "finance.yahoo.com",
+        "ca.finance.yahoo.com"
       ]
     },
     {
@@ -245,11 +248,12 @@
     {
       "id": "provided-m-7-24",
       "category": "robotics",
-      "title": "ROBO 로봇·자동화 지수",
+      "title": "ROBO",
       "priorTitle": "ROBO 로봇·자동화 지수",
-      "measurement": "월말 지수 종가(pt)",
-      "comparison": "동일 통화·동일 수익률 계열의 전월 말 종가 대비 (%)",
-      "monthEndPolicy": "현지 마지막 거래일 종가. 한국 시간 익월 확정 허용. ETF 가격 대체 금지."
+      "measurement": "월말 종가($)",
+      "comparison": "USD 일반 종가 기준 전월 말 대비 가격 변화율 (%)",
+      "monthEndPolicy": "현지 마지막 거래일 종가. 한국 시간 익월 확정 허용. 배당 재투자 수익률과 구분. 정식 상품명은 출처에 표시.",
+      "instrumentType": "ETF"
     },
     {
       "id": "provided-m-7-25",

@@ -521,21 +521,54 @@
     {
       "id": "provided-m-7-24",
       "category": "robotics",
-      "title": "ROBO 로봇·자동화 지수",
-      "valueText": "월말 종가 확보 중",
-      "basis": "2026.08 · 현지 월말 마지막 거래일 · USD Price Return",
-      "meaning": "로봇·자동화 또는 AI·빅데이터 상장기업의 자본시장 흐름.",
-      "impact": "주가 수익률은 실제 설비투자·출하량과 구분해야 합니다.",
-      "deltaText": "7월 말 종가 확보 후 전월 대비 계산",
-      "period": "2026-08",
+      "title": "ROBO",
+      "valueText": "$80.44",
+      "basis": "2026-08-31 · 월말 종가 · USD",
+      "meaning": "글로벌 로봇·자동화 관련 상장기업의 시장 흐름을 추적합니다.",
+      "impact": "로봇 산업에 대한 시장 기대를 보여주며 실제 생산량·수주액과 함께 해석합니다.",
+      "deltaText": "▲ 1.50% 전월 말 대비 · 전월 $79.25",
+      "period": "2026-08-31",
       "frequency": "monthly",
-      "dataStatus": "unavailable",
-      "missingReason": "공식 ROBO Price Return 일별 시계열의 다운로드가 차단되어 7월·8월 마지막 거래일 종가를 확보하지 못했습니다.",
-      "checkedSources": [
-        "https://www.vettafi.com/indexing/index/robo",
-        "https://vettafi-assets.b-cdn.net/JSON/robo_performance.json"
+      "dataStatus": "available",
+      "displayNote": "ROBO Global Robotics and Automation Index ETF의 달러 기준 일반 종가. 배당 재투자를 포함하지 않은 월말 가격 변화율입니다.",
+      "numericValue": 80.44,
+      "unit": "USD",
+      "published": "2026-09-01",
+      "verification": "source_checked",
+      "source": {
+        "name": "Investing.com",
+        "title": "ROBO Global Robotics and Automation Index ETF · 과거 종가",
+        "url": "https://kr.investing.com/etfs/global-robotics-and-automation-historical-data",
+        "kind": "통계 시계열"
+      },
+      "sources": [
+        {
+          "name": "Investing.com",
+          "title": "ROBO Global Robotics and Automation Index ETF · 과거 종가",
+          "url": "https://kr.investing.com/etfs/global-robotics-and-automation-historical-data",
+          "kind": "통계 시계열"
+        },
+        {
+          "name": "Yahoo Finance",
+          "title": "ROBO · Historical Prices · Close",
+          "url": "https://ca.finance.yahoo.com/quote/ROBO/history/",
+          "kind": "통계 시계열"
+        }
       ],
-      "displayNote": "공식 ROBO Price Return 일별 시계열의 다운로드가 차단되어 7월·8월 마지막 거래일 종가를 확보하지 못했습니다."
+      "checkedAt": "2026-10-28",
+      "marketClose": {
+        "seriesCode": "ROBO",
+        "instrumentType": "ETF",
+        "currency": "USD",
+        "returnType": "price",
+        "priceField": "unadjusted_close",
+        "date": "2026-08-31",
+        "close": 80.44,
+        "previousDate": "2026-07-31",
+        "previousClose": 79.25,
+        "changePct": 1.5015772870662358,
+        "cutoffPolicy": "local_month_end_close"
+      }
     },
     {
       "id": "provided-m-7-25",
@@ -2245,6 +2278,10 @@
         [
           "Agility 평가 데이터",
           "90일"
+        ],
+        [
+          "ROBO · 월말 종가",
+          "$80.44"
         ]
       ],
       "issues": [
@@ -2254,7 +2291,7 @@
         "적용: MHS 연구 프리뷰와 국내 국방 실증 협력"
       ],
       "opportunity": "검증 가능한 과업 비용·가동률 기반 도입",
-      "risk": "과거 지수 공시본 확보와 데이터·물리 안전 검증"
+      "risk": "모델 평가 기준 변경과 데이터·물리 안전 검증"
     },
     {
       "title": "2차전지·에너지·ESG",
@@ -2354,7 +2391,7 @@
     "9월 이후 발표된 8월 실적과 사후 개정치는 사용하지 않았습니다. 미국 시장은 한국 시간 기준일 내 확인 가능한 8월 28일 종가를 사용합니다.",
     "비교값이 확보된 경우에만 전월 대비를 표시하며, 전년 대비·전일 대비·모델 간 비교를 구분합니다."
   ],
-  "revisionNote": "Indxx를 공식 IAIQP 월말 종가와 전월 말 대비 증감률로 정정. 다른 월 보고서 유지.",
+  "revisionNote": "ROBO 월말 종가 및 전월 말 대비 가격 변화율 반영. 표시명 ROBO 유지.",
   "references": [
     {
       "name": "관세청",
@@ -2973,12 +3010,38 @@
       "usedBy": [
         "Indxx AI·빅데이터 지수"
       ]
+    },
+    {
+      "name": "Investing.com",
+      "title": "ROBO Global Robotics and Automation Index ETF · 과거 종가",
+      "url": "https://kr.investing.com/etfs/global-robotics-and-automation-historical-data",
+      "kind": "통계 시계열",
+      "categories": [
+        "robotics"
+      ],
+      "observationDate": "2026-08-31",
+      "usedBy": [
+        "ROBO"
+      ]
+    },
+    {
+      "name": "Yahoo Finance",
+      "title": "ROBO · Historical Prices · Close",
+      "url": "https://ca.finance.yahoo.com/quote/ROBO/history/",
+      "kind": "통계 시계열",
+      "categories": [
+        "robotics"
+      ],
+      "observationDate": "2026-08-31",
+      "usedBy": [
+        "ROBO"
+      ]
     }
   ],
   "researchAudit": {
     "researchedAt": "2026-10-28",
     "historicalCutoff": "2026-08-31",
-    "numericMetricCount": 29,
+    "numericMetricCount": 30,
     "missingMetrics": [
       {
         "id": "provided-m-6-21",
@@ -2987,15 +3050,6 @@
         "checkedSources": [
           "https://www.dapa.go.kr/",
           "https://www.lignex1.com/"
-        ]
-      },
-      {
-        "id": "provided-m-7-24",
-        "title": "ROBO 로봇·자동화 지수",
-        "reason": "공식 ROBO Price Return 일별 시계열의 다운로드가 차단되어 7월·8월 마지막 거래일 종가를 확보하지 못했습니다.",
-        "checkedSources": [
-          "https://www.vettafi.com/indexing/index/robo",
-          "https://vettafi-assets.b-cdn.net/JSON/robo_performance.json"
         ]
       },
       {
@@ -3054,6 +3108,10 @@
     {
       "date": "2026-10-28",
       "note": "Indxx를 공식 IAIQP 월말 종가와 전월 말 대비 증감률로 정정. 다른 월 보고서 유지."
+    },
+    {
+      "date": "2026-10-28",
+      "note": "ROBO 월말 종가 및 전월 말 대비 가격 변화율 반영. 표시명 ROBO 유지."
     }
   ]
 }
