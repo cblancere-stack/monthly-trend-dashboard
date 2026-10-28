@@ -110,3 +110,15 @@ python scripts/update_report.py --month 2026-10 --check-only
 - `data/summary-report.json`은 편집한 요약본입니다. `data/provided-report.json`은 내부 대조용이며, 요약본을 원문 그대로 재생성하는 데 사용하지 않습니다.
 - 제공 수치를 독립 검증값으로 표시하지 않습니다. 예시 가능성이 있는 AI·로봇 지표 4개는 값을 숨기고 검증 보류로 표시합니다.
 - 공식 조사본과 자동 수집은 `data/reports/`에서 별도로 운영하며, 요약본의 항목을 자동 삭제·대체하지 않습니다. 월간 수집에는 섹터별 임의 개수 상한을 두지 않습니다.
+
+## Gemini 연결과 전월 보고서 자동 표시
+
+1. Google AI Studio에서 Gemini API 키를 만듭니다. Gemini 웹 구독과 외부 API 이용 한도·요금은 별도입니다.
+2. 이 저장소의 Settings → Secrets and variables → Actions → New repository secret에서 이름 `GEMINI_API_KEY`로 등록합니다. 키를 코드·대화·공개 파일에 넣지 않습니다.
+3. Actions → Check Gemini connection → Run workflow로 키·모델 접근을 확인합니다. 한 번의 짧은 API 호출이 발생합니다. 검색 조사까지 확인하는 테스트는 아닙니다.
+4. 기본 모델은 `gemini-flash-latest`입니다. 해당 모델이나 Google Search를 사용할 수 없으면 Actions Variables의 `GEMINI_MODEL`을 계정에서 지원하는 검색 지원 모델 ID로 설정합니다.
+5. 매월 1~3일 한국 시간 09:17 전월을 수집합니다. 11월 1~3일의 대상은 10월 보고서입니다. 10월 말일 수집은 관측값 저장이며 공개 월간보고서 전환은 월 마감 후 진행합니다.
+6. 월 마감·Gemini 응답 성공·원문 대조를 통과한 뉴스·새 수치 또는 뉴스 수집 성공 조건을 충족하면 같은 요약보고서 선택 메뉴에 해당 월을 등록하고 최신 월을 기본으로 엽니다. 옛 ‘공식자료 조사’ 선택 그룹을 되살리지 않습니다.
+7. 연결 실패 시 기존 보고서를 유지합니다. Actions 실행 요약에서 키 인식, Gemini 응답, 반영 수, 공개 등록 여부를 확인합니다. 현재 편집한 9월 보고서는 그대로 남깁니다.
+
+자동 수집은 당시 공식 자료의 접근 가능성과 API 한도에 영향을 받습니다. 테스트 37개는 코드 검증이며 실제 계정의 API·Google Search 연결 성공을 의미하지 않습니다. 키 등록 후 실연결 확인이 필요합니다.

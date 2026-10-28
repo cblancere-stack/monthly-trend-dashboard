@@ -54,6 +54,13 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Validate collectors and existing snapshots
         run: python -m unittest discover -s tests -v
+      - name: Check Gemini configuration
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ -z "$GEMINI_API_KEY" ]; then
+            echo "::notice::GEMINI_API_KEY is not configured. Direct metrics may update, but a new summary report will not be published."
+          fi
       - name: Collect official sources
         id: collect
         continue-on-error: true
@@ -84,6 +91,8 @@ jobs:
           mkdir -p public
           cp index.html public/
           cp -r assets data public/
+          rm -rf public/assets/provided-original
+          rm -f public/data/provided-report.json public/data/provided-overview.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -91,6 +100,20 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Summarize connection and publication status
+        if: always()
+        run: |
+          python - <<'PYREPORT'
+          import json,os
+          from pathlib import Path
+          path=Path('data/status.json')
+          if path.exists():
+              state=json.loads(path.read_text())
+              with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as out:
+                  out.write('## Monthly report update\n')
+                  for key in ['month','geminiConfigured','geminiSucceeded','acceptedMetricUpdates','acceptedNewsUpdates','summaryPublished']:
+                      out.write(f"- {key}: {state.get(key,False)}\n")
+          PYREPORT
       - name: Surface collection failures
         if: steps.collect.outcome == 'failure'
         run: |

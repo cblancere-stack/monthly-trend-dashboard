@@ -49,6 +49,7 @@ METRIC_HOSTS.update({
 })
 DIRECT_ONLY={"robo_return","aa_cost_sol","humanoid_sales","hanwha_backlog","smp"}
 from direct_sources import collect_direct
+from publish_monthly import register_summary
 
 def host_matches(url: str, domains: list[str]) -> bool:
     u=urlparse(url)
@@ -275,7 +276,7 @@ def run(month,check_only=False):
     if not existed:
         report.update(news=[],reviewedAt=None,headline="공식 발표와 대표 지표로 살펴보는 이번 달 시장 변화.")
     for m in report["metrics"]:m["fresh"]=False
-    accepted=0;failures=[];proposals=[]
+    accepted=0;accepted_news=0;failures=[];proposals=[]
     updates,direct_issues=collect_direct(report["metrics"],month,cutoff,today,read_url)
     failures.extend(direct_issues)
     for updated in updates:
@@ -313,10 +314,10 @@ def run(month,check_only=False):
             try:
                 if not host_matches(url,ALLOWED[cat]):raise ValueError("Wrong news source")
                 if url not in cache:cache[url]=source_text(url,ALLOWED[cat])
-                valid=validate_news(n,start,cutoff,cache[url]);report["news"].append(valid);existing_ids.add(signature)
+                valid=validate_news(n,start,cutoff,cache[url]);report["news"].append(valid);existing_ids.add(signature);accepted_news+=1
             except Exception as e:failures.append("News source: "+type(e).__name__)
     validate_report(report)
-    status=dict(checkedAt=report["checkedAt"],month=month,geminiConfigured=bool(os.environ.get("GEMINI_API_KEY")),acceptedMetricUpdates=accepted,newsCount=len(report["news"]),issues=failures)
+    status=dict(checkedAt=report["checkedAt"],month=month,geminiConfigured=bool(os.environ.get("GEMINI_API_KEY")),acceptedMetricUpdates=accepted,acceptedNewsUpdates=accepted_news,geminiSucceeded=ai_result is not None,newsCount=len(report["news"]),issues=failures)
     if not check_only:
         atomic_json(ROOT/"data/status.json",status)
         # No synthetic new-month report when collectors did not retrieve anything.
@@ -324,9 +325,13 @@ def run(month,check_only=False):
             atomic_json(path,report)
             entry=dict(month=month,label=f"{start.year}년 {start.month}월"+(" · 잠정" if report["provisional"] else ""),path=f"data/reports/{month}.json")
             index["reports"]=[entry]+[e for e in index["reports"] if e["month"]!=month]
-            index["reports"].sort(key=lambda e:e["month"],reverse=True);atomic_json(ROOT/"data/index.json",index)
+            index["reports"].sort(key=lambda e:e["month"],reverse=True)
+            status["summaryPublished"]=register_summary(index,report,status)
+            atomic_json(ROOT/"data/index.json",index)
+            atomic_json(ROOT/"data/status.json",status)
     print(json.dumps(status,ensure_ascii=False))
     # Preserve published values on individual source failure, but surface failure in Actions.
+    if os.environ.get("GEMINI_API_KEY") and ai_result is None:return 2
     if not accepted and not ai_result:return 2
     return 0
 
