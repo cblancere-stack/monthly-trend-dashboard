@@ -36,4 +36,22 @@ class LifecycleTests(unittest.TestCase):
   self.report['month']='2026-09'
   with self.assertRaises(ValueError):save_summary(self.root,self.report,date(2026,11,5))
   self.assertEqual((self.root/'data/summary-report.json').read_text(),'September must remain unchanged')
+ def test_historical_publication_is_explicit_and_preserves_latest(self):
+  r=copy.deepcopy(self.report);r.update(month='2026-08',asOf='2026-08-31',cutoff='2026-08-31',revisionNote='Requested historical report')
+  for m in r['metrics']:m.update(period='2026-07',published='2026-08-20')
+  with self.assertRaises(ValueError):save_summary(self.root,r,date(2026,10,28))
+  path=save_summary(self.root,r,date(2026,10,28),historical=True)
+  saved=json.loads(path.read_text());self.assertEqual(saved['firstPublishedAt'],'2026-10-28');self.assertEqual(saved['cutoff'],'2026-08-31');self.assertEqual(saved['publicationMode'],'historical')
+  entries=json.loads((self.root/'data/index.json').read_text())['summaryReports'];self.assertEqual(entries[0]['path'],'data/summary-report.json')
+  self.assertEqual((self.root/'data/summary-report.json').read_text(),'September must remain unchanged')
+ def test_historical_mode_cannot_publish_current_month_or_future_cutoff(self):
+  r=copy.deepcopy(self.report);r.update(month='2026-10',asOf='2026-10-28',revisionNote='Historical request')
+  with self.assertRaises(ValueError):save_summary(self.root,r,date(2026,10,28),historical=True)
+  r.update(month='2026-08',asOf='2026-10-29')
+  with self.assertRaises(ValueError):save_summary(self.root,r,date(2026,10,28),historical=True)
+ def test_calendar_and_related_citations_cannot_leak_future_information(self):
+  r=copy.deepcopy(self.report);r['calendar']=[{'source':{'name':'主催','url':'https://example.com/event','published':'2026-11-06'}}]
+  with self.assertRaises(ValueError):validate_summary(r,self.template)
+  r=copy.deepcopy(self.report);r['metrics'][0]['sources']=[{'name':'기관','url':'https://example.com/release','published':'2026-11-06'}]
+  with self.assertRaises(ValueError):validate_summary(r,self.template)
 if __name__=='__main__':unittest.main()

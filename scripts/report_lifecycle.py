@@ -39,24 +39,37 @@ def validate_summary(report,template):
   if not isinstance(report.get(key),list):raise ValueError('Missing section: '+key)
  if len(report['sectorSummaries'])!=5:raise ValueError('Five overview groups required')
  if any(not _source(item) for item in report['calendar']):raise ValueError('Calendar source required')
+ # Nested citations and event announcements must respect the same cutoff.
+ def check_dates(value):
+  if isinstance(value,dict):
+   if value.get('published') and date.fromisoformat(value['published'])>asof:raise ValueError('Nested source after report cutoff')
+   for child in value.values():check_dates(child)
+  elif isinstance(value,list):
+   for child in value:check_dates(child)
+ for section in ['metrics','news','policies','supplements','calendar','references']:check_dates(report.get(section,[]))
  return report
 
-def save_summary(root,report,today=None):
+def save_summary(root,report,today=None,*,historical=False):
  root=Path(root);today=today or date.today()
  template=json.loads((root/'data/report-template.json').read_text())
  draft=copy.deepcopy(report)
  previous_month=(today.replace(day=1)-timedelta(days=1)).strftime('%Y-%m')
- if draft.get('month')!=previous_month:raise ValueError('Only previous month may be published')
+ if draft.get('month')!=previous_month and not historical:raise ValueError('Only previous month may be published')
+ if historical and draft.get('month','')>=today.strftime('%Y-%m'):raise ValueError('Historical publication requires a past month')
+ if date.fromisoformat(draft['asOf'])>today:raise ValueError('Report cutoff cannot be in the future')
+ if historical and not draft.get('revisionNote'):raise ValueError('Historical publication reason required')
  validate_summary(draft,template)
  target=root/f"data/summaries/{draft['month']}.json"
  old=json.loads(target.read_text()) if target.exists() else None
- draft['phase']='enriched' if today.day>=10 else 'initial'
+ draft['phase']='initial' if historical else ('enriched' if today.day>=10 else 'initial')
+ if historical:draft['publicationMode']='historical'
  draft['firstPublishedAt']=(old or {}).get('firstPublishedAt',today.isoformat())
  draft['updatedAt']=today.isoformat()
  draft['revisions']=(old or {}).get('revisions',[])+[{'date':today.isoformat(),'phase':draft['phase'],'note':draft.get('revisionNote','공식자료 반영')}]
  index_path=root/'data/index.json';index=json.loads(index_path.read_text())
  month=draft['month'];year,number=map(int,month.split('-'))
- entry={'id':'summary-'+month,'month':month,'label':f"{year}년 {number}월 · {'보강판' if draft['phase']=='enriched' else '1차'}",'path':f'data/summaries/{month}.json'}
+ edition='기준일 재현' if historical else ('보강판' if draft['phase']=='enriched' else '1차')
+ entry={'id':'summary-'+month,'month':month,'label':f"{year}년 {number}월 · {edition}",'path':f'data/summaries/{month}.json'}
  def entry_month(e):
   if e.get('month'):return e['month']
   match=re.search(r'\d{4}-\d{2}',e.get('id',''))

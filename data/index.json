@@ -17,6 +17,12 @@
       "id": "summary-2026-09-v5",
       "label": "2026년 9월 · 월간 동향보고서",
       "path": "data/summary-report.json"
+    },
+    {
+      "id": "summary-2026-08",
+      "month": "2026-08",
+      "label": "2026년 8월 · 기준일 재현",
+      "path": "data/summaries/2026-08.json"
     }
   ]
 }
