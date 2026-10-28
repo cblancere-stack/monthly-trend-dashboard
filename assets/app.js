@@ -2,6 +2,13 @@
 let sectors=[],report,category='home';
 const el=id=>document.getElementById(id);
 const labels=()=>Object.fromEntries(sectors.map(s=>[s.id,s.label]));
+
+async function fetchJSON(path){
+ const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
+ try{const response=await fetch(path,{cache:'no-store',signal:controller.signal});if(!response.ok)throw new Error(`HTTP ${response.status}`);return await response.json();}finally{clearTimeout(timer);}
+}
+function showLoadError(message){const box=el('error');box.hidden=false;box.replaceChildren(node('p',message));const link=node('a','최신 화면 다시 열기');const url=new URL(location.href);url.searchParams.set('v','20261028-r2');link.href=url.href;link.className='quiet-button';box.append(link);}
+
 const frequencyNames={monthly:'월간',annual:'연간',quarterly:'분기',snapshot:'확인 시점',decision:'정책 결정'};
 function node(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
 function safeURL(raw){try{const u=new URL(raw);return u.protocol==='https:'?u.href:null;}catch{return null;}}
@@ -89,19 +96,19 @@ function render(){
 }
 async function loadReport(path){
  el('loading').hidden=false;el('error').hidden=true;
- try{const response=await fetch(path,{cache:'no-cache'});if(!response.ok)throw new Error(`HTTP ${response.status}`);const priorKind=report?.kind;report=await response.json();if(!Array.isArray(report.metrics)||!Array.isArray(report.news))throw new Error('보고서 형식 오류');
+ try{const priorKind=report?.kind;report=await fetchJSON(path);if(!Array.isArray(report.metrics)||!Array.isArray(report.news))throw new Error('보고서 형식 오류');
  const provided=report.kind==='provided';document.querySelector('.hero-description').textContent=provided?'제공보고서의 섹터별 요약과 전체 내용을 확인합니다.':'경제와 주요 산업의 변화, 수치와 공식 발표로 확인합니다.';if(priorKind!==report.kind||!report)category='home';
  const [y,m]=report.month.split('-');el('report-title').textContent=`${y}년 ${Number(m)}월 ${provided?'제공보고서 전체':'동향 브리핑'}`;el('edition').textContent=provided?'제공자료 · 원본 보존':report.provisional?'공식자료 조사 · 잠정':'공식자료 조사';el('cutoff-label').textContent=provided?'원본 작성일':'자료 확인 기준';el('cutoff').textContent=report.cutoff.replaceAll('-','.');el('updated-at').textContent=provided?'원본 기준월·작성일 구분':`${report.reviewedAt?'자료 검토 '+report.reviewedAt.replaceAll('-','.'):'자동 수집 자료'}${report.checkedAt?' · 자동 확인 '+report.checkedAt.slice(0,10).replaceAll('-','.') : ''}`;el('headline').textContent=report.headline;
  const available=new Set([...report.news,...report.metrics].map(x=>x.category));
  const stats=provided?[['원본 대표 지표',report.metrics.length,'개'],['원본 뉴스·현안',report.news.length,'개'],['정부정책',report.policies.length,'개'],['보존한 원본',report.slides.length,'쪽']]:[['수록 산업',available.size,'개'],['주요 뉴스',report.news.length,'건'],['확인된 수치',report.metrics.filter(x=>x.current!==null).length,'개'],['연결 대기',report.metrics.filter(x=>x.current===null).length,'개']];
  el('overview-counts').replaceChildren();for(const [label,val,unit] of stats){const box=node('div',undefined,'overview-stat');const v=node('strong',String(val));v.append(node('small',unit));box.append(node('span',label),v);el('overview-counts').append(box);}
  el('filters').replaceChildren();for(const sector of [{id:'home',label:'섹터별 주요 내용 요약'},...sectors]){const b=node('button',sector.label);b.dataset.category=sector.id;b.classList.toggle('selected',sector.id===category);b.setAttribute('aria-pressed',String(sector.id===category));el('filters').append(b);}render();el('report').hidden=false;
- }catch(e){el('report').hidden=true;el('error').hidden=false;el('error').textContent='보고서를 불러오지 못했습니다. 잠시 후 새로고침해 주세요.';console.error(e);}finally{el('loading').hidden=true;}
+ }catch(e){el('report').hidden=true;showLoadError(e.name==='AbortError'?'자료 응답이 지연되고 있습니다. 최신 화면 다시 열기를 눌러 주세요.':'보고서를 불러오지 못했습니다. 최신 화면 다시 열기를 눌러 주세요.');console.error(e);}finally{el('loading').hidden=true;}
 }
-async function init(){try{const responses=await Promise.all([fetch('data/index.json',{cache:'no-cache'}),fetch('data/sectors.json',{cache:'no-cache'})]);if(responses.some(r=>!r.ok))throw new Error('목록 오류');const [index,config]=await Promise.all(responses.map(r=>r.json()));sectors=config;
+async function init(){try{const [index,config]=await Promise.all([fetchJSON('data/index.json'),fetchJSON('data/sectors.json')]);sectors=config;
  for(const [label,entries] of [['제공보고서 · 전체 보존',index.providedReports||[]],['공식자료 조사',index.reports]]){const group=node('optgroup');group.label=label;for(const entry of entries){const option=node('option',entry.label);option.value=entry.path;group.append(option);}el('month-select').append(group);}
  el('month-select').value=index.providedReports?.[0]?.path||index.reports[0].path;el('month-select').addEventListener('change',e=>loadReport(e.target.value));await loadReport(el('month-select').value);
- }catch(e){el('loading').hidden=true;el('error').hidden=false;el('error').textContent='보고서 목록을 불러올 수 없습니다.';console.error(e);}}
+ }catch(e){el('loading').hidden=true;showLoadError('보고서 목록을 불러올 수 없습니다. 최신 화면 다시 열기를 눌러 주세요.');console.error(e);}}
 el('filters').addEventListener('click',e=>{const b=e.target.closest('button[data-category]');if(!b||!report)return;category=b.dataset.category;document.querySelectorAll('#filters button').forEach(x=>{const selected=x===b;x.classList.toggle('selected',selected);x.setAttribute('aria-pressed',String(selected));});render();});el('print-button').addEventListener('click',()=>window.print());init();
 
 document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{if(a.hash==='#overview')selectCategory('home');else if(category==='home')selectCategory('macro');}));
