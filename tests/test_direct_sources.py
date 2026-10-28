@@ -1,8 +1,9 @@
 from pathlib import Path
 import sys
 import unittest
+from datetime import date
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from direct_sources import parse_smp,parse_aa,parse_robo,parse_motir,update_metric
+from direct_sources import parse_smp,parse_aa,parse_robo,parse_motir,update_metric,collect_direct
 
 class AdapterTests(unittest.TestCase):
  def test_integrated_smp_not_mainland(self):
@@ -27,4 +28,13 @@ class AdapterTests(unittest.TestCase):
   self.assertFalse(revised['comparable']);self.assertNotIn('reportedChange',revised)
   advanced=update_metric(m,3,'2026-09','https://example.com','x')
   self.assertEqual(advanced['previous'],1);self.assertNotIn('reportedChange',advanced)
+ def test_reviewed_release_fallback_cannot_become_next_month_data(self):
+  old=dict(id='exports',current=1209.4,period='2026-09',source={'name':'산업통상부','url':'https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172254/view'})
+  def read(url,domains):
+   if url==old['source']['url']:return '<p>2026년 9월 수출입 동향 등록일 2026-10-01 수출은 83.5% 증가한 1,209.4억 달러</p>','text/html'
+   return '<html>목록에 해당 제목 없음</html>','text/html'
+  updates,issues=collect_direct([old],'2026-10',date(2026,10,28),date(2026,10,28),read)
+  self.assertEqual(len(updates),1);self.assertFalse(issues)
+  updates,issues=collect_direct([old],'2026-11',date(2026,11,30),date(2026,11,30),read)
+  self.assertFalse(updates)
 if __name__=='__main__':unittest.main()

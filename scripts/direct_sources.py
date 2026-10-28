@@ -3,7 +3,7 @@ import copy
 from datetime import date,datetime,timedelta
 import io
 import re
-from urllib.parse import urljoin
+from urllib.parse import urljoin,urlencode
 from bs4 import BeautifulSoup
 
 SMP_URL='https://www.kpx.or.kr/smpMonthly.es?device=pc&mid=a10606080300'
@@ -130,21 +130,29 @@ def collect_direct(metrics,month,cutoff,today,read_url):
   if not needed:return
   base='https://www.motir.go.kr';targets={}
   y,m=map(int,target.split('-'))
-  for page in range(1,4):
-   raw,_=read_url(base+f'/kor/article/ATCL3f49a5a8c?pageIndex={page}',['motir.go.kr'])
+  # Filter by the actual publication title: a month's opening trade release
+  # is often already outside the newest three unfiltered pages.
+  queries=[urlencode({'searchKeyword':f'{y}년 {m}월 {title}'}) for title in ('수출입','자동차산업')]
+  for query in queries:
+   raw,_=read_url(base+'/kor/article/ATCL3f49a5a8c?'+query,['motir.go.kr'])
    soup=BeautifulSoup(raw,'html.parser')
    for a in soup.find_all('a',href=True):
     text=normalize(a.get_text(' ',strip=True))
     if not re.search(rf'{y}\s*년\s*{m}\s*월',text):continue
     kind='auto' if '자동차산업' in text else 'trade' if '수출입' in text else None
     if kind and kind not in targets and '/view' in a['href']:targets[kind]=urljoin(base,a['href'])
-   if len(targets)==2:break
+  # Already reviewed original URLs are safe fallbacks for refreshing that
+  # publication month. Dates below prevent carrying them into a new month.
+  for id,kind in [('exports','trade'),('auto_exports','auto')]:
+   if kind not in targets and id in old:
+    url=old[id].get('source',{}).get('url','')
+    if url.startswith(base+'/kor/article/ATCL3f49a5a8c/'):targets[kind]=url
   for kind,url in targets.items():
    raw,_=read_url(url,['motir.go.kr']);pub,period,values=parse_motir(raw,kind)
    if pub.strftime('%Y-%m')!=month or pub>cutoff or period!=target:continue
    for id,val in values.items():
     if id not in old or period<old[id]['period']:continue
     updates.append(update_metric(old[id],val,period,url,'산업통상부',published=pub.isoformat(),note='공식 보도자료의 발표값. 전월 자료 정정 및 반올림 차이는 원문에서 확인하세요.'))
-  if not targets:raise ValueError('Monthly release links not found in recent three pages')
+  if not targets:raise ValueError('Monthly release source not found')
  for label,fn in [('KPX SMP',smp),('ROBO factsheet',robo),('AA model cost',aa),('MOTIR monthly releases',motir)]:attempt(label,fn)
  return updates,issues
