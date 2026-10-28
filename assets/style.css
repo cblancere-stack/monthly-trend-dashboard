@@ -46,3 +46,18 @@ h1{font-size:30px;letter-spacing:-1.2px}
 
 .bibliography-row{grid-template-columns:2.5fr 1fr .9fr 1fr;gap:16px;font-size:11px;padding:14px 20px;align-items:start}.bibliography-row a{line-height:1.7}.related-sources{font-size:10px;color:#6d7e76}.related-sources summary{cursor:pointer}.related-sources p{margin:6px 0}.source-empty{padding:16px 20px;font-size:11px;color:#6d7e76}
 @media(max-width:780px){.bibliography-row{grid-template-columns:1.6fr .8fr 1fr;font-size:10px;padding:12px}.bibliography-row>:nth-child(2){display:none}.related-sources{max-width:55%}}
+
+/* Clearer headings and an optional source list. */
+.section-heading h2,.summary-card-heading h2{font-size:19px;font-weight:750}
+.news-card h3{font-size:17px;font-weight:750;line-height:1.55}
+.metric-card h3{font-size:16px;font-weight:700;line-height:1.55}
+.sector-summary-card h3{font-size:13px;font-weight:700}
+.source-toggle{display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;list-style:none;padding:4px 0}
+.source-toggle::-webkit-details-marker{display:none}
+.source-toggle .section-heading{flex:1;margin:0;min-width:0}
+.source-toggle-hint{display:flex;align-items:center;gap:9px;flex-shrink:0;font-size:11px;color:var(--teal)}
+.source-toggle-hint::after{content:'＋';font-size:19px}
+.source-disclosure[open] .source-toggle-hint::after{content:'−'}
+.source-disclosure[open] .source-panel{margin-top:16px}
+.source-toggle:hover h2{color:var(--teal)}
+@media(max-width:780px){.section-heading h2,.summary-card-heading h2{font-size:18px}.news-card h3{font-size:16px}.metric-card h3{font-size:15px}.source-toggle-hint{font-size:10px}}
