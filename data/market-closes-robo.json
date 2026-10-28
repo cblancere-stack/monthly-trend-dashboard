@@ -1,41 +1,23 @@
 {
-  "seriesCode": "ROBO",
-  "instrumentType": "ETF",
-  "instrumentName": "ROBO Global Robotics and Automation Index ETF",
+  "seriesCode": "ROBO_NTR",
+  "instrumentType": "index",
   "currency": "USD",
-  "returnType": "price",
-  "priceField": "unadjusted_close",
-  "retrievedAt": "2026-10-28",
+  "returnType": "net_total",
   "source": {
-    "name": "Investing.com",
-    "title": "ROBO Global Robotics and Automation Index ETF · 과거 종가",
-    "url": "https://kr.investing.com/etfs/global-robotics-and-automation-historical-data",
+    "name": "VettaFi",
+    "title": "ROBO Global Robotics and Automation Index · Net Total Return · 사용자 제공 공식 차트 화면",
+    "url": "https://www.vettafi.com/indexing/index/robo",
     "kind": "통계 시계열"
   },
-  "crossCheckSources": [
-    {
-      "name": "Yahoo Finance",
-      "title": "ROBO · Historical Prices · Close",
-      "url": "https://ca.finance.yahoo.com/quote/ROBO/history/",
-      "kind": "통계 시계열"
-    },
-    {
-      "name": "Quiver Quantitative",
-      "url": "https://www.quiverquant.com/stock/ROBO/historical-prices/"
-    }
-  ],
+  "evidence": "사용자 제공 VettaFi 공식 차트 스크린샷 2장 · 2026-10-28",
   "observations": [
     {
-      "date": "2026-07-31",
-      "close": 79.25
-    },
-    {
       "date": "2026-08-31",
-      "close": 80.44
+      "close": 3395.32
     },
     {
       "date": "2026-09-30",
-      "close": 80.46
+      "close": 3377.82
     }
   ]
 }

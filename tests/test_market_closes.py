@@ -28,15 +28,17 @@ class MarketCloseTests(unittest.TestCase):
    metric=next(m for m in report['metrics'] if m['id']=='provided-m-7-24')
    close=metric['marketClose']
    self.assertEqual(metric['title'],'ROBO')
-   self.assertEqual(close['instrumentType'],'ETF')
+   self.assertEqual(close['instrumentType'],'index')
    self.assertEqual(metric['numericValue'],values[close['date']])
-   expected=(values[close['date']]/values[close['previousDate']]-1)*100
-   self.assertAlmostEqual(close['changePct'],expected)
-   self.assertIn(f'{expected:.2f}%',metric['deltaText'])
+   if 'previousDate' in close:
+    expected=(values[close['date']]/values[close['previousDate']]-1)*100
+    self.assertAlmostEqual(close['changePct'],expected)
+    self.assertIn(f'{abs(expected):.2f}%',metric['deltaText'])
+   else:self.assertNotIn('changePct',close)
    self.assertNotIn('3개월',metric['deltaText'])
    self.assertNotIn('missingReason',metric)
    stats=[stat for group in report['sectorSummaries'] for stat in group['stats'] if 'ROBO' in stat[0]]
-   self.assertEqual(stats,[['ROBO · 월말 종가',metric['valueText']]])
+   self.assertEqual(stats,[['ROBO · 월말 지수',metric['valueText']]])
    self.assertFalse(any(x['id']==metric['id'] for x in report.get('researchAudit',{}).get('missingMetrics',[])))
  def test_next_day_market_close_allowed_but_news_still_rejected(self):
   validate_summary(self.report,self.template)

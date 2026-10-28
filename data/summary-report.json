@@ -626,53 +626,46 @@
       "sourceSlide": 7,
       "category": "robotics",
       "verification": "source_checked",
-      "deltaText": "▲ 0.02% 전월 말 대비 · 전월 $80.44",
+      "deltaText": "▼ 0.52% 전월 말 대비 · 전월 3,395.32 pt",
       "title": "ROBO",
-      "valueText": "$80.46",
+      "valueText": "3,377.82 pt",
       "meaning": "글로벌 로봇·자동화 관련 상장기업의 시장 흐름을 추적합니다.",
       "impact": "로봇 산업에 대한 시장 기대를 보여주며 실제 생산량·수주액과 함께 해석합니다.",
-      "basis": "2026-09-30 · 월말 종가 · USD",
+      "basis": "2026-09-30 · 월말 지수 · 순 총수익률",
       "priorTitle": "ROBO 로봇·자동화 지수",
       "period": "2026-09-30",
       "frequency": "monthly",
       "source": {
-        "name": "Investing.com",
-        "title": "ROBO Global Robotics and Automation Index ETF · 과거 종가",
-        "url": "https://kr.investing.com/etfs/global-robotics-and-automation-historical-data",
+        "name": "VettaFi",
+        "title": "ROBO Global Robotics and Automation Index · Net Total Return · 사용자 제공 공식 차트 화면",
+        "url": "https://www.vettafi.com/indexing/index/robo",
         "kind": "통계 시계열"
       },
       "checkedAt": "2026-10-28",
-      "displayNote": "ROBO Global Robotics and Automation Index ETF의 달러 기준 일반 종가. 배당 재투자를 포함하지 않은 월말 가격 변화율입니다.",
+      "displayNote": "VettaFi 공식 차트의 Net Total Return(순 총수익률) 계열. 사용자 제공 2026.10.28 화면에서 날짜와 값을 확인.",
       "sources": [
         {
-          "name": "Investing.com",
-          "title": "ROBO Global Robotics and Automation Index ETF · 과거 종가",
-          "url": "https://kr.investing.com/etfs/global-robotics-and-automation-historical-data",
-          "kind": "통계 시계열"
-        },
-        {
-          "name": "Yahoo Finance",
-          "title": "ROBO · Historical Prices · Close",
-          "url": "https://ca.finance.yahoo.com/quote/ROBO/history/",
+          "name": "VettaFi",
+          "title": "ROBO Global Robotics and Automation Index · Net Total Return · 사용자 제공 공식 차트 화면",
+          "url": "https://www.vettafi.com/indexing/index/robo",
           "kind": "통계 시계열"
         }
       ],
-      "numericValue": 80.46,
-      "unit": "USD",
+      "numericValue": 3377.82,
+      "unit": "pt",
       "published": "2026-10-01",
       "dataStatus": "available",
       "marketClose": {
-        "seriesCode": "ROBO",
-        "instrumentType": "ETF",
+        "seriesCode": "ROBO_NTR",
+        "instrumentType": "index",
         "currency": "USD",
-        "returnType": "price",
-        "priceField": "unadjusted_close",
+        "returnType": "net_total",
         "date": "2026-09-30",
-        "close": 80.46,
+        "close": 3377.82,
+        "cutoffPolicy": "local_month_end_close",
         "previousDate": "2026-08-31",
-        "previousClose": 80.44,
-        "changePct": 0.024863252113371814,
-        "cutoffPolicy": "local_month_end_close"
+        "previousClose": 3395.32,
+        "changePct": -0.5154153364042235
       }
     },
     {
@@ -4424,8 +4417,8 @@
           "9,836.20 pt"
         ],
         [
-          "ROBO · 월말 종가",
-          "$80.46"
+          "ROBO · 월말 지수",
+          "3,377.82 pt"
         ],
         [
           "휴머노이드 · 연간 판매",
@@ -4487,7 +4480,7 @@
     }
   ],
   "editorialPolicy": "항목은 유지하고 항목별 문장을 요약합니다. 동일 내용을 반복하는 종합 설명만 통합하며 원본 기재값을 독립 검증값으로 바꾸지 않습니다.",
-  "revisionNote": "ROBO 월말 종가 및 전월 말 대비 가격 변화율 반영. 표시명 ROBO 유지.",
+  "revisionNote": "사용자 제공 VettaFi 차트의 ROBO 순 총수익률 지수(pt)로 교체.",
   "revisedAt": "2026-10-28",
   "revisions": [
     {
@@ -4501,6 +4494,10 @@
     {
       "date": "2026-10-28",
       "note": "ROBO 월말 종가 및 전월 말 대비 가격 변화율 반영. 표시명 ROBO 유지."
+    },
+    {
+      "date": "2026-10-28",
+      "note": "사용자 제공 VettaFi 차트의 ROBO 순 총수익률 지수(pt)로 교체."
     }
   ],
   "references": [
@@ -5792,22 +5789,9 @@
       ]
     },
     {
-      "name": "Investing.com",
-      "title": "ROBO Global Robotics and Automation Index ETF · 과거 종가",
-      "url": "https://kr.investing.com/etfs/global-robotics-and-automation-historical-data",
-      "kind": "통계 시계열",
-      "categories": [
-        "robotics"
-      ],
-      "observationDate": "2026-09-30",
-      "usedBy": [
-        "ROBO"
-      ]
-    },
-    {
-      "name": "Yahoo Finance",
-      "title": "ROBO · Historical Prices · Close",
-      "url": "https://ca.finance.yahoo.com/quote/ROBO/history/",
+      "name": "VettaFi",
+      "title": "ROBO Global Robotics and Automation Index · Net Total Return · 사용자 제공 공식 차트 화면",
+      "url": "https://www.vettafi.com/indexing/index/robo",
       "kind": "통계 시계열",
       "categories": [
         "robotics"

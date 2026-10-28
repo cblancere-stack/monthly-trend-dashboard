@@ -250,10 +250,10 @@
       "category": "robotics",
       "title": "ROBO",
       "priorTitle": "ROBO 로봇·자동화 지수",
-      "measurement": "월말 종가($)",
-      "comparison": "USD 일반 종가 기준 전월 말 대비 가격 변화율 (%)",
-      "monthEndPolicy": "현지 마지막 거래일 종가. 한국 시간 익월 확정 허용. 배당 재투자 수익률과 구분. 정식 상품명은 출처에 표시.",
-      "instrumentType": "ETF"
+      "measurement": "월말 지수(pt)",
+      "comparison": "동일 Net Total Return 계열의 전월 말 대비 (%)",
+      "monthEndPolicy": "VettaFi 순 총수익률 계열 고정. ETF 가격 혼용 금지. 전월 값 없으면 증감률 제외.",
+      "instrumentType": "index"
     },
     {
       "id": "provided-m-7-25",
