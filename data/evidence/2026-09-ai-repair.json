@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-10-28",
+  "reportMonth": "2026-09",
+  "indicators": [
+    {
+      "title": "ROBO 지수 · 최근 3개월 수익률",
+      "valueText": "−5.4%",
+      "basis": "2026.09.30 · VettaFi · Price Return",
+      "deltaText": "최근 3개월 누적 · 연초 이후 +16.3%",
+      "meaning": "글로벌 로봇·자동화 관련 상장기업의 주가 흐름을 추적하는 지수의 수익률.",
+      "impact": "시장 기대의 변화를 보여주며, 로봇 생산량이나 기업으로 유입된 자금의 규모와는 구분해 해석.",
+      "period": "2026-09-30",
+      "frequency": "monthly",
+      "source": {
+        "name": "VettaFi · ROBO 공식 팩트시트",
+        "url": "https://index-docs.vettafi.com/Factsheets/ROBO%20Factsheet.pdf"
+      },
+      "definitionChange": "원지수 포인트 대신 공식 Price Return 수익률을 표시. 전월 대비 수익률이 아님.",
+      "id": "provided-m-7-24"
+    },
+    {
+      "title": "Indxx AI·빅데이터 · 월간 수익률",
+      "valueText": "+8.23%",
+      "basis": "2026.08.31 · Global X AIQ 팩트시트의 Index 행",
+      "deltaText": "8월 1개월 수익률 · 연초 이후 +27.18%",
+      "meaning": "AI·빅데이터 지수의 수익률. 운용사 팩트시트에서 ETF의 NAV·시장가격과 구분된 Index 행을 인용.",
+      "impact": "AI 관련 상장기업에 대한 시장 평가를 추적. 실제 인프라 투자액·매출 성장률과는 다른 지표.",
+      "period": "2026-08-31",
+      "frequency": "monthly",
+      "source": {
+        "name": "Global X · Indxx 기초지수 수익률 공시",
+        "url": "https://assets.globalxetfs.com/funds/documents/aiq/Fact-Sheet_AIQ.pdf"
+      },
+      "definitionChange": "9월 말 지수 포인트 대신 기준일이 명시된 8월 말 지수 월간 수익률을 인용. ETF 수익률로 대체한 것이 아님.",
+      "id": "provided-m-7-25"
+    },
+    {
+      "title": "AI 성능 · AA Intelligence Index",
+      "valueText": "52점",
+      "basis": "2026.09.29 발표 · GPT-6.1 Sol (max) · AA v4.3.2",
+      "deltaText": "동일 평가 GPT-6 Sol 48점 대비 +4점 · 모델 간 비교",
+      "meaning": "Artificial Analysis가 여러 평가를 종합한 AI 성능 점수. 특정 모델·추론 설정·평가 버전을 고정해 읽는 지표.",
+      "impact": "업무 자동화 모델을 비교하는 참고값이며, 인간 선호도나 모든 업무의 정확도를 뜻하지는 않음.",
+      "period": "2026-09-29",
+      "published": "2026-09-29",
+      "frequency": "snapshot",
+      "source": {
+        "name": "Artificial Analysis · 9월 29일 분석·원본 차트",
+        "url": "https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence"
+      },
+      "definitionChange": "9월 말 Arena 점수의 원자료를 확보하지 못해, 발표일·원본 차트가 확인되는 AA 성능 지표로 명시적으로 대체.",
+      "id": "provided-m-7-26"
+    },
+    {
+      "title": "AI 비용 · Sol (max) 과제당 비용",
+      "valueText": "$0.72 / 과제",
+      "basis": "2026.09.29 발표 · GPT-6.1 Sol (max) · AA 평가",
+      "deltaText": "동일 평가 GPT-6 Sol($1.05)보다 31% 낮음 · 모델 간 비교",
+      "meaning": "Artificial Analysis의 Intelligence Index 평가에서 측정한 단일 모델의 과제당 비용. 시장 평균이나 100만 토큰당 API 가격이 아님.",
+      "impact": "실제 업무에서는 과제 난도·재시도·캐시·추론 설정에 따라 비용이 달라지므로 사내 업무 완료 비용과 함께 비교.",
+      "period": "2026-09-29",
+      "published": "2026-09-29",
+      "frequency": "snapshot",
+      "source": {
+        "name": "Artificial Analysis · 9월 29일 비용 분석",
+        "url": "https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence"
+      },
+      "definitionChange": "정의·근거가 불분명한 시장 평균 $1.80 대신 같은 평가의 단일 모델 과제당 비용을 표시.",
+      "id": "provided-m-7-27"
+    }
+  ],
+  "notes": [
+    "9월 말 Arena 점수·Indxx 포인트를 현재값으로 소급하지 않음.",
+    "AA 성능 52점은 9월 29일 공식 기사 원본 차트에서 확인.",
+    "ROBO는 가격수익률형 3개월, Indxx는 팩트시트 Index 행 1개월로 서로 기간·유형이 다름."
+  ]
+}

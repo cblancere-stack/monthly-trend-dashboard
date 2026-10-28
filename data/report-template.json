@@ -243,22 +243,26 @@
     {
       "id": "provided-m-7-24",
       "category": "robotics",
-      "title": "ROBO 로봇·자동화 지수"
+      "title": "ROBO 지수 · 최근 3개월 수익률",
+      "priorTitle": "ROBO 로봇·자동화 지수"
     },
     {
       "id": "provided-m-7-25",
       "category": "ai",
-      "title": "Indxx AI·빅데이터 지수"
+      "title": "Indxx AI·빅데이터 · 월간 수익률",
+      "priorTitle": "Indxx AI·빅데이터 지수"
     },
     {
       "id": "provided-m-7-26",
       "category": "ai",
-      "title": "Arena AI 응답 평가점수"
+      "title": "AI 성능 · AA Intelligence Index",
+      "priorTitle": "Arena AI 응답 평가점수"
     },
     {
       "id": "provided-m-7-27",
       "category": "ai",
-      "title": "Artificial Analysis AI 비용"
+      "title": "AI 비용 · Sol (max) 과제당 비용",
+      "priorTitle": "Artificial Analysis AI 비용"
     },
     {
       "id": "provided-m-8-28",

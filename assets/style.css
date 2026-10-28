@@ -33,3 +33,13 @@ h1{font-size:30px;letter-spacing:-1.2px}
 .metric-card{padding:16px 14px}.provided-value{font-size:23px}.provided-delta{font-size:10px;margin-bottom:10px}
 #briefing,#sources,.provided-section,#provided-policy{margin-top:30px}
 @media(max-width:780px){h1{font-size:25px}.summary p{font-size:12px}.sector-summary-card,.sector-summary-card.wide-summary{padding:16px}.summary-card-heading h2{font-size:16px}.sector-summary-stats strong{font-size:19px}.news-card{padding:16px}.news-card h3{font-size:14px}.provided-value{font-size:21px}}
+
+/* Separate definitions from the main number without shrinking body copy. */
+.metric-definition-note{font-size:10px;line-height:1.7;color:#667974;border-left:2px solid #c5d6cf;padding-left:8px;margin:0 0 12px}
+.news-bottom{font-size:10px;color:#7b8984}.news-section>strong{color:#536d61}.sector-takeaway{border-left:3px solid #75988b}
+
+.metric-grid[data-count="1"]{grid-template-columns:minmax(0,420px)}
+.metric-grid[data-count="2"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+.metric-grid[data-count="3"]{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:1100px){.metric-grid[data-count="3"]{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.metric-grid[data-count="2"],.metric-grid[data-count="3"]{grid-template-columns:1fr}}
