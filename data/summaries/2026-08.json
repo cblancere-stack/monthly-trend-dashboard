@@ -526,7 +526,7 @@
       "basis": "2026-08-31 · 월말 지수 · 순 총수익률",
       "meaning": "글로벌 로봇·자동화 관련 상장기업의 시장 흐름을 추적합니다.",
       "impact": "로봇 산업에 대한 시장 기대를 보여주며 실제 생산량·수주액과 함께 해석합니다.",
-      "deltaText": "7월 말 동일 계열 값 미확보 · 전월 대비 제외",
+      "deltaText": "▲ 1.47% 전월 말 대비 · 전월 3,346.08 pt",
       "period": "2026-08-31",
       "frequency": "monthly",
       "dataStatus": "available",
@@ -557,7 +557,10 @@
         "returnType": "net_total",
         "date": "2026-08-31",
         "close": 3395.32,
-        "cutoffPolicy": "local_month_end_close"
+        "cutoffPolicy": "local_month_end_close",
+        "previousDate": "2026-07-31",
+        "previousClose": 3346.08,
+        "changePct": 1.4715727059723793
       }
     },
     {
@@ -2381,7 +2384,7 @@
     "9월 이후 발표된 8월 실적과 사후 개정치는 사용하지 않았습니다. 미국 시장은 한국 시간 기준일 내 확인 가능한 8월 28일 종가를 사용합니다.",
     "비교값이 확보된 경우에만 전월 대비를 표시하며, 전년 대비·전일 대비·모델 간 비교를 구분합니다."
   ],
-  "revisionNote": "사용자 제공 VettaFi 차트의 ROBO 순 총수익률 지수(pt)로 교체.",
+  "revisionNote": "추가 제공된 공식 차트의 7월 말 3,346.08pt를 반영하여 8월 전월비 계산.",
   "references": [
     {
       "name": "관세청",
@@ -3093,6 +3096,10 @@
     {
       "date": "2026-10-28",
       "note": "사용자 제공 VettaFi 차트의 ROBO 순 총수익률 지수(pt)로 교체."
+    },
+    {
+      "date": "2026-10-28",
+      "note": "추가 제공된 공식 차트의 7월 말 3,346.08pt를 반영하여 8월 전월비 계산."
     }
   ]
 }

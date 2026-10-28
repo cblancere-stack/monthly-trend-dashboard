@@ -9,8 +9,12 @@
     "url": "https://www.vettafi.com/indexing/index/robo",
     "kind": "통계 시계열"
   },
-  "evidence": "사용자 제공 VettaFi 공식 차트 스크린샷 2장 · 2026-10-28",
+  "evidence": "사용자 제공 VettaFi 공식 차트 스크린샷 3장 · 2026-10-28",
   "observations": [
+    {
+      "date": "2026-07-31",
+      "close": 3346.08
+    },
     {
       "date": "2026-08-31",
       "close": 3395.32
