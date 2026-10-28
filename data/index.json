@@ -11,5 +11,12 @@
       "label": "2026년 9월",
       "path": "data/reports/2026-09.json"
     }
+  ],
+  "providedReports": [
+    {
+      "id": "provided-2026-09-v5",
+      "label": "제공보고서 · 2026년 9월 전체",
+      "path": "data/provided-report.json"
+    }
   ]
 }

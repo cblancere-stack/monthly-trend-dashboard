@@ -1,8 +1,7 @@
 [
   {
     "id": "macro",
-    "label": "경제·정책",
-    "newsLimit": 2,
+    "label": "경제·사회·규제·정치",
     "hosts": [
       "bok.or.kr",
       "motir.go.kr",
@@ -15,7 +14,6 @@
   {
     "id": "realestate",
     "label": "부동산",
-    "newsLimit": 4,
     "hosts": [
       "kbthink.com",
       "kbfg.com",
@@ -29,7 +27,6 @@
   {
     "id": "mobility",
     "label": "자동차",
-    "newsLimit": 2,
     "hosts": [
       "motir.go.kr",
       "kama.or.kr",
@@ -41,7 +38,6 @@
   {
     "id": "defense",
     "label": "항공우주·방산",
-    "newsLimit": 2,
     "hosts": [
       "kasa.go.kr",
       "kari.re.kr",
@@ -57,7 +53,6 @@
   {
     "id": "ai",
     "label": "AI",
-    "newsLimit": 2,
     "hosts": [
       "openai.com",
       "anthropic.com",
@@ -76,7 +71,6 @@
   {
     "id": "robotics",
     "label": "휴머노이드·로봇",
-    "newsLimit": 2,
     "hosts": [
       "agilityrobotics.com",
       "figure.ai",
@@ -96,7 +90,6 @@
   {
     "id": "battery",
     "label": "2차전지",
-    "newsLimit": 2,
     "hosts": [
       "motir.go.kr",
       "me.go.kr",
@@ -110,7 +103,6 @@
   {
     "id": "energy",
     "label": "에너지·ESG",
-    "newsLimit": 2,
     "hosts": [
       "motir.go.kr",
       "me.go.kr",

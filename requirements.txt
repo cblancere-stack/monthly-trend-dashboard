@@ -1,2 +1,4 @@
 beautifulsoup4>=4.12,<5
 pypdf>=5,<7
+
+lxml>=5,<7

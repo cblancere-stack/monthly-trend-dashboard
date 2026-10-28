@@ -1,7 +1,7 @@
 """Monthly report collector. Only source-backed values can replace saved data.
 
 No key: collect KB, MOTIR, KPX, ROBO factsheet and AA public tables. GEMINI_API_KEY: discover official releases
-with Google Search grounding and draft the monthly 4/2/2 brief. Every published
+with Google Search grounding and draft the full monthly brief without a sector cap. Every published
 fact must have an exact supporting excerpt in a separately fetched official page.
 Unreachable, blocked and JavaScript-only pages fail closed.
 """
@@ -32,7 +32,7 @@ KST = timezone(timedelta(hours=9))
 MAX_BYTES = 6_000_000
 SECTORS = json.loads((ROOT/"data/sectors.json").read_text(encoding="utf-8"))
 ALLOWED = {sector["id"]:sector["hosts"] for sector in SECTORS}
-NEWS_LIMITS = {sector["id"]:sector["newsLimit"] for sector in SECTORS}
+NEWS_LIMITS = {sector["id"]:None for sector in SECTORS}  # No editorial truncation by sector
 METRIC_HOSTS = {
  "sale": ["kbthink.com", "kbfg.com"], "rent": ["kbthink.com", "kbfg.com"],
  "transactions": ["molit.go.kr", "korea.kr", "reb.or.kr", "eiec.kdi.re.kr"],
@@ -224,7 +224,7 @@ def gemini_candidates(month,cutoff):
     if not re.fullmatch(r"[a-zA-Z0-9_.-]+",model):raise ValueError("Invalid model name")
     prompt=f'''한국어 공개 월간 동향보고서. 보고서 월 {month}, 발표자료 마감 {cutoff.isoformat()}.
 공식기관·기업 공식 뉴스룸만 Google Search로 조사한다. 10월 보고서에 11월 발표를 넣는 등 발표월을 혼동하지 않는다.
-분야별 뉴스 선정 한도: {json.dumps(NEWS_LIMITS,ensure_ascii=False)}. 분야 키와 허용 출처는 아래 목록과 일치해야 한다. 기존 사실과 분석을 분리하고 투자 권유·당사 내부정보는 쓰지 않는다.
+경제·사회·국내 규제·해외 규제·정치·통상을 포함해 분야별 주요 발표를 빠짐없이 조사한다. 건수 상한으로 자르지 않는다. 확인되지 않은 항목은 만들지 않는다. 분야 키와 허용 출처는 아래 목록과 일치해야 한다. 기존 사실과 분석을 분리하고 투자 권유·당사 내부정보는 쓰지 않는다.
 계획·목표·기업 자체 주장을 검증된 생산·납품 실적으로 표현하지 않는다. 숫자가 없으면 만들지 않는다.
 뉴스는 해당 월 발표여야 한다. 오래된 원문을 새 기사처럼 만들지 않는다. 각 사실마다 짧은 원문 연속 발췌 evidence를 붙인다. 원문에 적힌 숫자만 사실에 사용한다.
 출처 허용 도메인: {json.dumps(ALLOWED,ensure_ascii=False)}.
@@ -263,7 +263,7 @@ def validate_report(report):
         if n["category"] not in ALLOWED or not start<=date.fromisoformat(n["published"])<=cutoff:raise ValueError("News outside month")
         if not host_matches(n["source"]["url"],ALLOWED[n["category"]]):raise ValueError("Unapproved news source")
         counts[n["category"]]+=1
-    if any(counts[c]>limit for c,limit in NEWS_LIMITS.items()):raise ValueError("Too many news cards")
+    # Preserve every validated issue; no per-sector editorial cap.
 
 def run(month,check_only=False):
     today=datetime.now(KST).date();start,cutoff=month_bounds(month,today)
@@ -303,16 +303,17 @@ def run(month,check_only=False):
     if ai_result:
         # Retain manually reviewed news in the current month; fill remaining slots.
         limits=NEWS_LIMITS
-        existing_ids={n["source"]["url"] for n in report["news"]}
-        for n in ai_result.get("news",[])[:12]:
+        existing_ids={(n["category"],n["source"]["url"],normalize(n["headline"])) for n in report["news"]}
+        for n in ai_result.get("news",[]):
             cat=n.get("category")
-            if cat not in limits or sum(x["category"]==cat for x in report["news"])>=limits[cat]:continue
+            if cat not in ALLOWED:continue
             url=n.get("source",{}).get("url","")
-            if url in existing_ids:continue
+            signature=(cat,url,normalize(n.get("headline","")))
+            if signature in existing_ids:continue
             try:
                 if not host_matches(url,ALLOWED[cat]):raise ValueError("Wrong news source")
                 if url not in cache:cache[url]=source_text(url,ALLOWED[cat])
-                valid=validate_news(n,start,cutoff,cache[url]);report["news"].append(valid);existing_ids.add(url)
+                valid=validate_news(n,start,cutoff,cache[url]);report["news"].append(valid);existing_ids.add(signature)
             except Exception as e:failures.append("News source: "+type(e).__name__)
     validate_report(report)
     status=dict(checkedAt=report["checkedAt"],month=month,geminiConfigured=bool(os.environ.get("GEMINI_API_KEY")),acceptedMetricUpdates=accepted,newsCount=len(report["news"]),issues=failures)
