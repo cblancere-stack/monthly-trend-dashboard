@@ -14,3 +14,22 @@
 .sector-home-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.sector-summary-card{background:#fff;border:1px solid var(--border);border-radius:5px;padding:25px;min-width:0}.sector-summary-card.wide-summary{grid-column:1/-1}.summary-card-heading{display:flex;justify-content:space-between;align-items:center;gap:12px}.summary-card-heading h2{font-size:21px;margin:0;letter-spacing:-.7px}.summary-origin{font-size:10px;color:#887a5e;white-space:nowrap}.sector-takeaway{padding:12px 14px;background:#e8eff0;color:var(--teal);font-size:14px;font-weight:600;line-height:1.8}.sector-summary-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}.wide-summary .sector-summary-stats{grid-template-columns:repeat(3,minmax(0,1fr))}.sector-summary-stats>div{background:#f5f5f1;padding:13px 14px}.sector-summary-stats span{display:block;font-size:11px;color:var(--muted);margin-bottom:3px}.sector-summary-stats strong{font-size:25px;line-height:1.4;letter-spacing:-.7px;overflow-wrap:anywhere}.sector-summary-card h3{font-size:12px;color:#67766c;margin:16px 0 8px}.sector-summary-card ul{padding-left:18px;font-size:13px;line-height:1.9;margin-bottom:18px}.overview-implication{margin:7px 0;font-size:12px;line-height:1.9}.overview-implication b{color:var(--teal);margin-right:8px}.overview-implication+.overview-implication b{color:#a15535}.summary-detail-links{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px;padding-top:15px;border-top:1px solid var(--border)}.summary-detail-links button{background:#eaf1ed;border:1px solid #d5e2da;border-radius:4px;padding:8px 12px;cursor:pointer;font-size:11px;color:var(--teal)}.overview-original{font-size:10px;color:var(--muted);margin-top:13px}.overview-original summary{cursor:pointer}.overview-original img,.original-slide-image{display:block;max-width:100%;height:auto;margin:15px auto}.original-slide-image{max-height:1000px;object-fit:contain}#sector-home[hidden],#provided-extra[hidden],#indicators[hidden],#briefing[hidden],#sources[hidden]{display:none}@media(max-width:900px){.sector-home-grid{grid-template-columns:1fr}.sector-summary-card.wide-summary{grid-column:auto}.summary-card-heading{flex-wrap:wrap}.wide-summary .sector-summary-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.sector-summary-card{padding:20px}.summary-card-heading h2{font-size:20px}.sector-summary-stats strong{font-size:23px}}
 
 .provided-delta{font-size:11px;line-height:1.8;color:#665c46;margin:0 0 13px;font-weight:600}
+
+/* Compact report layout: keep all topics, reduce heading scale and whitespace. */
+h1{font-size:30px;letter-spacing:-1.2px}
+.hero{padding-top:28px}.hero-row{margin:12px 0 18px}
+.topbar{height:68px}.summary{padding:14px 18px}.summary p{font-size:13px}
+.overview-stat{padding:12px 18px}.overview-stat strong{font-size:22px}
+.filter-row{margin:24px 0 20px}.section-heading h2{font-size:17px}
+.sector-home-grid{gap:14px}.sector-summary-card,.sector-summary-card.wide-summary{padding:18px;grid-column:auto}
+.summary-card-heading h2{font-size:17px}.sector-takeaway{font-size:12px;line-height:1.65;padding:9px 11px;margin:10px 0}
+.sector-summary-stats,.wide-summary .sector-summary-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:12px 0}
+.sector-summary-stats>div{padding:8px 10px}.sector-summary-stats span{font-size:10px}.sector-summary-stats strong{font-size:20px}
+.sector-summary-card h3{font-size:11px;margin:12px 0 6px}.sector-summary-card ul{font-size:11px;line-height:1.7;margin:0 0 12px;padding-left:16px}
+.overview-implication{font-size:11px;line-height:1.7;margin:5px 0}
+.summary-detail-links{margin-top:12px;padding-top:10px;gap:6px}.summary-detail-links button{font-size:10px;padding:6px 9px}
+.news-grid{gap:14px}.news-card{padding:18px}.news-card h3{font-size:15px;margin-bottom:14px}.news-card .card-top{margin-bottom:10px}
+.news-section{margin-top:10px;line-height:1.75}.news-analysis{padding:10px}.news-bottom{font-size:10px;margin-top:13px;padding-top:10px}
+.metric-card{padding:16px 14px}.provided-value{font-size:23px}.provided-delta{font-size:10px;margin-bottom:10px}
+#briefing,#sources,.provided-section,#provided-policy{margin-top:30px}
+@media(max-width:780px){h1{font-size:25px}.summary p{font-size:12px}.sector-summary-card,.sector-summary-card.wide-summary{padding:16px}.summary-card-heading h2{font-size:16px}.sector-summary-stats strong{font-size:19px}.news-card{padding:16px}.news-card h3{font-size:14px}.provided-value{font-size:21px}}
