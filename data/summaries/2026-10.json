@@ -585,6 +585,12 @@
           "name": "VettaFi · 기존 공식 차트 확인값",
           "url": "https://www.vettafi.com/indexing/index/robo"
         }
+      ],
+      "checkedSources": [
+        {
+          "name": "VettaFi Net Total Return 공식 차트",
+          "url": "https://www.vettafi.com/indexing/index/robo"
+        }
       ]
     },
     {
@@ -607,6 +613,12 @@
       "sources": [
         {
           "name": "Indxx · 기존 월말 확인값",
+          "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index"
+        }
+      ],
+      "checkedSources": [
+        {
+          "name": "Indxx IAIQP 공식 지수 페이지",
           "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index"
         }
       ]
@@ -1465,7 +1477,7 @@
     {
       "date": "2026-11-05",
       "phase": "initial",
-      "note": "10월 1차 독립 조사. 11월 5일까지 확인한 공표 자료와 미확보 지표를 구분."
+      "note": "10월 1차 독립 조사. 11월 5일까지 확인한 공표 자료와 미확보 지표를 구분. ROBO·Indxx 월말 지수 확인 경로를 함께 기록."
     }
   ]
 }
