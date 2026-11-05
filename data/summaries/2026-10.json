@@ -1,0 +1,1471 @@
+{
+  "kind": "summary",
+  "origin": "independent",
+  "month": "2026-10",
+  "id": "summary-2026-10",
+  "asOf": "2026-11-05",
+  "cutoff": "2026-11-05",
+  "headline": "반도체 수출과 9월 생산은 강했지만, 주택 거래의 지역 격차와 높은 에너지 원가가 이어졌다.",
+  "metrics": [
+    {
+      "id": "provided-m-4-1",
+      "category": "macro",
+      "title": "수출액",
+      "asOf": "2026-11-05",
+      "valueText": "1,152.8억 달러",
+      "period": "2026-10",
+      "published": "2026-11-01",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
+      },
+      "deltaText": "전년 동월 대비 +93.7%",
+      "basis": "전국 통관 수출 잠정",
+      "meaning": "반도체 564.4억 달러로 전체의 약 49%.",
+      "impact": "반도체 투자와 비IT 수출 회복을 분리해 매출 민감도를 점검.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "산업통상부",
+          "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
+        },
+        {
+          "name": "산업통상부 영문 발표",
+          "url": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2773/view"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-4-2",
+      "category": "macro",
+      "title": "코스피",
+      "asOf": "2026-11-05",
+      "valueText": "5,730.74 pt",
+      "period": "2026-10-30",
+      "published": "2026-10-30",
+      "source": {
+        "name": "국내 증시 마감 재현 자료",
+        "url": "https://snowshagal.com/market/2026-10-30/"
+      },
+      "deltaText": "당일 −3.48%. 동일 원자료 전월 종가 미확보",
+      "basis": "코스피 10월 마지막 거래일 종가. KRX 원표 미확보",
+      "meaning": "유가증권시장 가격 지수.",
+      "impact": "단기 변동성 확대는 주식 발행·투자 일정에 영향.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "국내 증시 마감 재현 자료",
+          "url": "https://snowshagal.com/market/2026-10-30/"
+        },
+        {
+          "name": "주간 시세 교차자료",
+          "url": "https://mooconomy.co.kr/weekly/2026-W44.html"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-4-3",
+      "category": "macro",
+      "title": "원/달러 환율",
+      "asOf": "2026-11-05",
+      "valueText": "1,334.20원",
+      "period": "2026-10-30",
+      "published": "2026-10-30",
+      "source": {
+        "name": "국내 증시 마감 재현 자료",
+        "url": "https://snowshagal.com/market/2026-10-30/"
+      },
+      "deltaText": "동일 계열 전월 종가 교차 미확인",
+      "basis": "서울 주간거래 마감 · 원/USD · 2차 자료",
+      "meaning": "원화 기준 달러 조달 단가의 관측값.",
+      "impact": "수입 매입원가·외화 지급액 산정 시 환율 고정 여부 점검.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "국내 증시 마감 재현 자료",
+          "url": "https://snowshagal.com/market/2026-10-30/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-4-4",
+      "category": "macro",
+      "title": "한은 경제전망",
+      "asOf": "2026-11-05",
+      "valueText": "2026년 +3.3% / 2027년 +2.9%",
+      "period": "2026/2027 전망",
+      "published": "2026-08-27",
+      "source": {
+        "name": "한국은행",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000170/view.do?menuNo=200060&nttId=11064263"
+      },
+      "deltaText": "5월 전망 대비 각각 +0.7%p / +0.8%p",
+      "basis": "8월 정례 실질 GDP 전망 · 10월 평가는 상회 가능성 제시",
+      "meaning": "한국은행의 연간 성장률 전망.",
+      "impact": "AI 투자와 유가 변화에 따른 성장률 민감도 점검.",
+      "frequency": "quarterly",
+      "sources": [
+        {
+          "name": "한국은행",
+          "url": "https://www.bok.or.kr/portal/bbs/B0000170/view.do?menuNo=200060&nttId=11064263"
+        },
+        {
+          "name": "한국은행 10월 경제상황 평가",
+          "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&nttId=11065826"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-4-5",
+      "category": "macro",
+      "title": "산업활동",
+      "asOf": "2026-11-05",
+      "valueText": "생산 +3.0% · 소매판매 +3.6% · 설비투자 +5.3%",
+      "period": "2026-09",
+      "published": "2026-10-30",
+      "source": {
+        "name": "국가데이터처",
+        "url": "https://www.mods.go.kr/board.es?act=view&bid=216&list_no=447747&mid=a10301050100"
+      },
+      "deltaText": "각각 전월 대비",
+      "basis": "9월 산업활동 · 10월 실적은 작성일 현재 미발표",
+      "meaning": "광공업 생산 +9.0%, 서비스업 +0.5%.",
+      "impact": "반도체·자동차 생산 반등과 내수 지속성을 구분.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "국가데이터처",
+          "url": "https://www.mods.go.kr/board.es?act=view&bid=216&list_no=447747&mid=a10301050100"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-4-6",
+      "category": "macro",
+      "title": "한·미 기준금리",
+      "asOf": "2026-11-05",
+      "valueText": "한국 3.00% / 미국 3.75~4.00%",
+      "period": "2026-10",
+      "published": "2026-10-28",
+      "source": {
+        "name": "미 연준",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+      },
+      "deltaText": "양국 동결",
+      "basis": "한국 10.22, 미국 10.28 현지 발표",
+      "meaning": "정책금리와 연방기금금리 목표 범위.",
+      "impact": "단기 차입비용과 환헤지 비용의 기준.",
+      "frequency": "decision",
+      "sources": [
+        {
+          "name": "한국은행",
+          "url": "https://www.bok.or.kr/portal/bbs/B0000170/view.do?nttId=11065867&menuNo=201297"
+        },
+        {
+          "name": "미 연준",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-4-7",
+      "category": "macro",
+      "title": "美 10년물 국채금리",
+      "asOf": "2026-11-05",
+      "valueText": "4.94%",
+      "period": "2026-10-30",
+      "published": "2026-10-30",
+      "source": {
+        "name": "미 재무부",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&type=daily_treasury_yield_curve"
+      },
+      "deltaText": "전일 4.98% 대비 −0.04%p",
+      "basis": "미 재무부 10년물 파수익률 · 현지 월말",
+      "meaning": "달러 장기 조달비용 기준.",
+      "impact": "국제 장기 자금조달과 투자 할인율에 영향.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "미 재무부",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&type=daily_treasury_yield_curve"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-4-8",
+      "category": "macro",
+      "title": "美 PCE 물가",
+      "asOf": "2026-11-05",
+      "valueText": "+3.6% · 근원 +3.1%",
+      "period": "2026-09",
+      "published": "2026-10-29",
+      "source": {
+        "name": "미 경제분석국",
+        "url": "https://bea.gov/news/2026/personal-income-and-outlays-september-2026"
+      },
+      "deltaText": "전년 동월 대비. 전월비는 각각 +0.5%, +0.3%",
+      "basis": "9월 PCE 물가지수 · 10월 실적 미발표",
+      "meaning": "미국 소비 지출 기준 물가.",
+      "impact": "근원 물가의 하락 여부가 긴축 지속 판단에 중요.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "미 경제분석국",
+          "url": "https://bea.gov/news/2026/personal-income-and-outlays-september-2026"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-4-9",
+      "category": "macro",
+      "title": "나스닥 종합지수",
+      "asOf": "2026-11-05",
+      "valueText": "25,437.00 pt",
+      "period": "2026-10-30",
+      "published": "2026-10-30",
+      "source": {
+        "name": "Nasdaq · FRED",
+        "url": "https://fred.stlouisfed.org/graph/?graph_id=715757"
+      },
+      "deltaText": "전일 26,184.72 pt 대비 −2.86%",
+      "basis": "나스닥 종합 · 현지 월말 종가",
+      "meaning": "미 기술주 비중이 높은 종합지수.",
+      "impact": "기술·성장주 투자 평가에 참고.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "Nasdaq · FRED",
+          "url": "https://fred.stlouisfed.org/graph/?graph_id=715757"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-4-10",
+      "category": "macro",
+      "title": "국제유가 (WTI)",
+      "asOf": "2026-11-05",
+      "valueText": "104.12달러/배럴",
+      "period": "2026-10-30",
+      "published": "2026-11-04",
+      "source": {
+        "name": "에너지경제연구원 · 한국석유공사",
+        "url": "https://keei.re.kr/"
+      },
+      "deltaText": "동일 기관 9월 말 계열 미확보",
+      "basis": "한국석유공사 일별 WTI · KEEI 재배포 11.04 확인",
+      "meaning": "미 원유 가격 기준.",
+      "impact": "운송·원재료 비용에 영향.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "에너지경제연구원 · 한국석유공사",
+          "url": "https://keei.re.kr/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-5-11",
+      "category": "realestate",
+      "title": "주택 매매가격",
+      "asOf": "2026-11-05",
+      "valueText": "+0.34%",
+      "period": "2026-09",
+      "published": "2026-10-15",
+      "source": {
+        "name": "KB국민은행",
+        "url": "https://kbthink.com/realestate/insights/research/261015-2.html"
+      },
+      "deltaText": "전월 대비 +0.34% · 8월 +0.27%",
+      "basis": "전국 주택 · 9월 공식 확인값",
+      "meaning": "수도권 중심으로 상승.",
+      "impact": "지역별 거래와 가격 차이를 분리할 필요.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "KB국민은행",
+          "url": "https://kbthink.com/realestate/insights/research/261015-2.html"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-5-12",
+      "category": "realestate",
+      "title": "주택 매매 거래량",
+      "asOf": "2026-11-05",
+      "valueText": "48,997건",
+      "period": "2026-09",
+      "published": "2026-10-30",
+      "source": {
+        "name": "국토교통부",
+        "url": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95092539"
+      },
+      "deltaText": "전월 대비 +1.3%",
+      "basis": "전국 주택 매매 신고 · 10월 실적 미발표",
+      "meaning": "거래 유동성 지표.",
+      "impact": "수도권 거래는 오히려 −1.7%.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "국토교통부",
+          "url": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95092539"
+        },
+        {
+          "name": "KDI 정책자료 재배포",
+          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=288812&pg=&pp=20&topic=O"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-5-13",
+      "category": "realestate",
+      "title": "주택 전세가격",
+      "asOf": "2026-11-05",
+      "valueText": "+0.32%",
+      "period": "2026-09",
+      "published": "2026-10-15",
+      "source": {
+        "name": "KB국민은행",
+        "url": "https://kbthink.com/realestate/insights/research/261015-4.html"
+      },
+      "deltaText": "전월 대비 +0.32% · 8월 +0.30%",
+      "basis": "전국 주택 전세 · 9월 공식 확인값",
+      "meaning": "수도권은 +0.56%.",
+      "impact": "입주물량과 갱신계약 증가가 임차비용에 영향.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "KB국민은행",
+          "url": "https://kbthink.com/realestate/insights/research/261015-4.html"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-5-14",
+      "category": "realestate",
+      "title": "준공 후 미분양",
+      "asOf": "2026-11-05",
+      "valueText": "27,549호",
+      "period": "2026-09",
+      "published": "2026-10-30",
+      "source": {
+        "name": "국토교통부",
+        "url": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95092539"
+      },
+      "deltaText": "전월 대비 −1.9%",
+      "basis": "전국 준공 후 미분양 · 10월 실적 미발표",
+      "meaning": "준공 이후 남아 있는 재고.",
+      "impact": "지역별 분양가·회수기간 검토에 활용.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "국토교통부",
+          "url": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95092539"
+        },
+        {
+          "name": "KDI 정책자료 재배포",
+          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=288812&pg=&pp=20&topic=O"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-6-15",
+      "category": "mobility",
+      "title": "월간 자동차 수출액",
+      "asOf": "2026-11-05",
+      "valueText": "65.5억 달러",
+      "period": "2026-10",
+      "published": "2026-11-01",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
+      },
+      "deltaText": "전년 동월 대비 +18.1%",
+      "basis": "산업통상부 품목별 통관 수출",
+      "meaning": "역대 10월 최고. 조업일수와 하이브리드 수출 영향.",
+      "impact": "차종별 생산 일정과 국내 부품 발주를 연결해 확인.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "산업통상부",
+          "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
+        },
+        {
+          "name": "산업통상부 영문 발표",
+          "url": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2773/view"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-6-16",
+      "category": "mobility",
+      "title": "국내 신차 전체 판매량",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "개소세 환원(3.5→5%) 충격, 엔트리 소비 절벽 심화",
+      "impact": "내수 위축이 길어지면 국내 판매 비중이 큰 부품사의 실적 부담이 커질 수 있음",
+      "deltaText": "비교값 미산출",
+      "frequency": "monthly",
+      "dataStatus": "unavailable",
+      "missingReason": "완성차 개별사 발표는 확보했으나 수입차를 포함한 기존 범위의 전체 판매량 미확보",
+      "checkedSources": [
+        {
+          "name": "KAMA 통계",
+          "url": "https://www.kama.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-6-17",
+      "category": "mobility",
+      "title": "중국 NEV 시장 침투율",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "단월 112만 대 돌파, LFP·EREV 기반 유럽·동남아 잠식",
+      "impact": "중국산 저가 EV·EREV가 유럽·동남아로 늘어나면 국내 완성차의 수출 경쟁이 심해질 수 있음",
+      "deltaText": "비교값 미산출",
+      "frequency": "monthly",
+      "dataStatus": "unavailable",
+      "missingReason": "소매·도매와 승용·전체 중 기존 값과 동일한 분모 미확인",
+      "checkedSources": [
+        {
+          "name": "중국자동차공업협회",
+          "url": "https://www.caam.org.cn/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-6-18",
+      "category": "defense",
+      "title": "글로벌 우주 경제 규모",
+      "asOf": "2026-11-05",
+      "valueText": "4,290억 달러",
+      "period": "2025",
+      "published": "2026-05-13",
+      "source": {
+        "name": "미국위성산업협회",
+        "url": "https://sia.org/affordability-productivity-drive-historic-satellite-industry-growth-satellite-industry-association-releases-29th-annual-state-of-the-satellite-industry-report/"
+      },
+      "deltaText": "2024년 대비 +3%",
+      "basis": "SIA 연간 집계 · 기존 장기 전망과 별도 계열",
+      "meaning": "위성 산업과 비위성 우주 활동을 포함한 실적.",
+      "impact": "월간 수요나 2034년 전망치와 직접 비교할 수 없음.",
+      "frequency": "annual",
+      "sources": [
+        {
+          "name": "미국위성산업협회",
+          "url": "https://sia.org/affordability-productivity-drive-historic-satellite-industry-growth-satellite-industry-association-releases-29th-annual-state-of-the-satellite-industry-report/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-6-19",
+      "category": "defense",
+      "title": "상업 위성 지상 장비 시장",
+      "asOf": "2026-11-05",
+      "valueText": "1,652억 달러",
+      "period": "2025",
+      "published": "2026-05-13",
+      "source": {
+        "name": "미국위성산업협회",
+        "url": "https://sia.org/affordability-productivity-drive-historic-satellite-industry-growth-satellite-industry-association-releases-29th-annual-state-of-the-satellite-industry-report/"
+      },
+      "deltaText": "2024년 대비 +6%",
+      "basis": "2025년 글로벌 위성 지상부문 연간 매출",
+      "meaning": "위성 지상 네트워크·GNSS 장비 등 포함.",
+      "impact": "장비 전체 시장과 특정 국내 공급사의 접근 시장을 구분.",
+      "frequency": "annual",
+      "sources": [
+        {
+          "name": "미국위성산업협회",
+          "url": "https://sia.org/affordability-productivity-drive-historic-satellite-industry-growth-satellite-industry-association-releases-29th-annual-state-of-the-satellite-industry-report/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-6-20",
+      "category": "defense",
+      "title": "韓 우주개발 R&D 정부예산",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "우주항공청 설립 및 민간 소부장 펀드 전면 확대",
+      "impact": "예산 확대가 민간 소부장 투자로 이어지면 우주 공급망 국산화가 빨라질 수 있음",
+      "deltaText": "비교값 미산출",
+      "frequency": "annual",
+      "dataStatus": "unavailable",
+      "missingReason": "정부 예산안과 확정예산 및 R&D 범위를 구분할 근거 미확보",
+      "checkedSources": [
+        {
+          "name": "우주항공청",
+          "url": "https://www.kasa.go.kr/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-6-21",
+      "category": "defense",
+      "title": "천궁-II UAE 실전 요격률",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "실전 검증 성공으로 사우디·이라크 등 중동 벨트 수주 확산",
+      "impact": "중동 추가 수주로 이어지면 방산 수출과 협력사 물량 확대로 연결될 수 있음",
+      "deltaText": "비교값 미산출",
+      "frequency": "snapshot",
+      "dataStatus": "unavailable",
+      "missingReason": "교전 기간·발사 수·요격 성공 수를 확인할 공식 원표 미확보",
+      "checkedSources": [
+        {
+          "name": "방위사업청",
+          "url": "https://www.dapa.go.kr/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-6-22",
+      "category": "defense",
+      "title": "국내 방산 4사 합산 수주잔고",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "수주잔고 대비 연매출 백로그 5.8배(록히드 4.2배 상회)",
+      "impact": "수년간 매출 가시성이 높아 협력사 설비투자·고용 확대 요인이 될 수 있음",
+      "deltaText": "비교값 미산출",
+      "frequency": "quarterly",
+      "dataStatus": "unavailable",
+      "missingReason": "동일 방산 4사의 동일 범위 수주잔고 원표 미확보",
+      "checkedSources": [
+        {
+          "name": "전자공시시스템",
+          "url": "https://dart.fss.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-6-23",
+      "category": "defense",
+      "title": "방산 부문 합산 영업이익률",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "해외 수출 비중 60% 돌파로 구조적 고수익 체질 안착",
+      "impact": "수출 중심 고수익 구조가 유지되면 R&D 재투자 여력이 커질 수 있음",
+      "deltaText": "비교값 미산출",
+      "frequency": "quarterly",
+      "dataStatus": "unavailable",
+      "missingReason": "방산 부문만의 매출과 영업이익을 같은 범위로 집계할 공시 미확보",
+      "checkedSources": [
+        {
+          "name": "전자공시시스템",
+          "url": "https://dart.fss.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-7-24",
+      "category": "robotics",
+      "title": "ROBO",
+      "asOf": "2026-11-05",
+      "valueText": "3,377.82 pt",
+      "period": "2026-09-30",
+      "published": "2026-10-01",
+      "source": {
+        "name": "VettaFi · 기존 공식 차트 확인값",
+        "url": "https://www.vettafi.com/indexing/index/robo"
+      },
+      "deltaText": "9월 −0.52%. 10월 전월비 미산출",
+      "basis": "USD Net Total Return · 10월 말 공식 관측값 미확보",
+      "meaning": "배당 순재투자를 포함한 원지수.",
+      "impact": "로봇·자동화 관련 상장사 흐름을 추적.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "VettaFi · 기존 공식 차트 확인값",
+          "url": "https://www.vettafi.com/indexing/index/robo"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-7-25",
+      "category": "ai",
+      "title": "Indxx AI·빅데이터 지수",
+      "asOf": "2026-11-05",
+      "valueText": "9,836.20 pt",
+      "period": "2026-09-30",
+      "published": "2026-10-01",
+      "source": {
+        "name": "Indxx · 기존 월말 확인값",
+        "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index"
+      },
+      "deltaText": "10월 동일 계열 미확보",
+      "basis": "IAIQP · USD Price Return · 9월 확인값 유지",
+      "meaning": "AI·빅데이터 관련 상장사 원지수.",
+      "impact": "ETF 가격과 혼합 없이 테마 흐름을 비교.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "Indxx · 기존 월말 확인값",
+          "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-7-26",
+      "category": "ai",
+      "title": "AI 성능 · AA Intelligence Index",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "Artificial Analysis가 여러 평가를 종합한 AI 성능 점수. 특정 모델·추론 설정·평가 버전을 고정해 읽는 지표.",
+      "impact": "업무 자동화 모델을 비교하는 참고값이며, 인간 선호도나 모든 업무의 정확도를 뜻하지는 않음.",
+      "deltaText": "비교값 미산출",
+      "frequency": "snapshot",
+      "dataStatus": "unavailable",
+      "missingReason": "고정 버전의 점수와 10월 평가 기준을 확인할 자료 미확보",
+      "checkedSources": [
+        {
+          "name": "Artificial Analysis",
+          "url": "https://artificialanalysis.ai/leaderboards/models"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-7-27",
+      "category": "ai",
+      "title": "AI 비용 · Sol (max) 과제당 비용",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "Artificial Analysis의 Intelligence Index 평가에서 측정한 단일 모델의 과제당 비용. 시장 평균이나 100만 토큰당 API 가격이 아님.",
+      "impact": "실제 업무에서는 과제 난도·재시도·캐시·추론 설정에 따라 비용이 달라지므로 사내 업무 완료 비용과 함께 비교.",
+      "deltaText": "비교값 미산출",
+      "frequency": "snapshot",
+      "dataStatus": "unavailable",
+      "missingReason": "동일 모델·동일 과제군·동일 가격 설정의 공개 스냅샷 미확보",
+      "checkedSources": [
+        {
+          "name": "Artificial Analysis",
+          "url": "https://artificialanalysis.ai/leaderboards/models"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-8-28",
+      "category": "battery",
+      "title": "탄산리튬 가격",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "핵심 양극재 제조에 사용되는 기초 원자재",
+      "impact": "배터리 기업의 수익성 결정",
+      "deltaText": "비교값 미산출",
+      "frequency": "monthly",
+      "dataStatus": "unavailable",
+      "missingReason": "배터리급 규격·단위·월평균/월말 구분을 확인할 원표 미확보",
+      "checkedSources": [
+        {
+          "name": "한국광해광업공단 KOMIS",
+          "url": "https://www.komis.or.kr/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-8-29",
+      "category": "battery",
+      "title": "양극재 수출액",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "국내 양극재 기업의 제품 수출 실적",
+      "impact": "국내 배터리 셀 기업의 해외 공장에 납품되어 실적 선행",
+      "deltaText": "비교값 미산출",
+      "frequency": "monthly",
+      "dataStatus": "unavailable",
+      "missingReason": "기존과 동일한 양극재 HS 코드 묶음 미확인",
+      "checkedSources": [
+        {
+          "name": "관세청 수출입무역통계",
+          "url": "https://tradedata.go.kr/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-8-30",
+      "category": "battery",
+      "title": "이차전지 수출액",
+      "asOf": "2026-11-05",
+      "valueText": "약 7억 달러",
+      "period": "2026-10",
+      "published": "2026-11-01",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
+      },
+      "deltaText": "전년 동월 대비 약 +38%",
+      "basis": "산업통상부 20대 수출 품목 표의 반올림값",
+      "meaning": "이차전지 품목 전체 수출.",
+      "impact": "양극재 단독 수출·내수 생산과 별도.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "산업통상부",
+          "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-8-31",
+      "category": "energy",
+      "title": "두바이유 가격",
+      "asOf": "2026-11-05",
+      "valueText": "118.70달러/배럴",
+      "period": "2026-10-30",
+      "published": "2026-11-04",
+      "source": {
+        "name": "에너지경제연구원 · 한국석유공사",
+        "url": "https://keei.re.kr/"
+      },
+      "deltaText": "동일 기관 9월 말 계열 미확보",
+      "basis": "한국석유공사 일별 Dubai · KEEI 재배포 11.04 확인",
+      "meaning": "중동산 원유 가격 기준.",
+      "impact": "정유·석화·운송 원가에 영향.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "에너지경제연구원 · 한국석유공사",
+          "url": "https://keei.re.kr/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-8-32",
+      "category": "energy",
+      "title": "LNG 가격",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "한국/일본 액화천연가스 현물 시장 표준 시세",
+      "impact": "가장 비싼 LNG 단가를 한계가로 전력 도매가 결정 전력 도매가 상승 시 전기료 증가, 재생에너지 전환 자극",
+      "deltaText": "비교값 미산출",
+      "frequency": "monthly",
+      "dataStatus": "unavailable",
+      "missingReason": "기존 JKM 계열과 동일한 가격 원표 미확보",
+      "checkedSources": [
+        {
+          "name": "일본 경제산업성 LNG 통계",
+          "url": "https://www.meti.go.jp/english/statistics/sho/slng/index.html"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-8-33",
+      "category": "energy",
+      "title": "계통한계가격",
+      "asOf": "2026-11-05",
+      "valueText": "110.02원/kWh",
+      "period": "2026-10",
+      "published": "2026-11-05",
+      "source": {
+        "name": "전력거래소",
+        "url": "https://www.kpx.or.kr/smpMonthly.es?mid=a30303000000"
+      },
+      "deltaText": "9월 119.02원/kWh 대비 −7.56%",
+      "basis": "전국 통합 월평균 · 최초 게시일 미표기, 11.05 확인",
+      "meaning": "전력 도매시장 월평균 계통한계가격.",
+      "impact": "발전 판매단가와 전력 조달 수익성에 영향.",
+      "frequency": "monthly",
+      "sources": [
+        {
+          "name": "전력거래소",
+          "url": "https://www.kpx.or.kr/smpMonthly.es?mid=a30303000000"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-8-34",
+      "category": "energy",
+      "title": "국내 배출권 가격",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "시장에서 거래되는 26년 이행연도용 국내 배출권 종가",
+      "impact": "배출량 할당 기업의 지출 비용 및 탄소감축 설비투자에 영향",
+      "deltaText": "비교값 미산출",
+      "frequency": "monthly",
+      "dataStatus": "unavailable",
+      "missingReason": "동일 배출권 빈티지의 월말 체결가 미확보",
+      "checkedSources": [
+        {
+          "name": "KRX 배출권시장",
+          "url": "https://ets.krx.co.kr/"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-8-35",
+      "category": "energy",
+      "title": "EU 배출권 가격",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "유럽연합 시장에서 거래되는 배출권 종가",
+      "impact": "유럽에 수출하는 한국 기업이 부담하는 탄소 세금 비용",
+      "deltaText": "비교값 미산출",
+      "frequency": "monthly",
+      "dataStatus": "unavailable",
+      "missingReason": "현물·선물 및 선물 만기가 동일한 원자료 미확보",
+      "checkedSources": [
+        {
+          "name": "EEX 환경상품",
+          "url": "https://www.eex.com/en/market-data/market-data-hub/environmentals"
+        }
+      ]
+    },
+    {
+      "id": "provided-m-8-36",
+      "category": "energy",
+      "title": "국내 RE100 기업 수",
+      "asOf": "2026-11-05",
+      "valueText": "수치 확인 중",
+      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "meaning": "사용전력 100%를 재생에너지로 충당하겠다고 선언한 국내 기업 수",
+      "impact": "글로벌 기업의 RE100 요구에 따라 재생에너지 수요 증가",
+      "deltaText": "비교값 미산출",
+      "frequency": "annual",
+      "dataStatus": "unavailable",
+      "missingReason": "참여기업 집계의 모집단·기준일이 명시된 공식 원표 미확보",
+      "checkedSources": [
+        {
+          "name": "한국에너지공단 K-RE100",
+          "url": "https://nr.energy.or.kr/RE/CST/login.do"
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "category": "macro",
+      "published": "2026-10-29",
+      "dateLabel": "2026.10.29",
+      "headline": "기업심리지수 개선",
+      "facts": [
+        "제조업 105.6(+6.1p), 비제조업 103.2(+4.3p), ESI 100.8(+0.9p)."
+      ],
+      "analysis": "제조업 개선폭이 더 컸다. 수주·생산 실적과 함께 확인할 필요가 있다.",
+      "track": "11월 업종별 기업심리",
+      "source": {
+        "name": "한국은행",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?nttId=11066009&menuNo=201264"
+      },
+      "tag": "경제·사회·규제·정치",
+      "id": "oct-n-1"
+    },
+    {
+      "category": "macro",
+      "published": "2026-10-22",
+      "dateLabel": "2026.10.22",
+      "headline": "한국은행, 기존 성장 전망 경로 상회 가능성 제시",
+      "facts": [
+        "반도체 경기 호조와 다른 업종으로의 파급을 예상했다."
+      ],
+      "analysis": "성장 기대 개선과 비용발 물가 압력이 동시에 나타났다.",
+      "track": "다음 정례 전망의 성장·물가 조정 폭",
+      "source": {
+        "name": "한국은행",
+        "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&nttId=11065826"
+      },
+      "tag": "경제·사회·규제·정치",
+      "id": "oct-n-2"
+    },
+    {
+      "category": "realestate",
+      "published": "2026-10-15",
+      "dateLabel": "2026.10.15",
+      "headline": "KB, 수도권 가격 상승과 매수 관망 동시 확인",
+      "facts": [
+        "9월 수도권 매매가격 +0.68%, 서울 전세가격 +0.64%를 10월 리뷰에서 발표했다."
+      ],
+      "analysis": "전세 압력과 매매 유동성은 같은 방향으로 움직이지 않을 수 있다.",
+      "track": "수도권 착공·준공 및 전세 매물",
+      "source": {
+        "name": "KB국민은행",
+        "url": "https://kbthink.com/realestate/insights/research/261015-1.html"
+      },
+      "tag": "부동산",
+      "id": "oct-n-3"
+    },
+    {
+      "category": "mobility",
+      "published": "2026-10-29",
+      "dateLabel": "2026.10.29",
+      "headline": "현대차 3분기 영업이익 2.68조 원",
+      "facts": [
+        "영업이익은 전년 동기 대비 5.5% 증가했다. 회사는 환율·원가 개선·하이브리드 판매 구성 효과를 제시했다."
+      ],
+      "analysis": "수익성 개선과 별도로 수요 및 원자재 비용 위험을 봐야 한다.",
+      "track": "연간 가이던스 변경과 하이브리드 생산계획",
+      "source": {
+        "name": "현대자동차",
+        "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001298"
+      },
+      "tag": "자동차",
+      "id": "oct-n-4"
+    },
+    {
+      "category": "mobility",
+      "published": "2026-10-29",
+      "dateLabel": "2026.10.29",
+      "headline": "현대차, 3분기 글로벌 소매 판매 93만1,211대",
+      "facts": [
+        "1~9월 누적 글로벌 소매 판매는 287만9,590대였다. 인도에서 2030년까지 26개 신차 출시를 계획한다."
+      ],
+      "analysis": "지역별 신차 주기가 현지 조달 수요에 영향을 줄 수 있다.",
+      "track": "인도 신차 양산 및 부품 현지화",
+      "source": {
+        "name": "현대자동차",
+        "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001299"
+      },
+      "tag": "자동차",
+      "id": "oct-n-5"
+    },
+    {
+      "category": "defense",
+      "published": "2026-10-21",
+      "dateLabel": "2026.10.21",
+      "headline": "우주항공청, 국제 재난 대응 헌장 이사국 가입",
+      "facts": [
+        "우주항공청은 2027년부터 이사회 위원으로 정책에 참여한다."
+      ],
+      "analysis": "위성 영상 제공과 재난 분석 협력 기반이 넓어진다.",
+      "track": "국내 영상 처리·공유 사업의 발주 여부",
+      "source": {
+        "name": "우주항공청",
+        "url": "https://www.kasa.go.kr/prog/plcyBrf/brief/kor/sub01_01_04/view.do?plcyBrfNo=522"
+      },
+      "tag": "항공우주·방산",
+      "id": "oct-n-6"
+    },
+    {
+      "category": "defense",
+      "published": "2026-10-26",
+      "dateLabel": "2026.10.26",
+      "headline": "방위사업청, 10월까지 유도무기사업 계약현황 공개",
+      "facts": [
+        "방위사업청 사전정보공개 목록에 10월까지의 유도무기사업 계약현황이 등록됐다."
+      ],
+      "analysis": "개별 계약과 기업 전체 방산 수주잔고를 구분해 해석해야 한다.",
+      "track": "첨부 계약별 이행기간·사업자와 기업 공시 대조",
+      "source": {
+        "name": "방위사업청",
+        "url": "https://www.dapa.go.kr/dapa/doc/selectDocList.do?bbsSeq=244"
+      },
+      "tag": "항공우주·방산",
+      "id": "oct-n-7"
+    },
+    {
+      "category": "ai",
+      "published": "2026-10-27",
+      "dateLabel": "2026.10.27",
+      "headline": "OpenAI·Oracle, ChatGPT 앱 협력 확대",
+      "facts": [
+        "양사는 Oracle 앱을 ChatGPT에 도입하는 파트너십 확대를 발표했다."
+      ],
+      "analysis": "업무 흐름 안에서 AI를 쓰는 경로가 확대되면서 시스템 연동과 권한 관리의 중요성이 커진다.",
+      "track": "지원 기능과 기업 권한·감사로그 공개 범위",
+      "source": {
+        "name": "OpenAI",
+        "url": "https://openai.com/ko-KR/index/oracle-apps-in-chatgpt/"
+      },
+      "tag": "AI",
+      "id": "oct-n-8"
+    },
+    {
+      "category": "ai",
+      "published": "2026-10-07",
+      "dateLabel": "2026.10.07",
+      "headline": "OpenAI, 연구자 대상 AI 접근 확대 발표",
+      "facts": [
+        "학술 연구자 10만 명에게 고급 AI 모델 무료 접근을 제공하는 프로그램을 발표했다."
+      ],
+      "analysis": "연구 작업에서 모델 사용이 늘어날 수 있다.",
+      "track": "지원 분야·선정 기준과 결과 재현성",
+      "source": {
+        "name": "OpenAI",
+        "url": "https://openai.com/research/index/release/"
+      },
+      "tag": "AI",
+      "id": "oct-n-9"
+    },
+    {
+      "category": "robotics",
+      "published": "2026-10-06",
+      "dateLabel": "2026.10.06",
+      "headline": "Boston Dynamics, 신임 CEO 발표",
+      "facts": [
+        "Rohit Prasad가 10월 7일 CEO에 취임한다. 회사는 AI와 로봇 통합 및 산업 적용 확대 방향을 밝혔다."
+      ],
+      "analysis": "상용화 판단에는 고객 현장 적용과 유지보수 조건이 중요하다.",
+      "track": "유상 계약·현장 가동률·서비스 체계",
+      "source": {
+        "name": "Boston Dynamics",
+        "url": "https://bostondynamics.com/news/boston-dynamics-appoints-rohit-prasad-as-chief-executive-officer/"
+      },
+      "tag": "휴머노이드·로봇",
+      "id": "oct-n-10"
+    },
+    {
+      "category": "battery",
+      "published": "2026-10-08",
+      "dateLabel": "2026.10.08",
+      "headline": "LG에너지솔루션 3분기 잠정 영업이익 7,560억 원",
+      "facts": [
+        "매출은 9조6,434억 원. 첨단 제조 생산 세액공제 4,169억 원 제외 시 영업이익은 3,391억 원이다."
+      ],
+      "analysis": "영업 실적과 세액공제 효과를 분리해 수익성을 평가할 필요가 있다.",
+      "track": "ESS 가동률과 세액공제 제외 마진",
+      "source": {
+        "name": "LG에너지솔루션",
+        "url": "https://inside.lgensol.com/2026/10/lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C/"
+      },
+      "tag": "2차전지",
+      "id": "oct-n-11"
+    },
+    {
+      "category": "energy",
+      "published": "2026-10-22",
+      "dateLabel": "2026.10.22",
+      "headline": "석탄발전 폐지에 따른 고용 전환 논의",
+      "facts": [
+        "국회에서 노동계·정부·전문가가 참여한 고용 안정 및 일자리 전환 토론회가 열렸다."
+      ],
+      "analysis": "정의로운 전환 사업은 발전설비 폐지와 지역 고용 대책을 함께 봐야 한다.",
+      "track": "특별지구 지정과 사업 집행 계획",
+      "source": {
+        "name": "기후에너지환경부 · 정책브리핑",
+        "url": "https://m.korea.kr/briefing/pressReleaseList.do?repCode=A00019&repCodeType=%EC%A0%95%EB%B6%80%EB%B6%80%EC%B2%98"
+      },
+      "tag": "에너지·ESG",
+      "id": "oct-n-12"
+    }
+  ],
+  "policies": [
+    {
+      "category": "macro",
+      "published": "2026-10-22",
+      "headline": "한국은행 기준금리 동결",
+      "content": "금통위는 기준금리를 3.00%로 유지했다.",
+      "analysis": "원화 단기 차입의 기준금리 변화는 없지만 은행 대출 가산금리는 별도 확인해야 한다.",
+      "source": {
+        "name": "한국은행",
+        "url": "https://www.bok.or.kr/portal/bbs/B0000170/view.do?nttId=11065867&menuNo=201297"
+      },
+      "id": "oct-p-1"
+    },
+    {
+      "category": "macro",
+      "published": "2026-10-28",
+      "headline": "미 연준, 연방기금금리 목표 범위 동결",
+      "content": "FOMC는 3.75~4.00% 목표 범위를 유지했다.",
+      "analysis": "장기금리와 정책금리의 움직임이 다를 수 있어 차입 만기별 민감도를 따로 봐야 한다.",
+      "source": {
+        "name": "미 연준",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+      },
+      "id": "oct-p-2"
+    },
+    {
+      "category": "energy",
+      "published": "2026-10-29",
+      "headline": "원전 공론화평가단 운영",
+      "content": "공론화위원회가 공론화 과정의 점검·평가를 위한 평가단 운영을 공표했다.",
+      "analysis": "공론화 절차 단계이며 발전원 구성이나 신규 원전 사업의 확정은 이후 결정에 달려 있다.",
+      "source": {
+        "name": "기후에너지환경부 · 정책브리핑",
+        "url": "https://m.korea.kr/briefing/pressReleaseList.do?repCode=A00019&repCodeType=%EC%A0%95%EB%B6%80%EB%B6%80%EC%B2%98"
+      },
+      "id": "oct-p-3"
+    }
+  ],
+  "calendar": [
+    {
+      "date": "11. 5",
+      "event": "한국은행 9월 국제수지",
+      "watch": "수출 증가가 경상수지에 반영된 정도",
+      "sector": "경제",
+      "categories": [
+        "macro"
+      ],
+      "source": {
+        "name": "한국은행 통계공표일정",
+        "url": "https://www.bok.or.kr/eng/stats/statsPublictSchdul/listCldr.do?menuNo=400359"
+      }
+    },
+    {
+      "date": "11. 13",
+      "event": "한국은행 10월 수출입물가지수",
+      "watch": "환율·유가가 교역단가에 미친 영향",
+      "sector": "경제",
+      "categories": [
+        "macro"
+      ],
+      "source": {
+        "name": "한국은행 통계공표일정",
+        "url": "https://www.bok.or.kr/eng/stats/statsPublictSchdul/listCldr.do?menuNo=400359"
+      }
+    },
+    {
+      "date": "11. 18",
+      "event": "한국은행 3분기 가계신용",
+      "watch": "주택 거래와 가계 신용 확대 속도",
+      "sector": "부동산",
+      "categories": [
+        "macro",
+        "realestate"
+      ],
+      "source": {
+        "name": "한국은행 통계공표일정",
+        "url": "https://www.bok.or.kr/eng/stats/statsPublictSchdul/listCldr.do?menuNo=400359"
+      }
+    },
+    {
+      "date": "11. 25",
+      "event": "BEA 10월 PCE",
+      "watch": "근원물가와 소비 증가율",
+      "sector": "경제",
+      "categories": [
+        "macro"
+      ],
+      "source": {
+        "name": "BEA",
+        "url": "https://www.bea.gov/data/income-saving/personal-income"
+      }
+    }
+  ],
+  "sectorSummaries": [
+    {
+      "title": "경제·사회·규제·정치",
+      "categories": [
+        "macro"
+      ],
+      "message": "수출은 반도체 주도로 두 달 연속 1,100억 달러를 넘었고 한·미 정책금리는 동결됐다.",
+      "stats": [
+        [
+          "수출액",
+          "1,152.8억 달러"
+        ],
+        [
+          "코스피",
+          "5,730.74 pt"
+        ],
+        [
+          "원/달러 환율",
+          "1,334.20원"
+        ],
+        [
+          "한은 경제전망",
+          "2026년 +3.3% / 2027년 +2.9%"
+        ]
+      ],
+      "issues": [
+        "기업심리지수 개선",
+        "한국은행, 기존 성장 전망 경로 상회 가능성 제시"
+      ],
+      "opportunity": "수출 업종별 설비 발주 추적",
+      "risk": "반도체 편중과 유가 상승"
+    },
+    {
+      "title": "부동산",
+      "categories": [
+        "realestate"
+      ],
+      "message": "전국 거래량은 소폭 늘었지만 수도권은 줄었고 전세가격은 상승했다.",
+      "stats": [
+        [
+          "주택 매매가격",
+          "+0.34%"
+        ],
+        [
+          "주택 매매 거래량",
+          "48,997건"
+        ],
+        [
+          "주택 전세가격",
+          "+0.32%"
+        ],
+        [
+          "준공 후 미분양",
+          "27,549호"
+        ]
+      ],
+      "issues": [
+        "KB, 수도권 가격 상승과 매수 관망 동시 확인"
+      ],
+      "opportunity": "착공·준공과 임차 수급의 지역 차이 검토",
+      "risk": "수도권 거래 둔화와 전세 부담"
+    },
+    {
+      "title": "자동차·항공·우주·방산",
+      "categories": [
+        "mobility",
+        "defense"
+      ],
+      "message": "자동차 수출은 역대 10월 최고치를 기록했다. 우주 분야에서는 국제 재난 대응 협력이 확대됐다.",
+      "stats": [
+        [
+          "월간 자동차 수출액",
+          "65.5억 달러"
+        ],
+        [
+          "글로벌 우주 경제 규모",
+          "4,290억 달러"
+        ],
+        [
+          "상업 위성 지상 장비 시장",
+          "1,652억 달러"
+        ]
+      ],
+      "issues": [
+        "현대차 3분기 영업이익 2.68조 원",
+        "현대차, 3분기 글로벌 소매 판매 93만1,211대",
+        "우주항공청, 국제 재난 대응 헌장 이사국 가입",
+        "방위사업청, 10월까지 유도무기사업 계약현황 공개"
+      ],
+      "opportunity": "하이브리드 부품 발주 및 위성 영상 처리 검토",
+      "risk": "조업일수 효과와 사업 수주 변동"
+    },
+    {
+      "title": "AI·휴머노이드·로보틱스",
+      "categories": [
+        "ai",
+        "robotics"
+      ],
+      "message": "기업용 AI 연동과 로봇 상용화가 진행 중이다. 원지수는 9월 확인값을 유지했다.",
+      "stats": [
+        [
+          "ROBO",
+          "3,377.82 pt"
+        ],
+        [
+          "Indxx AI·빅데이터 지수",
+          "9,836.20 pt"
+        ]
+      ],
+      "issues": [
+        "OpenAI·Oracle, ChatGPT 앱 협력 확대",
+        "OpenAI, 연구자 대상 AI 접근 확대 발표",
+        "Boston Dynamics, 신임 CEO 발표"
+      ],
+      "opportunity": "업무 연동·로봇 파일럿의 비용과 가동률 확인",
+      "risk": "평가 기준 변경과 현장 실적 부족"
+    },
+    {
+      "title": "2차전지·에너지·ESG",
+      "categories": [
+        "battery",
+        "energy"
+      ],
+      "message": "이차전지 수출은 전년 동월보다 늘었고 통합 도매 전력가격은 전월보다 하락했다.",
+      "stats": [
+        [
+          "이차전지 수출액",
+          "약 7억 달러"
+        ],
+        [
+          "두바이유 가격",
+          "118.70달러/배럴"
+        ],
+        [
+          "계통한계가격",
+          "110.02원/kWh"
+        ]
+      ],
+      "issues": [
+        "LG에너지솔루션 3분기 잠정 영업이익 7,560억 원",
+        "석탄발전 폐지에 따른 고용 전환 논의"
+      ],
+      "opportunity": "ESS 가동률과 전력 조달계약 조건 검토",
+      "risk": "세액공제 의존과 원유 가격 변동"
+    }
+  ],
+  "supplements": [
+    {
+      "id": "oct-s-1",
+      "categories": [
+        "macro"
+      ],
+      "title": "경제·사회·규제·정치 사업 검토",
+      "points": [
+        "수출 업종별 설비 발주 추적",
+        "반도체 편중과 유가 상승"
+      ],
+      "sources": [
+        {
+          "name": "한국은행",
+          "url": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?nttId=11066009&menuNo=201264"
+        },
+        {
+          "name": "한국은행",
+          "url": "https://www.bok.or.kr/eng/bbs/E0000634/view.do?menuNo=400069&nttId=11065826"
+        }
+      ]
+    },
+    {
+      "id": "oct-s-2",
+      "categories": [
+        "realestate"
+      ],
+      "title": "부동산 사업 검토",
+      "points": [
+        "착공·준공과 임차 수급의 지역 차이 검토",
+        "수도권 거래 둔화와 전세 부담"
+      ],
+      "sources": [
+        {
+          "name": "KB국민은행",
+          "url": "https://kbthink.com/realestate/insights/research/261015-1.html"
+        }
+      ]
+    },
+    {
+      "id": "oct-s-3",
+      "categories": [
+        "mobility",
+        "defense"
+      ],
+      "title": "자동차·항공·우주·방산 사업 검토",
+      "points": [
+        "하이브리드 부품 발주 및 위성 영상 처리 검토",
+        "조업일수 효과와 사업 수주 변동"
+      ],
+      "sources": [
+        {
+          "name": "현대자동차",
+          "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001298"
+        },
+        {
+          "name": "현대자동차",
+          "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001299"
+        },
+        {
+          "name": "우주항공청",
+          "url": "https://www.kasa.go.kr/prog/plcyBrf/brief/kor/sub01_01_04/view.do?plcyBrfNo=522"
+        },
+        {
+          "name": "방위사업청",
+          "url": "https://www.dapa.go.kr/dapa/doc/selectDocList.do?bbsSeq=244"
+        }
+      ]
+    },
+    {
+      "id": "oct-s-4",
+      "categories": [
+        "ai",
+        "robotics"
+      ],
+      "title": "AI·휴머노이드·로보틱스 사업 검토",
+      "points": [
+        "업무 연동·로봇 파일럿의 비용과 가동률 확인",
+        "평가 기준 변경과 현장 실적 부족"
+      ],
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/ko-KR/index/oracle-apps-in-chatgpt/"
+        },
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/research/index/release/"
+        },
+        {
+          "name": "Boston Dynamics",
+          "url": "https://bostondynamics.com/news/boston-dynamics-appoints-rohit-prasad-as-chief-executive-officer/"
+        }
+      ]
+    },
+    {
+      "id": "oct-s-5",
+      "categories": [
+        "battery",
+        "energy"
+      ],
+      "title": "2차전지·에너지·ESG 사업 검토",
+      "points": [
+        "ESS 가동률과 전력 조달계약 조건 검토",
+        "세액공제 의존과 원유 가격 변동"
+      ],
+      "sources": [
+        {
+          "name": "LG에너지솔루션",
+          "url": "https://inside.lgensol.com/2026/10/lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C/"
+        },
+        {
+          "name": "기후에너지환경부 · 정책브리핑",
+          "url": "https://m.korea.kr/briefing/pressReleaseList.do?repCode=A00019&repCodeType=%EC%A0%95%EB%B6%80%EB%B6%80%EC%B2%98"
+        }
+      ]
+    }
+  ],
+  "sectorCoverage": {
+    "macro": {
+      "news": 2,
+      "policy": 2,
+      "calendar": 4,
+      "notes": "한국은행·한국은행 발표 중심으로 확인. 정책 원문 수록. 11월 일정 수록."
+    },
+    "realestate": {
+      "news": 1,
+      "policy": 0,
+      "calendar": 1,
+      "notes": "KB국민은행 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 11월 일정 수록."
+    },
+    "mobility": {
+      "news": 2,
+      "policy": 0,
+      "calendar": 0,
+      "notes": "현대자동차·현대자동차 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+    },
+    "defense": {
+      "news": 2,
+      "policy": 0,
+      "calendar": 0,
+      "notes": "우주항공청·방위사업청 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+    },
+    "ai": {
+      "news": 2,
+      "policy": 0,
+      "calendar": 0,
+      "notes": "OpenAI·OpenAI 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+    },
+    "robotics": {
+      "news": 1,
+      "policy": 0,
+      "calendar": 0,
+      "notes": "Boston Dynamics 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+    },
+    "battery": {
+      "news": 1,
+      "policy": 0,
+      "calendar": 0,
+      "notes": "LG에너지솔루션 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+    },
+    "energy": {
+      "news": 1,
+      "policy": 1,
+      "calendar": 0,
+      "notes": "기후에너지환경부 · 정책브리핑 발표 중심으로 확인. 정책 원문 수록. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+    }
+  },
+  "revisionNote": "10월 1차 독립 조사. 11월 5일까지 확인한 공표 자료와 미확보 지표를 구분.",
+  "phase": "initial",
+  "firstPublishedAt": "2026-11-05",
+  "updatedAt": "2026-11-05",
+  "revisions": [
+    {
+      "date": "2026-11-05",
+      "phase": "initial",
+      "note": "10월 1차 독립 조사. 11월 5일까지 확인한 공표 자료와 미확보 지표를 구분."
+    }
+  ]
+}
