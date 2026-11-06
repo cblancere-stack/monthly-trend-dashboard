@@ -7,7 +7,7 @@ async function fetchJSON(path){
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
  try{const response=await fetch(path,{cache:'no-store',signal:controller.signal});if(!response.ok)throw new Error(`HTTP ${response.status}`);return await response.json();}finally{clearTimeout(timer);}
 }
-function showLoadError(message){const box=el('error');box.hidden=false;box.replaceChildren(node('p',message));const link=node('a','최신 화면 다시 열기');const url=new URL(location.href);url.searchParams.set('v','20261106-r1');link.href=url.href;link.className='quiet-button';box.append(link);}
+function showLoadError(message){const box=el('error');box.hidden=false;box.replaceChildren(node('p',message));const link=node('a','최신 화면 다시 열기');const url=new URL(location.href);url.searchParams.set('v','20261106-r2');link.href=url.href;link.className='quiet-button';box.append(link);}
 
 const frequencyNames={monthly:'월간',annual:'연간',quarterly:'분기',snapshot:'확인 시점',decision:'정책 결정'};
 function node(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
@@ -42,9 +42,10 @@ function summaryMetric(m){const card=node('article',undefined,'metric-card');con
  if(m.displayNote){const details=node('details',undefined,'metric-definition-note');details.append(node('summary','지표 산출 기준'),node('p',m.displayNote));card.append(details);}
  for(const [label,text] of [['의미',m.meaning],['파급',m.impact]])if(text){const block=node('p',undefined,'meaning');block.append(node('b',label),document.createTextNode(text));card.append(block);}
  if(m.source){const link=sourceLink(m.source,`${m.source.name} · 원문 ↗`);link.className='metric-source';card.append(link);}return card;}
-function summaryNews(n,policy=false){const card=node('article',undefined,'news-card');const top=node('div',undefined,'card-top');top.append(node('span',policy?'정부정책':n.tag||labels()[n.category],'news-tag'),node('span',n.dateLabel||'정책 요약','news-date'),node('span',report.origin==='independent'?(n.stage||'월간 조사'):'월간 브리핑','news-stage'));card.append(top,node('h3',n.headline));
- if(policy)card.append(newsSection('내용',n.content),newsSection('해석',n.analysis,true));
- else card.append(newsSection('사실',n.facts),newsSection('해석·시사점',n.analysis,true),newsSection('추적 포인트',n.track));
+function summaryNews(n,policy=false){const card=node('article',undefined,'news-card');const top=node('div',undefined,'card-top');top.append(node('span',policy?'정부정책':n.tag||labels()[n.category],'news-tag'),node('span',n.dateLabel||n.published?.replaceAll('-','.')||'','news-date'),node('span',report.origin==='independent'?(n.stage||'월간 조사'):'월간 브리핑','news-stage'));card.append(node('h3',n.headline),top);
+ if(n.analysis)card.append(newsSection('시사점',n.analysis,true));
+ card.append(newsSection(policy?'내용':'근거',policy?n.content:n.facts));
+ if(!policy&&n.track)card.append(newsSection('확인할 점',n.track));
  const bottom=node('div',undefined,'news-bottom');if(n.source)bottom.append(sourceLink(n.source,`${n.source.name} · 원문 ↗`));if(n.source){if((n.sources||[]).length>1){const details=node('details',undefined,'related-sources');details.append(node('summary',`관련 원문 ${n.sources.length-1}건`));for(const source of n.sources.slice(1)){const p=node('p');p.append(sourceLink(source,`${source.name} · ${source.title||'원문 보기'}`));details.append(p);}bottom.append(details);}card.append(bottom);}return card;}
 function renderSummary(){const metrics=report.metrics.filter(m=>m.category===category),news=report.news.filter(n=>n.category===category),policies=report.policies.filter(n=>n.category===category),supplements=report.supplements.filter(s=>s.categories.includes(category));
  el('metric-grid').dataset.count=String(metrics.length);el('metric-grid').replaceChildren(...metrics.map(summaryMetric));el('news-grid').replaceChildren(...news.map(n=>summaryNews(n)));
@@ -76,7 +77,7 @@ function metricCard(m){
  const meaning=node('p',undefined,'meaning');meaning.append(node('b','의미'),document.createTextNode(m.meaning));const impact=node('div',undefined,'impact');impact.append(node('b','파급'),document.createTextNode(m.impact));card.append(meaning,impact);const link=sourceLink(m.source,'원문 출처 ↗');link.className='metric-source';card.append(link);return card;
 }
 function newsSection(label,items,analysis=false){const box=node('div',undefined,`news-section${analysis?' news-analysis':''}`);box.append(node('strong',label));if(Array.isArray(items)){if(items.length===1)box.append(node('p',items[0]));else if(items.length>1){const list=node('ul');items.forEach(t=>list.append(node('li',t)));box.append(list);}}else box.append(node('p',items));return box;}
-function newsCard(n){const card=node('article',undefined,'news-card');const top=node('div',undefined,'card-top');top.append(node('span',n.tag,'news-tag'),node('span',n.published.replaceAll('-','.'),'news-date'),node('span',n.stage,'news-stage'));card.append(top,node('h3',n.headline),newsSection('사실',n.facts),newsSection('해석·시사점',n.analysis,true),newsSection('추적 포인트',n.track));const bottom=node('div',undefined,'news-bottom');bottom.append(sourceLink(n.source,'공식 발표 원문 ↗'),node('span',n.review==='auto'?'자동 작성 · 원문 대조 필요':'자료 검토 '+(n.reviewedAt||report.reviewedAt||report.cutoff).replaceAll('-','.')));card.append(bottom);return card;}
+function newsCard(n){const card=node('article',undefined,'news-card');const top=node('div',undefined,'card-top');top.append(node('span',n.tag,'news-tag'),node('span',n.published.replaceAll('-','.'),'news-date'),node('span',n.stage,'news-stage'));card.append(node('h3',n.headline),top,newsSection('시사점',n.analysis,true),newsSection('근거',n.facts),newsSection('확인할 점',n.track));const bottom=node('div',undefined,'news-bottom');bottom.append(sourceLink(n.source,'공식 발표 원문 ↗'),node('span',n.review==='auto'?'자동 작성 · 원문 대조 필요':'자료 검토 '+(n.reviewedAt||report.reviewedAt||report.cutoff).replaceAll('-','.')));card.append(bottom);return card;}
 function render(){
  const home=category==='home';el('sector-home').hidden=!home;
  for(const id of ['indicators','briefing','sources'])el(id).hidden=home;
