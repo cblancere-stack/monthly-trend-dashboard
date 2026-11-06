@@ -3,8 +3,8 @@
   "origin": "independent",
   "month": "2026-10",
   "id": "summary-2026-10",
-  "asOf": "2026-11-05",
-  "cutoff": "2026-11-05",
+  "asOf": "2026-11-06",
+  "cutoff": "2026-11-06",
   "headline": "반도체 주도로 수출 호조. 주택 거래의 지역 격차와 높은 에너지 원가 지속",
   "metrics": [
     {
@@ -399,19 +399,23 @@
       "id": "provided-m-6-16",
       "category": "mobility",
       "title": "국내 신차 전체 판매량",
-      "asOf": "2026-11-05",
-      "valueText": "수치 확인 중",
-      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "asOf": "2026-11-06",
+      "valueText": "13.5만 대",
+      "basis": "9월 자동차 내수 판매 전체 · 10월 동일 범위 공식 집계 미확보",
       "meaning": "개소세 환원(3.5→5%) 충격, 엔트리 소비 절벽 심화",
       "impact": "내수 위축이 길어지면 국내 판매 비중이 큰 부품사의 실적 부담이 커질 수 있음",
-      "deltaText": "비교값 미산출",
+      "deltaText": "전년 동월 대비 −14.3%",
       "frequency": "monthly",
-      "dataStatus": "unavailable",
-      "missingReason": "완성차 개별사 발표는 확보했으나 수입차를 포함한 기존 범위의 전체 판매량 미확보",
-      "checkedSources": [
+      "period": "2026-09",
+      "published": "2026-10-19",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172302/view"
+      },
+      "sources": [
         {
-          "name": "KAMA 통계",
-          "url": "https://www.kama.or.kr/"
+          "name": "산업통상부",
+          "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172302/view"
         }
       ]
     },
@@ -627,19 +631,27 @@
       "id": "provided-m-7-26",
       "category": "ai",
       "title": "AI 성능 · AA Intelligence Index",
-      "asOf": "2026-11-05",
-      "valueText": "수치 확인 중",
-      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
-      "meaning": "Artificial Analysis가 여러 평가를 종합한 AI 성능 점수. 특정 모델·추론 설정·평가 버전을 고정해 읽는 지표",
-      "impact": "업무 자동화 모델을 비교하는 참고값이며, 인간 선호도나 모든 업무의 정확도를 뜻하지는 않음",
-      "deltaText": "비교값 미산출",
+      "asOf": "2026-11-06",
+      "valueText": "52점",
+      "basis": "GPT-6.1 Sol (Max) · 9월 공개 AA Intelligence Index 평가",
+      "meaning": "복수 과제를 종합한 특정 모델의 벤치마크 점수",
+      "impact": "동일 평가 버전·추론 설정에서 모델 간 비교에 활용",
+      "deltaText": "10월 동일 평가 기준 비교값 미확보",
       "frequency": "snapshot",
-      "dataStatus": "unavailable",
-      "missingReason": "고정 버전의 점수와 10월 평가 기준을 확인할 자료 미확보",
-      "checkedSources": [
+      "period": "2026-09-29",
+      "published": "2026-09-29",
+      "source": {
+        "name": "Artificial Analysis 모델별 평가표",
+        "url": "https://artificialanalysis.ai/models/releases/gpt-6-1-sol"
+      },
+      "sources": [
+        {
+          "name": "Artificial Analysis 모델별 평가표",
+          "url": "https://artificialanalysis.ai/models/releases/gpt-6-1-sol"
+        },
         {
           "name": "Artificial Analysis",
-          "url": "https://artificialanalysis.ai/leaderboards/models"
+          "url": "https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence"
         }
       ]
     },
@@ -647,19 +659,23 @@
       "id": "provided-m-7-27",
       "category": "ai",
       "title": "AI 비용 · Sol (max) 과제당 비용",
-      "asOf": "2026-11-05",
-      "valueText": "수치 확인 중",
-      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
-      "meaning": "Artificial Analysis의 Intelligence Index 평가에서 측정한 단일 모델의 과제당 비용. 시장 평균이나 100만 토큰당 API 가격이 아님",
-      "impact": "실제 업무에서는 과제 난도·재시도·캐시·추론 설정에 따라 비용이 달라지므로 사내 업무 완료 비용과 함께 비교",
-      "deltaText": "비교값 미산출",
+      "asOf": "2026-11-06",
+      "valueText": "0.72달러/과제",
+      "basis": "GPT-6.1 Sol (Max) · 9월 공개 AA 과제당 평가비용",
+      "meaning": "AA 벤치마크 과제당 해당 모델의 평가 비용",
+      "impact": "서비스 실제 비용은 토큰량·캐시 조건에 따라 달라짐",
+      "deltaText": "동일 발표의 GPT-6 Sol 1.05달러 대비 약 31% 낮음",
       "frequency": "snapshot",
-      "dataStatus": "unavailable",
-      "missingReason": "동일 모델·동일 과제군·동일 가격 설정의 공개 스냅샷 미확보",
-      "checkedSources": [
+      "period": "2026-09-29",
+      "published": "2026-09-29",
+      "source": {
+        "name": "Artificial Analysis",
+        "url": "https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence"
+      },
+      "sources": [
         {
           "name": "Artificial Analysis",
-          "url": "https://artificialanalysis.ai/leaderboards/models"
+          "url": "https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence"
         }
       ]
     },
@@ -799,19 +815,27 @@
       "id": "provided-m-8-34",
       "category": "energy",
       "title": "국내 배출권 가격",
-      "asOf": "2026-11-05",
-      "valueText": "수치 확인 중",
-      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
+      "asOf": "2026-11-06",
+      "valueText": "30,250원/tCO₂",
+      "basis": "KAU26 월말 종가 · 2차 출처 대조, KRX 원표 미확보",
       "meaning": "시장에서 거래되는 26년 이행연도용 국내 배출권 종가",
       "impact": "배출량 할당 기업의 지출 비용 및 탄소감축 설비투자에 영향",
-      "deltaText": "비교값 미산출",
+      "deltaText": "10월 23일 29,800원 대비 +1.51% · 주간 비교",
       "frequency": "monthly",
-      "dataStatus": "unavailable",
-      "missingReason": "동일 배출권 빈티지의 월말 체결가 미확보",
-      "checkedSources": [
+      "period": "2026-10-30",
+      "published": "2026-11-02",
+      "source": {
+        "name": "위제이 시장 자료",
+        "url": "https://zurigo.kr/insight/enerybrief/199?category=%EC%A0%84%EC%B2%B4&page=1"
+      },
+      "sources": [
         {
-          "name": "KRX 배출권시장",
-          "url": "https://ets.krx.co.kr/"
+          "name": "위제이 시장 자료",
+          "url": "https://zurigo.kr/insight/enerybrief/199?category=%EC%A0%84%EC%B2%B4&page=1"
+        },
+        {
+          "name": "한국탄소신문",
+          "url": "https://carbonnews.co.kr/?paged=3"
         }
       ]
     },
@@ -1469,15 +1493,20 @@
       "notes": "기후에너지환경부 · 정책브리핑 발표 중심으로 확인. 정책 원문 수록. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
     }
   },
-  "revisionNote": "10월 1차 독립 조사. 11월 5일까지 확인한 공표 자료와 미확보 지표를 구분.",
-  "phase": "initial",
+  "revisionNote": "수시 보강: 자동차 내수 전체, AI 성능·비용, 국내 배출권 가격 확인",
+  "phase": "enriched",
   "firstPublishedAt": "2026-11-05",
-  "updatedAt": "2026-11-05",
+  "updatedAt": "2026-11-06",
   "revisions": [
     {
       "date": "2026-11-05",
       "phase": "initial",
       "note": "10월 1차 독립 조사. 11월 5일까지 확인한 공표 자료와 미확보 지표를 구분. ROBO·Indxx 월말 지수 확인 경로를 함께 기록."
+    },
+    {
+      "date": "2026-11-06",
+      "phase": "enriched",
+      "note": "수시 보강: 자동차 내수 전체, AI 성능·비용, 국내 배출권 가격 확인"
     }
   ]
 }
