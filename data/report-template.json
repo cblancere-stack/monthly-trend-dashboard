@@ -362,6 +362,7 @@
     "preservePastMonths": true,
     "sourceRequired": true,
     "initialDay": 5,
-    "enrichmentDay": 10
+    "enrichmentDay": 10,
+    "interimEnrichmentDay": 7
   }
 }
