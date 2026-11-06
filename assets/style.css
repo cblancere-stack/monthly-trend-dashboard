@@ -143,4 +143,13 @@ h1{font-size:30px;letter-spacing:-1.2px}
 #supplement-list li+li{margin-top:5px}
 .sector-home-grid .sector-summary-card{padding:13px 15px}
 .sector-summary-stats strong{font-size:19px;font-weight:800}
-@media(min-width:1450px){.metric-grid:not([data-count="1"]):not([data-count="2"]),.news-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1450px){.news-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Keep four headline indicators on each desktop row. */
+.metric-grid .summary-metric-card{padding:10px 12px}
+.metric-grid .summary-metric-card h3{font-size:16px}
+.metric-grid .summary-metric-card .provided-value{font-size:21px}
+.metric-grid .summary-metric-card .meaning{font-size:13px}
+@media(min-width:1101px){
+  .metric-grid:not([data-count="1"]):not([data-count="2"]):not([data-count="3"]){grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+}
