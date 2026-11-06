@@ -3,8 +3,8 @@
   "origin": "independent",
   "month": "2026-10",
   "id": "summary-2026-10",
-  "asOf": "2026-11-06",
-  "cutoff": "2026-11-06",
+  "asOf": "2026-11-07",
+  "cutoff": "2026-11-07",
   "headline": "반도체 주도로 수출 호조. 주택 거래의 지역 격차와 높은 에너지 원가 지속",
   "metrics": [
     {
@@ -423,19 +423,27 @@
       "id": "provided-m-6-17",
       "category": "mobility",
       "title": "중국 NEV 시장 침투율",
-      "asOf": "2026-11-05",
-      "valueText": "수치 확인 중",
-      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
-      "meaning": "단월 112만 대 돌파, LFP·EREV 기반 유럽·동남아 잠식",
-      "impact": "중국산 저가 EV·EREV가 유럽·동남아로 늘어나면 국내 완성차의 수출 경쟁이 심해질 수 있음",
-      "deltaText": "비교값 미산출",
+      "asOf": "2026-11-07",
+      "valueText": "67.0%",
+      "basis": "9월 중국 국내 승용차 소매 판매 중 신에너지차 비중 · 10월 월간 공식값 미확보",
+      "meaning": "승용차 소매 판매에서 신에너지차가 차지하는 비중",
+      "impact": "중국 현지 승용차 전동화 흐름과 부품 수요 검토에 활용",
+      "deltaText": "동일 기준 전월치 미대조",
       "frequency": "monthly",
-      "dataStatus": "unavailable",
-      "missingReason": "소매·도매와 승용·전체 중 기존 값과 동일한 분모 미확인",
-      "checkedSources": [
+      "period": "2026-09",
+      "published": "2026-10-12",
+      "source": {
+        "name": "중국자동차유통협회 승용차시장정보연석분회",
+        "url": "https://cada.cn/Trends/info_91_10580.html"
+      },
+      "sources": [
         {
-          "name": "중국자동차공업협회",
-          "url": "https://www.caam.org.cn/"
+          "name": "중국자동차유통협회 승용차시장정보연석분회",
+          "url": "https://cada.cn/Trends/info_91_10580.html"
+        },
+        {
+          "name": "홍망 자동차",
+          "url": "https://auto.rednet.cn/m/content/646054/58/16366716.html"
         }
       ]
     },
@@ -491,7 +499,7 @@
       "id": "provided-m-6-20",
       "category": "defense",
       "title": "韓 우주개발 R&D 정부예산",
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-07",
       "valueText": "수치 확인 중",
       "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
       "meaning": "우주항공청 설립 및 민간 소부장 펀드 전면 확대",
@@ -499,11 +507,15 @@
       "deltaText": "비교값 미산출",
       "frequency": "annual",
       "dataStatus": "unavailable",
-      "missingReason": "정부 예산안과 확정예산 및 R&D 범위를 구분할 근거 미확보",
+      "missingReason": "우주항공청 전체 정부예산안 1조 6,491억 원 확인. 우주개발 R&D만의 합계는 별도 확인 필요",
       "checkedSources": [
         {
           "name": "우주항공청",
           "url": "https://www.kasa.go.kr/"
+        },
+        {
+          "name": "우주항공청 2027년 정부예산안",
+          "url": "https://www.kasa.go.kr/prog/plcyBrf/brief/kor/sub01_01_04/view.do?plcyBrfNo=477"
         }
       ]
     },
@@ -683,7 +695,7 @@
       "id": "provided-m-8-28",
       "category": "battery",
       "title": "탄산리튬 가격",
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-07",
       "valueText": "수치 확인 중",
       "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
       "meaning": "핵심 양극재 제조에 사용되는 기초 원자재",
@@ -691,11 +703,15 @@
       "deltaText": "비교값 미산출",
       "frequency": "monthly",
       "dataStatus": "unavailable",
-      "missingReason": "배터리급 규격·단위·월평균/월말 구분을 확인할 원표 미확보",
+      "missingReason": "KOMIS의 CIF China 규격 자료 인용 확인. 동일 계열 월말 가격 원표 미확보",
       "checkedSources": [
         {
           "name": "한국광해광업공단 KOMIS",
           "url": "https://www.komis.or.kr/"
+        },
+        {
+          "name": "KOMIS 자료를 인용한 전기신문",
+          "url": "https://www.electimes.com/news/articleView.html?idxno=373882"
         }
       ]
     },
@@ -771,7 +787,7 @@
       "id": "provided-m-8-32",
       "category": "energy",
       "title": "LNG 가격",
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-07",
       "valueText": "수치 확인 중",
       "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
       "meaning": "한국/일본 액화천연가스 현물 시장 표준 시세",
@@ -779,11 +795,19 @@
       "deltaText": "비교값 미산출",
       "frequency": "monthly",
       "dataStatus": "unavailable",
-      "missingReason": "기존 JKM 계열과 동일한 가격 원표 미확보",
+      "missingReason": "JKM 10월 30일 자료의 계약월·가격 계열 차이로 기존 지표와 동일한 관측값 미확보",
       "checkedSources": [
         {
           "name": "일본 경제산업성 LNG 통계",
           "url": "https://www.meti.go.jp/english/statistics/sho/slng/index.html"
+        },
+        {
+          "name": "Investing.com JKM 선물",
+          "url": "https://kr.investing.com/commodities/lng-japan-korea-marker-platts-futures-historical-data"
+        },
+        {
+          "name": "OilPriceAPI JKM 시계열",
+          "url": "https://www.oilpriceapi.com/live/jkm-lng-price"
         }
       ]
     },
@@ -863,7 +887,7 @@
       "id": "provided-m-8-36",
       "category": "energy",
       "title": "국내 RE100 기업 수",
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-07",
       "valueText": "수치 확인 중",
       "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
       "meaning": "사용전력 100%를 재생에너지로 충당하겠다고 선언한 국내 기업 수",
@@ -871,11 +895,15 @@
       "deltaText": "비교값 미산출",
       "frequency": "annual",
       "dataStatus": "unavailable",
-      "missingReason": "참여기업 집계의 모집단·기준일이 명시된 공식 원표 미확보",
+      "missingReason": "등록정보 API 확인. 10월 말 기준 중복 제거 기업 수 원표 미확보",
       "checkedSources": [
         {
           "name": "한국에너지공단 K-RE100",
           "url": "https://nr.energy.or.kr/RE/CST/login.do"
+        },
+        {
+          "name": "한국에너지공단 K-RE100 참여기업 등록정보",
+          "url": "https://www.data.go.kr/data/15093741/openapi.do"
         }
       ]
     }
@@ -1084,6 +1112,56 @@
       },
       "tag": "에너지·ESG",
       "id": "oct-n-12"
+    },
+    {
+      "id": "oct-n-robot-public",
+      "category": "robotics",
+      "published": "2026-10-28",
+      "dateLabel": "2026.10.28",
+      "headline": "산업부, 공공현장 4륜·4족 로봇 도입 협의",
+      "facts": [
+        "정부·공공기관 9곳과 로봇기업 11곳 참여",
+        "2027년 공공부문 AI 로봇 약 1,700대 보급 계획"
+      ],
+      "analysis": "순찰·농업 등 초기 수요처 확보 가능성",
+      "track": "기관별 실증 요건과 발주 일정",
+      "source": {
+        "name": "산업통상부·정책브리핑",
+        "url": "https://m.korea.kr/briefing/pressReleaseView.do?newsId=156786786"
+      },
+      "sources": [
+        {
+          "name": "산업통상부·정책브리핑",
+          "url": "https://m.korea.kr/briefing/pressReleaseView.do?newsId=156786786"
+        }
+      ]
+    },
+    {
+      "id": "oct-n-sdi-q3",
+      "category": "battery",
+      "published": "2026-10-29",
+      "dateLabel": "2026.10.29",
+      "headline": "삼성SDI, 3분기 영업이익 4,078억 원으로 흑자 전환",
+      "facts": [
+        "전년 동기 영업손실 5,913억 원에서 흑자 전환",
+        "배터리 부문 영업이익 3,619억 원"
+      ],
+      "analysis": "ESS·소형전지 중심의 수익 회복 여부 확인 필요",
+      "track": "ESS 출하·가동률과 4분기 흑자 지속 여부",
+      "source": {
+        "name": "삼성SDI",
+        "url": "https://samsungsdi.co.kr/sdi-now/sdi-news/5065.html"
+      },
+      "sources": [
+        {
+          "name": "삼성SDI",
+          "url": "https://samsungsdi.co.kr/sdi-now/sdi-news/5065.html"
+        },
+        {
+          "name": "연합뉴스",
+          "url": "https://www.yna.co.kr/view/AKR20261029042600003"
+        }
+      ]
     }
   ],
   "policies": [
@@ -1291,7 +1369,8 @@
       "issues": [
         "OpenAI·Oracle, ChatGPT 앱 협력 확대",
         "OpenAI, 연구자 대상 AI 접근 확대 발표",
-        "Boston Dynamics, 신임 CEO 발표"
+        "Boston Dynamics, 신임 CEO 발표",
+        "산업부, 공공현장 4륜·4족 로봇 도입 협의"
       ],
       "opportunity": "업무 연동·로봇 파일럿의 비용과 가동률 확인",
       "risk": "평가 기준 변경과 현장 실적 부족"
@@ -1319,7 +1398,8 @@
       ],
       "issues": [
         "LG에너지솔루션 3분기 잠정 영업이익 7,560억 원",
-        "석탄발전 폐지에 따른 고용 전환 논의"
+        "석탄발전 폐지에 따른 고용 전환 논의",
+        "삼성SDI, 3분기 영업이익 4,078억 원으로 흑자 전환"
       ],
       "opportunity": "ESS 가동률과 전력 조달계약 조건 검토",
       "risk": "세액공제 의존과 원유 가격 변동"
@@ -1475,13 +1555,13 @@
       "notes": "OpenAI·OpenAI 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
     },
     "robotics": {
-      "news": 1,
+      "news": 2,
       "policy": 0,
       "calendar": 0,
       "notes": "Boston Dynamics 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
     },
     "battery": {
-      "news": 1,
+      "news": 2,
       "policy": 0,
       "calendar": 0,
       "notes": "LG에너지솔루션 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
@@ -1493,10 +1573,10 @@
       "notes": "기후에너지환경부 · 정책브리핑 발표 중심으로 확인. 정책 원문 수록. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
     }
   },
-  "revisionNote": "수시 보강: 자동차 내수 전체, AI 성능·비용, 국내 배출권 가격 확인",
+  "revisionNote": "중간 보강: 중국 신에너지 승용차 소매 침투율 반영, 공공 로봇 도입 협의와 삼성SDI 3분기 실적 추가, 일부 결측 근거 보완",
   "phase": "enriched",
   "firstPublishedAt": "2026-11-05",
-  "updatedAt": "2026-11-06",
+  "updatedAt": "2026-11-07",
   "revisions": [
     {
       "date": "2026-11-05",
@@ -1507,6 +1587,11 @@
       "date": "2026-11-06",
       "phase": "enriched",
       "note": "수시 보강: 자동차 내수 전체, AI 성능·비용, 국내 배출권 가격 확인"
+    },
+    {
+      "date": "2026-11-07",
+      "phase": "enriched",
+      "note": "중간 보강: 중국 신에너지 승용차 소매 침투율 반영, 공공 로봇 도입 협의와 삼성SDI 3분기 실적 추가, 일부 결측 근거 보완"
     }
   ]
 }
