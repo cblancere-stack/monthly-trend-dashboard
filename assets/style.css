@@ -105,3 +105,29 @@ h1{font-size:30px;letter-spacing:-1.2px}
 .news-grid .news-bottom{margin-top:7px;padding-top:5px;font-size:11px}
 .news-grid .news-tag{background:#edf3fc;color:#123d78}
 @media(min-width:1450px){.news-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Compact overview and indicator cards */
+.sector-home-grid{gap:12px;align-items:start}
+.sector-home-grid .sector-summary-card{padding:12px 13px}
+.summary-card-heading h2{font-size:17px;line-height:1.45}
+.sector-takeaway{margin:7px 0;padding:6px 9px;font-weight:750;line-height:1.5}
+.sector-summary-stats,.wide-summary .sector-summary-stats{gap:5px;margin:7px 0}
+.sector-summary-stats>div{padding:5px 7px}
+.sector-summary-stats span{font-size:11px;margin:0}
+.sector-summary-stats strong{font-size:17px;line-height:1.35}
+.overview-implication{padding:4px 7px;margin:4px 0;font-size:12px}
+.summary-issues{margin-top:7px;font-size:12px;color:var(--teal)}
+.summary-issues summary{cursor:pointer;font-weight:700}
+.summary-issues ul{margin:4px 0 0;font-size:13px;color:var(--ink)}
+.summary-detail-links{margin-top:7px;padding-top:6px}
+.summary-detail-links button{padding:3px 6px}
+.metric-grid{align-items:start;gap:12px}
+.metric-grid .summary-metric-card{min-height:0;padding:11px 13px}
+.summary-metric-card .card-top{margin:0}
+.summary-metric-card .metric-meta{min-height:0;margin:4px 0;color:var(--muted)}
+.summary-metric-card .provided-value{margin:5px 0 3px;color:var(--teal);font-size:23px;font-weight:800}
+.summary-metric-card .provided-delta{align-self:flex-start;margin:0;padding:2px 6px;border-radius:3px;background:#e9f1fc;color:var(--teal);font-size:12px}
+.summary-metric-card .meaning{margin:3px 0;font-size:13px;line-height:1.5}
+.summary-metric-card .meaning b{color:var(--teal);margin-right:5px}
+.summary-metric-card .metric-source{padding-top:4px;color:var(--teal);font-size:11px}
+@media(min-width:1450px){.sector-home-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
