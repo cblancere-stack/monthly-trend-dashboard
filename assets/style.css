@@ -131,3 +131,16 @@ h1{font-size:30px;letter-spacing:-1.2px}
 .summary-metric-card .meaning b{color:var(--teal);margin-right:5px}
 .summary-metric-card .metric-source{padding-top:4px;color:var(--teal);font-size:11px}
 @media(min-width:1450px){.sector-home-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Give editorial cards the same scale as headline indicators. */
+.news-grid .news-card,.metric-grid .summary-metric-card{padding:13px 15px}
+.news-grid .news-card h3,.metric-grid .summary-metric-card h3,.summary-card-heading h2{font-size:18px;font-weight:800;line-height:1.45;color:#123d78}
+.news-grid .news-section,.metric-grid .summary-metric-card .meaning,.sector-takeaway,.overview-implication,#supplement-list li{font-size:14px;line-height:1.55}
+.news-grid .news-analysis{font-weight:700;border-left:3px solid #123d78}
+.news-grid .news-section>strong{font-size:12px}
+.news-grid .news-tag,.news-grid .news-date,.news-grid .news-stage,.news-grid .news-bottom{font-size:12px}
+#supplement-list ul{margin:8px 0 0;padding-left:19px}
+#supplement-list li+li{margin-top:5px}
+.sector-home-grid .sector-summary-card{padding:13px 15px}
+.sector-summary-stats strong{font-size:19px;font-weight:800}
+@media(min-width:1450px){.metric-grid:not([data-count="1"]):not([data-count="2"]),.news-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
