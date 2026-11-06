@@ -79,7 +79,7 @@ def save_summary(root,report,today=None,*,historical=False):
  validate_summary(draft,template)
  target=root/f"data/summaries/{draft['month']}.json"
  old=json.loads(target.read_text()) if target.exists() else None
- draft['phase']='initial' if historical else ('enriched' if today.day>=10 else 'initial')
+ draft['phase']='initial' if historical else ('enriched' if today.day>=7 else 'initial')
  if historical:draft['publicationMode']='historical'
  draft['firstPublishedAt']=(old or {}).get('firstPublishedAt',today.isoformat())
  draft['updatedAt']=today.isoformat()
