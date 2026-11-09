@@ -263,7 +263,7 @@
       "id": "provided-m-4-10",
       "category": "macro",
       "title": "국제유가 (WTI)",
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-09",
       "valueText": "104.12달러/배럴",
       "period": "2026-10-30",
       "published": "2026-11-04",
@@ -271,7 +271,7 @@
         "name": "에너지경제연구원 · 한국석유공사",
         "url": "https://keei.re.kr/"
       },
-      "deltaText": "동일 기관 9월 말 계열 미확보",
+      "deltaText": "9월 30일 90.42달러/배럴 대비 +15.15%",
       "basis": "한국석유공사 일별 WTI · KEEI 재배포 11.04 확인",
       "meaning": "미 원유 가격 기준",
       "impact": "운송·원재료 비용에 영향",
@@ -280,8 +280,17 @@
         {
           "name": "에너지경제연구원 · 한국석유공사",
           "url": "https://keei.re.kr/"
+        },
+        {
+          "name": "한국농촌경제연구원 · 한국석유공사 9월 30일 일별 가격",
+          "url": "https://www.krei.re.kr/grain/page/342"
+        },
+        {
+          "name": "에너지경제연구원 · 9월 30일 일별 가격 대조",
+          "url": "https://keei.re.kr/newsletter/view?mid=a10210020000&newsltr_sn=283"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-5-11",
@@ -443,20 +452,24 @@
       "id": "provided-m-6-17",
       "category": "mobility",
       "title": "중국 NEV 시장 침투율",
-      "asOf": "2026-11-07",
-      "valueText": "67.0%",
-      "basis": "9월 중국 국내 승용차 소매 판매 중 신에너지차 비중 · 10월 월간 공식값 미확보",
+      "asOf": "2026-11-09",
+      "valueText": "67.8% (잠정)",
+      "basis": "10월 중국 국내 승용차 소매 기준 · 전체 169.3만 대, 신에너지차 114.8만 대",
       "meaning": "승용차 소매 판매에서 신에너지차가 차지하는 비중",
       "impact": "중국 현지 승용차 전동화 흐름과 부품 수요 검토에 활용",
-      "deltaText": "동일 기준 전월치 미대조",
+      "deltaText": "9월 동일 소매 기준 67.0% 대비 +0.8%p",
       "frequency": "monthly",
-      "period": "2026-09",
-      "published": "2026-10-12",
+      "period": "2026-10",
+      "published": "2026-11-07",
       "source": {
-        "name": "중국자동차유통협회 승용차시장정보연석분회",
-        "url": "https://cada.cn/Trends/info_91_10580.html"
+        "name": "중국자동차유통협회 승용차시장정보연석분회 · 10월 잠정 집계",
+        "url": "https://www.cada.cn/Trends/info_91_10593.html"
       },
       "sources": [
+        {
+          "name": "중국자동차유통협회 승용차시장정보연석분회 · 10월 잠정 집계",
+          "url": "https://www.cada.cn/Trends/info_91_10593.html"
+        },
         {
           "name": "중국자동차유통협회 승용차시장정보연석분회",
           "url": "https://cada.cn/Trends/info_91_10580.html"
@@ -465,7 +478,8 @@
           "name": "홍망 자동차",
           "url": "https://auto.rednet.cn/m/content/646054/58/16366716.html"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-6-18",
@@ -1782,7 +1796,7 @@
       "notes": "기후에너지환경부 · 정책브리핑 발표 중심으로 확인. 정책 원문 수록. 공식 공지에서 확인한 11월 일정 수록."
     }
   },
-  "revisionNote": "빈 지표 3개 보완: 방산 4사 3분기 연결 합산 마진, 양극재 4월 및 K-RE100 8월 말 참고값 수록. 대체 범위와 당월 미확보 상태 명시",
+  "revisionNote": "표시 문구 전수 점검 후 중국 NEV 10월 잠정치와 WTI 동일 계열 월말 비교 추가",
   "phase": "enriched",
   "firstPublishedAt": "2026-11-05",
   "updatedAt": "2026-11-09",
@@ -1831,6 +1845,11 @@
       "date": "2026-11-09",
       "phase": "enriched",
       "note": "빈 지표 3개 보완: 방산 4사 3분기 연결 합산 마진, 양극재 4월 및 K-RE100 8월 말 참고값 수록. 대체 범위와 당월 미확보 상태 명시"
+    },
+    {
+      "date": "2026-11-09",
+      "phase": "enriched",
+      "note": "표시 문구 전수 점검 후 중국 NEV 10월 잠정치와 WTI 동일 계열 월말 비교 추가"
     }
   ]
 }
