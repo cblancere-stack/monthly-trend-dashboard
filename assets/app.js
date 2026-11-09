@@ -41,6 +41,12 @@ function renderSectorHome(){const provided=report.kind==='summary';const groups=
 function summaryMetric(m){const card=node('article',undefined,'metric-card summary-metric-card');const top=node('div',undefined,'card-top');top.append(node('span',labels()[m.category],'category-label'),node('span',m.frequency?({monthly:'월간 지표',quarterly:'분기 지표',annual:'연간 지표',snapshot:'시점 지표',forecast:'전망'}[m.frequency]||'주요 지표'):'월간 지표','state'));card.append(node('h3',m.title),top,node('div',m.valueText,'metric-value provided-value'));
  if(m.deltaText)card.append(node('div',m.deltaText,'provided-delta'));
  if(m.basis)card.append(node('div',m.basis,'metric-meta'));
+ if(report.origin==='independent'&&m.period){
+  const release=m.publicationDateStatus==='unknown'?'발표일 미표기':m.published?`발표 ${m.published.replaceAll('-','.')}`:'';
+  const basisDate=(m.asOf||report.asOf||report.cutoff)?.replaceAll('-','.');
+  const dates=[`실적 ${periodLabel(m.period)}`,release,basisDate&&`작성 ${basisDate}`].filter(Boolean);
+  card.append(node('div',dates.join(' · '),'metric-meta'));
+ }
  if(m.displayNote){const details=node('details',undefined,'metric-definition-note');details.append(node('summary','지표 산출 기준'),node('p',m.displayNote));card.append(details);}
  for(const [label,text] of [['의미',m.meaning],['파급',m.impact]])if(text){const block=node('p',undefined,'meaning');block.append(node('b',label),document.createTextNode(text));card.append(block);}
  if(m.source){const link=sourceLink(m.source,`${m.source.name} · 원문 ↗`);link.className='metric-source';card.append(link);}return card;}
