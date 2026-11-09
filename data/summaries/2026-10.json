@@ -1204,6 +1204,20 @@
   ],
   "calendar": [
     {
+      "date": "11. 4~7",
+      "sector": "휴머노이드·로봇",
+      "event": "로보월드 2026 · 킨텍스",
+      "watch": "국내 로봇 제품의 산업 적용 사례와 실증 단계 확인",
+      "categories": [
+        "robotics"
+      ],
+      "checkedAt": "2026-11-09",
+      "source": {
+        "name": "산업통상부",
+        "url": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2780/view?bbsCdN=2&pageIndex=1"
+      }
+    },
+    {
       "date": "11. 5",
       "event": "한국은행 9월 국제수지",
       "watch": "수출 증가가 경상수지에 반영된 정도",
@@ -1217,6 +1231,20 @@
       }
     },
     {
+      "date": "11. 9~20",
+      "sector": "에너지·ESG",
+      "event": "유엔 기후변화협약 COP31 · 안탈리아",
+      "watch": "기후재원·감축 이행 논의와 기업 공시·투자 영향 점검",
+      "categories": [
+        "energy"
+      ],
+      "checkedAt": "2026-11-09",
+      "source": {
+        "name": "UNFCCC",
+        "url": "https://unfccc.int/cop31"
+      }
+    },
+    {
       "date": "11. 13",
       "event": "한국은행 10월 수출입물가지수",
       "watch": "환율·유가가 교역단가에 미친 영향",
@@ -1227,6 +1255,20 @@
       "source": {
         "name": "한국은행 통계공표일정",
         "url": "https://www.bok.or.kr/eng/stats/statsPublictSchdul/listCldr.do?menuNo=400359"
+      }
+    },
+    {
+      "date": "11. 17~20",
+      "sector": "AI",
+      "event": "Microsoft Ignite 2026",
+      "watch": "기업용 AI 에이전트, 보안·권한 관리, 업무 시스템 연동 발표 확인",
+      "categories": [
+        "ai"
+      ],
+      "checkedAt": "2026-11-09",
+      "source": {
+        "name": "Microsoft",
+        "url": "https://www.microsoft.com/ko-kr/events"
       }
     },
     {
@@ -1244,6 +1286,34 @@
       }
     },
     {
+      "date": "11. 18~20",
+      "sector": "2차전지",
+      "event": "ESS WORLD · 일본 오사카",
+      "watch": "ESS용 배터리, 안전·열관리 기술, 현지 공급 협력 동향 확인",
+      "categories": [
+        "battery"
+      ],
+      "checkedAt": "2026-11-09",
+      "source": {
+        "name": "SMART ENERGY WEEK 주최 측",
+        "url": "https://www.wsew.jp/hub/en-gb/about/ess.html"
+      }
+    },
+    {
+      "date": "11. 24~27",
+      "sector": "항공우주·방산",
+      "event": "IDEAS 2026 국제방산전 · 파키스탄 카라치",
+      "watch": "중동·남아시아 방산 조달과 수출 협력 동향 확인",
+      "categories": [
+        "defense"
+      ],
+      "checkedAt": "2026-11-09",
+      "source": {
+        "name": "파키스탄 국방수출진흥기구(DEPO)",
+        "url": "https://www.depo.gov.pk/ideas.php"
+      }
+    },
+    {
       "date": "11. 25",
       "event": "BEA 10월 PCE",
       "watch": "근원물가와 소비 증가율",
@@ -1254,6 +1324,34 @@
       "source": {
         "name": "BEA",
         "url": "https://www.bea.gov/data/income-saving/personal-income"
+      }
+    },
+    {
+      "date": "11. 26",
+      "sector": "항공우주·방산",
+      "event": "우주항공·방산 국제 융합 콘퍼런스 · 경상국립대",
+      "watch": "국내 산학연 협력 과제와 기술 실증 주제 확인",
+      "categories": [
+        "defense"
+      ],
+      "checkedAt": "2026-11-09",
+      "source": {
+        "name": "행사 공식 사이트",
+        "url": "https://gass2026.kr/?lang=ko"
+      }
+    },
+    {
+      "date": "11. 27~12. 6",
+      "sector": "자동차",
+      "event": "광저우 국제모터쇼 · 완성차 전시",
+      "watch": "중국 신에너지차·신차 공개, 부품 공급망 전시(11.27~30) 확인",
+      "categories": [
+        "mobility"
+      ],
+      "checkedAt": "2026-11-09",
+      "source": {
+        "name": "광저우 국제모터쇼 주최 측",
+        "url": "https://www.autoguangzhou.org.cn/auto/richenganpai/"
       }
     }
   ],
@@ -1539,44 +1637,44 @@
     "mobility": {
       "news": 2,
       "policy": 0,
-      "calendar": 0,
-      "notes": "현대자동차·현대자동차 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+      "calendar": 1,
+      "notes": "현대자동차·현대자동차 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 공식 공지에서 확인한 11월 일정 수록."
     },
     "defense": {
       "news": 2,
       "policy": 0,
-      "calendar": 0,
-      "notes": "우주항공청·방위사업청 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+      "calendar": 2,
+      "notes": "우주항공청·방위사업청 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 공식 공지에서 확인한 11월 일정 수록."
     },
     "ai": {
       "news": 2,
       "policy": 0,
-      "calendar": 0,
-      "notes": "OpenAI·OpenAI 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+      "calendar": 1,
+      "notes": "OpenAI·OpenAI 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 공식 공지에서 확인한 11월 일정 수록."
     },
     "robotics": {
       "news": 2,
       "policy": 0,
-      "calendar": 0,
-      "notes": "Boston Dynamics 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+      "calendar": 1,
+      "notes": "Boston Dynamics 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 공식 공지에서 확인한 11월 일정 수록."
     },
     "battery": {
       "news": 2,
       "policy": 0,
-      "calendar": 0,
-      "notes": "LG에너지솔루션 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+      "calendar": 1,
+      "notes": "LG에너지솔루션 발표 중심으로 확인. 별도 적용 정책 원문은 이번 판에서 확보하지 못함. 공식 공지에서 확인한 11월 일정 수록."
     },
     "energy": {
       "news": 1,
       "policy": 1,
-      "calendar": 0,
-      "notes": "기후에너지환경부 · 정책브리핑 발표 중심으로 확인. 정책 원문 수록. 해당 분야 11월 일정은 날짜가 확인된 공식 공지 미확보."
+      "calendar": 1,
+      "notes": "기후에너지환경부 · 정책브리핑 발표 중심으로 확인. 정책 원문 수록. 공식 공지에서 확인한 11월 일정 수록."
     }
   },
-  "revisionNote": "중간 보강: 중국 신에너지 승용차 소매 침투율 반영, 공공 로봇 도입 협의와 삼성SDI 3분기 실적 추가, 일부 결측 근거 보완",
+  "revisionNote": "일정 보강: 자동차·항공우주·방산·AI·휴머노이드·로봇·2차전지·에너지·ESG의 11월 공식 일정 추가",
   "phase": "enriched",
   "firstPublishedAt": "2026-11-05",
-  "updatedAt": "2026-11-07",
+  "updatedAt": "2026-11-09",
   "revisions": [
     {
       "date": "2026-11-05",
@@ -1592,6 +1690,11 @@
       "date": "2026-11-07",
       "phase": "enriched",
       "note": "중간 보강: 중국 신에너지 승용차 소매 침투율 반영, 공공 로봇 도입 협의와 삼성SDI 3분기 실적 추가, 일부 결측 근거 보완"
+    },
+    {
+      "date": "2026-11-09",
+      "phase": "enriched",
+      "note": "일정 보강: 자동차·항공우주·방산·AI·휴머노이드·로봇·2차전지·에너지·ESG의 11월 공식 일정 추가"
     }
   ]
 }
