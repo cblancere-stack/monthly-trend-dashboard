@@ -48,3 +48,21 @@ ROBO는 사용자가 지정한 상장 상품(ROBO Global Robotics and Automation
 
 
 2026-10-28 사용자 최종 확정: ROBO는 ETF 가격 대신 VettaFi Net Total Return 원지수(pt)를 사용한다. 이 규칙이 앞의 ROBO ETF 규칙에 우선한다. 8월 3,395.32pt, 9월 3,377.82pt는 사용자가 제공한 공식 차트 화면을 근거로 한다. 8월 전월비는 7월 동일 계열 값 확보 전까지 제외한다.
+
+## 시장·원자재 지표 조회 절차
+
+검색 결과는 공식 자료의 위치를 찾는 데 사용한다. 공식 페이지에 값이 텍스트로 노출되지 않으면 표·공개 다운로드를 먼저 확인하고, 필요한 경우 브라우저에서 차트 기간을 좁혀 해당 거래일의 그래프 선 위 툴팁을 확인한다. 값·관측일·공개일(원문 미표기 시 확인일과 구분)·계열명·단위·공식 링크·조회 경로를 남긴다. 전월 비교값은 같은 계열에서 별도 확인하며, 전월값 미확보만으로 당월 관측값을 생략하지 않는다.
+
+| 지표 | 조회 경로와 확인 사항 |
+|---|---|
+| 코스피·나스닥·환율·미 국채 | [KRX](https://data.krx.co.kr/), [Nasdaq/FRED](https://fred.stlouisfed.org/series/NASDAQCOM), [한국은행 ECOS](https://ecos.bok.or.kr/), [미 재무부](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve)에서 양쪽 월의 마지막 거래일 대조. 서울 외환시장 주간 종가와 매매기준율·해외 고시환율 구분. |
+| ROBO | [VettaFi 공식 차트](https://www.vettafi.com/indexing/index/robo) → Chart view → Net Total Return(ROBOTR) → 1M 또는 3M → 해당 거래일의 그래프 선 위 툴팁. Table view는 최신 기준일 수준과 기간 수익률 확인용. 월말 pt는 날짜별 툴팁으로 확인. |
+| Indxx | [Indxx 공식 지수](https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index) → IAIQP USD Price Return 차트의 날짜별 관측치 또는 공식 시계열. |
+| 탄산리튬 | [KOMIS](https://www.komis.or.kr/) 광물가격 조회에서 해당 규격·순도·인도조건·통화·단위를 확인해 일별 표 또는 월별 자료 조회. 중국 도착도(CIF)와 중국 내수 위안화 가격은 별도 계열. |
+| 양극재 수출액 | [관세청 수출입무역통계](https://tradedata.go.kr/)에서 품목별 조회. 양극활물질 HS 코드 범위·코드 개정 여부·수출금액 단위를 확인하고 같은 코드로 양월 합산. 코드 확정 근거를 데이터에 저장. |
+| 두바이유 | [한국석유공사 Petronet](https://www.petronet.co.kr/) 또는 [에너지경제연구원](https://keei.re.kr/) 재배포의 일별 Dubai USD/배럴. 두 달 같은 출처·계열의 마지막 관측일 확인. |
+| LNG | JKM 현물 평가가격과 JKM 선물은 별도 계열. 원 계열 미확보 시 대체 지표를 명시하고, 선물은 거래소·계약월·정산가·USD/MMBtu를 고정. |
+| EU 배출권 | [EEX 환경상품](https://www.eex.com/en/market-data/market-data-hub/environmentals) 원자료 우선. EUA 현물·경매·선물 구분, 선물 만기와 EUR/tCO₂ 기준 명시. |
+| RE100 기업 수 | [한국에너지공단 K-RE100 등록정보](https://www.data.go.kr/data/15093741/openapi.do)에서 기준일이 붙은 누적 등록기업 수 확인. 원자료를 집계할 경우 중복 제거 단위 기록. 글로벌 RE100 한국 회원 수는 별도. |
+
+미확보 처리 시 확인 URL과 실제로 시도한 메뉴·필터·날짜, 미확보 사유를 남긴다. 차트 조작이나 표 조회를 끝내지 못한 상태를 자료 미공표로 표시하지 않는다.
