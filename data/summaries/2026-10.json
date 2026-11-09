@@ -44,24 +44,33 @@
       "period": "2026-10-30",
       "published": "2026-10-30",
       "source": {
-        "name": "국내 증시 마감 재현 자료",
-        "url": "https://snowshagal.com/market/2026-10-30/"
+        "name": "연합뉴스 10월 30일 마감",
+        "url": "https://www.yna.co.kr/view/AKR20261030131500008"
       },
-      "deltaText": "당일 −3.48%. 동일 원자료 전월 종가 미확보",
-      "basis": "코스피 10월 마지막 거래일 종가. KRX 원표 미확보",
+      "deltaText": "9월 말 6,838.04 pt 대비 −16.19%",
+      "basis": "2026.10.30 코스피 월말 종가 · 보도 및 KRX 종가 재게시 자료 교차 확인",
       "meaning": "유가증권시장 가격 지수",
       "impact": "단기 변동성 확대는 주식 발행·투자 일정에 영향",
       "frequency": "monthly",
       "sources": [
         {
-          "name": "국내 증시 마감 재현 자료",
-          "url": "https://snowshagal.com/market/2026-10-30/"
+          "name": "연합뉴스 10월 30일 마감",
+          "url": "https://www.yna.co.kr/view/AKR20261030131500008"
         },
         {
-          "name": "주간 시세 교차자료",
-          "url": "https://mooconomy.co.kr/weekly/2026-W44.html"
+          "name": "매일경제 9월 30일 마감",
+          "url": "https://www.mk.co.kr/news/stock/12164974"
+        },
+        {
+          "name": "KRX 종가 재게시 · 10월 30일",
+          "url": "https://deja.q-ova.com/daily/2026-10-30"
+        },
+        {
+          "name": "KRX 종가 재게시 · 9월 30일",
+          "url": "https://deja.q-ova.com/daily/2026-09-30"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-4-3",
@@ -75,7 +84,7 @@
         "name": "국내 증시 마감 재현 자료",
         "url": "https://snowshagal.com/market/2026-10-30/"
       },
-      "deltaText": "동일 계열 전월 종가 교차 미확인",
+      "deltaText": "서울 외환시장 10월 말 주간 종가의 교차 확인 미완료 · 전월비 미산출",
       "basis": "서울 주간거래 마감 · 원/USD · 2차 자료",
       "meaning": "원화 기준 달러 조달 단가의 관측값",
       "impact": "수입 매입원가·외화 지급액 산정 시 환율 고정 여부 점검",
@@ -85,7 +94,8 @@
           "name": "국내 증시 마감 재현 자료",
           "url": "https://snowshagal.com/market/2026-10-30/"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-4-4",
@@ -179,7 +189,7 @@
         "name": "미 재무부",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&type=daily_treasury_yield_curve"
       },
-      "deltaText": "전일 4.98% 대비 −0.04%p",
+      "deltaText": "9월 말 5.29% 대비 −0.35%p",
       "basis": "미 재무부 10년물 파수익률 · 현지 월말",
       "meaning": "달러 장기 조달비용 기준",
       "impact": "국제 장기 자금조달과 투자 할인율에 영향",
@@ -188,8 +198,13 @@
         {
           "name": "미 재무부",
           "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202610&type=daily_treasury_yield_curve"
+        },
+        {
+          "name": "미 재무부 9월 일별 파수익률",
+          "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&type=daily_treasury_yield_curve"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-4-8",
@@ -227,7 +242,7 @@
         "name": "Nasdaq · FRED",
         "url": "https://fred.stlouisfed.org/graph/?graph_id=715757"
       },
-      "deltaText": "전일 26,184.72 pt 대비 −2.86%",
+      "deltaText": "9월 말 26,861.06 pt 대비 −5.30%",
       "basis": "나스닥 종합 · 현지 월말 종가",
       "meaning": "미 기술주 비중이 높은 종합지수",
       "impact": "기술·성장주 투자 평가에 참고",
@@ -236,8 +251,13 @@
         {
           "name": "Nasdaq · FRED",
           "url": "https://fred.stlouisfed.org/graph/?graph_id=715757"
+        },
+        {
+          "name": "Nasdaq · ALFRED 9월 30일 관측치",
+          "url": "https://alfred.stlouisfed.org/release?ob=pv&od=desc&rd=2026-09-30&rid=328"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-4-10",
@@ -607,7 +627,8 @@
           "name": "VettaFi Net Total Return 공식 차트",
           "url": "https://www.vettafi.com/indexing/index/robo"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-7-25",
@@ -637,7 +658,8 @@
           "name": "Indxx IAIQP 공식 지수 페이지",
           "url": "https://www.indxx.com/index/indxx-artificial-intelligence-big-data-index"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-7-26",
@@ -1671,7 +1693,7 @@
       "notes": "기후에너지환경부 · 정책브리핑 발표 중심으로 확인. 정책 원문 수록. 공식 공지에서 확인한 11월 일정 수록."
     }
   },
-  "revisionNote": "일정 보강: 자동차·항공우주·방산·AI·휴머노이드·로봇·2차전지·에너지·ESG의 11월 공식 일정 추가",
+  "revisionNote": "시장지표 재대조: 코스피·나스닥 종합·미국 10년물 국채금리의 동일 기준 월말 비교 추가",
   "phase": "enriched",
   "firstPublishedAt": "2026-11-05",
   "updatedAt": "2026-11-09",
@@ -1695,6 +1717,11 @@
       "date": "2026-11-09",
       "phase": "enriched",
       "note": "일정 보강: 자동차·항공우주·방산·AI·휴머노이드·로봇·2차전지·에너지·ESG의 11월 공식 일정 추가"
+    },
+    {
+      "date": "2026-11-09",
+      "phase": "enriched",
+      "note": "시장지표 재대조: 코스피·나스닥 종합·미국 10년물 국채금리의 동일 기준 월말 비교 추가"
     }
   ]
 }
