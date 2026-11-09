@@ -518,23 +518,29 @@
     {
       "id": "provided-m-6-20",
       "category": "defense",
-      "title": "韓 우주개발 R&D 정부예산",
-      "asOf": "2026-11-07",
-      "valueText": "수치 확인 중",
-      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
-      "meaning": "우주항공청 설립 및 민간 소부장 펀드 전면 확대",
-      "impact": "예산 확대가 민간 소부장 투자로 이어지면 우주 공급망 국산화가 빨라질 수 있음",
-      "deltaText": "비교값 미산출",
+      "title": "우주항공청 정부예산안",
+      "asOf": "2026-11-09",
+      "valueText": "1조 6,491억 원",
+      "basis": "2027년 우주항공청 전체 정부예산안 · 우주개발 R&D 단독 합계 미확보로 대체",
+      "meaning": "우주항공청 전체 지출 계획. R&D 외 지출 포함",
+      "impact": "국회 심의 이후 확정 예산과 사업별 발주 확인 필요",
+      "deltaText": "2026년 예산 1조 1,201억 원 대비 +5,290억 원(+47.2%)",
       "frequency": "annual",
-      "dataStatus": "unavailable",
-      "missingReason": "우주항공청 전체 정부예산안 1조 6,491억 원 확인. 우주개발 R&D만의 합계는 별도 확인 필요",
-      "checkedSources": [
+      "replaces": "provided-m-6-20",
+      "period": "2027",
+      "published": "2026-09-01",
+      "checkedAt": "2026-11-09",
+      "source": {
+        "name": "우주항공청 · 정책브리핑",
+        "url": "https://m.korea.kr/briefing/pressReleaseView.do?newsId=156776389"
+      },
+      "sources": [
         {
-          "name": "우주항공청",
-          "url": "https://www.kasa.go.kr/"
+          "name": "우주항공청 · 정책브리핑",
+          "url": "https://m.korea.kr/briefing/pressReleaseView.do?newsId=156776389"
         },
         {
-          "name": "우주항공청 2027년 정부예산안",
+          "name": "우주항공청 공식 발표",
           "url": "https://www.kasa.go.kr/prog/plcyBrf/brief/kor/sub01_01_04/view.do?plcyBrfNo=477"
         }
       ]
@@ -543,19 +549,28 @@
       "id": "provided-m-6-21",
       "category": "defense",
       "title": "천궁-II UAE 실전 요격률",
-      "asOf": "2026-11-05",
-      "valueText": "수치 확인 중",
-      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
-      "meaning": "실전 검증 성공으로 사우디·이라크 등 중동 벨트 수주 확산",
-      "impact": "중동 추가 수주로 이어지면 방산 수출과 협력사 물량 확대로 연결될 수 있음",
-      "deltaText": "비교값 미산출",
+      "asOf": "2026-11-09",
+      "valueText": "96% (업계 인용)",
+      "basis": "2026년 3월 UAE 실전 사례 · 정책주간지가 방산업계 수치 인용",
+      "meaning": "UAE 배치 2개 포대, 약 60발 발사 관련 업계 보고치",
+      "impact": "실전 적용 참고값. 교전별 공식 원표와 집계 방식은 미공개",
+      "deltaText": "개별 교전 사례 · 월간 비교 없음",
       "frequency": "snapshot",
-      "dataStatus": "unavailable",
-      "missingReason": "교전 기간·발사 수·요격 성공 수를 확인할 공식 원표 미확보",
-      "checkedSources": [
+      "period": "2026-03",
+      "published": "2026-03-24",
+      "checkedAt": "2026-11-09",
+      "source": {
+        "name": "대한민국 정책주간지 K-공감",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148961207"
+      },
+      "sources": [
         {
-          "name": "방위사업청",
-          "url": "https://www.dapa.go.kr/"
+          "name": "대한민국 정책주간지 K-공감",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148961207"
+        },
+        {
+          "name": "Korea JoongAng Daily",
+          "url": "https://www.koreajoongangdaily.com/business/korean-interceptor-system-posts-96-success-rate-in-uae-defense-against-iranian-strike/12618152"
         }
       ]
     },
@@ -563,19 +578,28 @@
       "id": "provided-m-6-22",
       "category": "defense",
       "title": "국내 방산 4사 합산 수주잔고",
-      "asOf": "2026-11-05",
-      "valueText": "수치 확인 중",
-      "basis": "2026년 10월 보고서 · 기존 지표 정의 유지",
-      "meaning": "수주잔고 대비 연매출 백로그 5.8배(록히드 4.2배 상회)",
-      "impact": "수년간 매출 가시성이 높아 협력사 설비투자·고용 확대 요인이 될 수 있음",
-      "deltaText": "비교값 미산출",
+      "asOf": "2026-11-09",
+      "valueText": "약 95.35조 원",
+      "basis": "2026년 9월 말 · 한화에어로·KAI·현대로템 방산 3사 집계와 LIG D&A IR 수치 합산",
+      "meaning": "3사 집계 70.8083조 원과 LIG D&A 24.54조 원 합산. KAI 등 회사별 공시 범위 차이 유의",
+      "impact": "분기별 수주와 납품 속도 추적에 활용",
+      "deltaText": "같은 집계 기준 6월 말 약 98.44조 원 대비 −3.14%",
       "frequency": "quarterly",
-      "dataStatus": "unavailable",
-      "missingReason": "동일 방산 4사의 동일 범위 수주잔고 원표 미확보",
-      "checkedSources": [
+      "period": "2026-Q3",
+      "published": "2026-11-06",
+      "checkedAt": "2026-11-09",
+      "source": {
+        "name": "헤럴드경제 · 3사 수주잔고 집계",
+        "url": "https://mbiz.heraldcorp.com/article/10925241"
+      },
+      "sources": [
         {
-          "name": "전자공시시스템",
-          "url": "https://dart.fss.or.kr/"
+          "name": "헤럴드경제 · 3사 수주잔고 집계",
+          "url": "https://mbiz.heraldcorp.com/article/10925241"
+        },
+        {
+          "name": "LIG D&A 3분기 IR",
+          "url": "https://www.ligdefenseaerospace.com/ir/irResourceView.do?bbs_no=7470"
         }
       ]
     },
@@ -1734,7 +1758,7 @@
       "notes": "기후에너지환경부 · 정책브리핑 발표 중심으로 확인. 정책 원문 수록. 공식 공지에서 확인한 11월 일정 수록."
     }
   },
-  "revisionNote": "원자재·탄소 시장 지표 보강: SMM 탄산리튬 현물, JKM·EUA 12월물 수록, 한국석유공사 두바이유 월말 비교 추가. 양극재·K-RE100 확인 경로 보강",
+  "revisionNote": "수치 재조회: 우주항공청 전체 예산안 대체 수록, 천궁-II UAE 업계 인용치 및 방산 4사 수주잔고 합산 추가",
   "phase": "enriched",
   "firstPublishedAt": "2026-11-05",
   "updatedAt": "2026-11-09",
@@ -1773,6 +1797,11 @@
       "date": "2026-11-09",
       "phase": "enriched",
       "note": "원자재·탄소 시장 지표 보강: SMM 탄산리튬 현물, JKM·EUA 12월물 수록, 한국석유공사 두바이유 월말 비교 추가. 양극재·K-RE100 확인 경로 보강"
+    },
+    {
+      "date": "2026-11-09",
+      "phase": "enriched",
+      "note": "수치 재조회: 우주항공청 전체 예산안 대체 수록, 천궁-II UAE 업계 인용치 및 방산 4사 수주잔고 합산 추가"
     }
   ]
 }
