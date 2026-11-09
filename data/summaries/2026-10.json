@@ -138,7 +138,7 @@
         "url": "https://www.mods.go.kr/board.es?act=view&bid=216&list_no=447747&mid=a10301050100"
       },
       "deltaText": "각각 전월 대비",
-      "basis": "9월 산업활동 · 10월 실적은 작성일 현재 미발표",
+      "basis": "9월 산업활동 · 10월 실적 11월 30일 공표 예정",
       "meaning": "광공업 생산 +9.0%, 서비스업 +0.5%",
       "impact": "반도체·자동차 생산 반등과 내수 지속성을 구분",
       "frequency": "monthly",
@@ -146,8 +146,13 @@
         {
           "name": "국가데이터처",
           "url": "https://www.mods.go.kr/board.es?act=view&bid=216&list_no=447747&mid=a10301050100"
+        },
+        {
+          "name": "국가데이터처 2026년 공표 일정",
+          "url": "https://mods.go.kr/boardDownload.es?bid=216&list_no=443302&seq=1"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-4-6",
@@ -219,7 +224,7 @@
         "url": "https://bea.gov/news/2026/personal-income-and-outlays-september-2026"
       },
       "deltaText": "전년 동월 대비. 전월비는 각각 +0.5%, +0.3%",
-      "basis": "9월 PCE 물가지수 · 10월 실적 미발표",
+      "basis": "9월 PCE 물가지수 · 10월 실적 11월 25일 미국 현지 발표 예정",
       "meaning": "미국 소비 지출 기준 물가",
       "impact": "근원 물가의 하락 여부가 긴축 지속 판단에 중요",
       "frequency": "monthly",
@@ -227,8 +232,13 @@
         {
           "name": "미 경제분석국",
           "url": "https://bea.gov/news/2026/personal-income-and-outlays-september-2026"
+        },
+        {
+          "name": "미 경제분석국 공표 일정",
+          "url": "https://www.bea.gov/news/schedule/full"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-4-9",
@@ -305,7 +315,7 @@
         "url": "https://kbthink.com/realestate/insights/research/261015-2.html"
       },
       "deltaText": "전월 대비 +0.34% · 8월 +0.27%",
-      "basis": "전국 주택 · 9월 공식 확인값",
+      "basis": "KB 전국 주택종합 · 9월 값. 10월 전국 아파트 매매 +0.32%는 별도 범위",
       "meaning": "수도권 중심으로 상승",
       "impact": "지역별 거래와 가격 차이를 분리할 필요",
       "frequency": "monthly",
@@ -313,8 +323,13 @@
         {
           "name": "KB국민은행",
           "url": "https://kbthink.com/realestate/insights/research/261015-2.html"
+        },
+        {
+          "name": "연합뉴스 · KB부동산 10월 발표 인용",
+          "url": "https://www.yna.co.kr/view/AKR20261025026700003?section=economy/real-estate"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-5-12",
@@ -348,25 +363,30 @@
       "id": "provided-m-5-13",
       "category": "realestate",
       "title": "주택 전세가격",
-      "asOf": "2026-11-05",
-      "valueText": "+0.32%",
-      "period": "2026-09",
-      "published": "2026-10-15",
+      "asOf": "2026-11-09",
+      "valueText": "+0.22%",
+      "period": "2026-10",
+      "published": "2026-10-25",
       "source": {
-        "name": "KB국민은행",
-        "url": "https://kbthink.com/realestate/insights/research/261015-4.html"
+        "name": "연합뉴스 · KB부동산 10월 발표 인용",
+        "url": "https://www.yna.co.kr/view/AKR20261025026700003?section=economy/real-estate"
       },
-      "deltaText": "전월 대비 +0.32% · 8월 +0.30%",
-      "basis": "전국 주택 전세 · 9월 공식 확인값",
-      "meaning": "수도권은 +0.56%",
-      "impact": "입주물량과 갱신계약 증가가 임차비용에 영향",
+      "deltaText": "전월 대비 +0.22%. 9월 변동률 +0.32% 대비 상승폭 0.10%p 축소",
+      "basis": "KB부동산 · 10월 전국 주택 전세가격 월간 변동률 · 발표 인용 보도 확인",
+      "meaning": "전국 주택 전세가격의 월간 상승률",
+      "impact": "전국 전세가격 상승 지속. 지역별 입주물량·매물 흐름은 별도 확인",
       "frequency": "monthly",
       "sources": [
+        {
+          "name": "연합뉴스 · KB부동산 10월 발표 인용",
+          "url": "https://www.yna.co.kr/view/AKR20261025026700003?section=economy/real-estate"
+        },
         {
           "name": "KB국민은행",
           "url": "https://kbthink.com/realestate/insights/research/261015-4.html"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-09"
     },
     {
       "id": "provided-m-5-14",
@@ -1513,7 +1533,7 @@
       "categories": [
         "realestate"
       ],
-      "message": "전국 주택 거래 소폭 증가. 수도권 거래 감소, 전세가격 상승",
+      "message": "9월 전국 주택 거래 소폭 증가, 수도권 거래 감소. 10월 전국 주택 전세가격 상승폭 축소",
       "stats": [
         [
           "주택 매매가격",
@@ -1525,7 +1545,7 @@
         ],
         [
           "주택 전세가격",
-          "+0.32%"
+          "+0.22%"
         ],
         [
           "준공 후 미분양",
@@ -1796,7 +1816,7 @@
       "notes": "기후에너지환경부 · 정책브리핑 발표 중심으로 확인. 정책 원문 수록. 공식 공지에서 확인한 11월 일정 수록."
     }
   },
-  "revisionNote": "표시 문구 전수 점검 후 중국 NEV 10월 잠정치와 WTI 동일 계열 월말 비교 추가",
+  "revisionNote": "9월 기준값 재점검: KB 10월 전국 주택 전세가격 반영, 산업활동·미 PCE 공표 예정일 및 주택 매매 집계 범위 명시",
   "phase": "enriched",
   "firstPublishedAt": "2026-11-05",
   "updatedAt": "2026-11-09",
@@ -1850,6 +1870,11 @@
       "date": "2026-11-09",
       "phase": "enriched",
       "note": "표시 문구 전수 점검 후 중국 NEV 10월 잠정치와 WTI 동일 계열 월말 비교 추가"
+    },
+    {
+      "date": "2026-11-09",
+      "phase": "enriched",
+      "note": "9월 기준값 재점검: KB 10월 전국 주택 전세가격 반영, 산업활동·미 PCE 공표 예정일 및 주택 매매 집계 범위 명시"
     }
   ]
 }
