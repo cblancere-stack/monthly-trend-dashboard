@@ -85,25 +85,60 @@
       "category": "macro",
       "title": "원/달러 환율",
       "asOf": "2026-11-10",
-      "valueText": "1,334.20원",
+      "valueText": "1,334.30원",
       "period": "2026-10-30",
       "published": "2026-10-30",
       "source": {
-        "name": "국내 증시 마감 재현 자료",
-        "url": "https://snowshagal.com/market/2026-10-30/"
+        "name": "연합뉴스 · 서울 외환시장 주간 마감",
+        "url": "https://www.yna.co.kr/view/AKR20261030142000002"
       },
-      "deltaText": "서울 외환시장 10월 말 주간 종가의 교차 확인 미완료 · 전월비 미산출",
-      "basis": "서울 주간거래 마감 · 원/USD · 2차 자료",
+      "deltaText": "9월 30일 1,352.80원 대비 −18.50원(−1.37%)",
+      "basis": "서울 외환시장 15:30 주간 종가 · 원/USD · 마감 보도 교차 확인",
       "meaning": "원화 기준 달러 조달 단가의 관측값",
       "impact": "수입 매입원가·외화 지급액 산정 시 환율 고정 여부 점검",
       "frequency": "monthly",
       "sources": [
         {
-          "name": "국내 증시 마감 재현 자료",
-          "url": "https://snowshagal.com/market/2026-10-30/"
+          "name": "연합뉴스 · 서울 외환시장 주간 마감",
+          "url": "https://www.yna.co.kr/view/AKR20261030142000002"
+        },
+        {
+          "name": "조선비즈 · 10월 30일 주간 마감",
+          "url": "https://biz.chosun.com/policy/policy_sub/2026/10/30/SAVYRD2DUNADLF7EEAOIU5RFLM/?outputType=amp"
+        },
+        {
+          "name": "조선비즈 · 9월 30일 주간 마감",
+          "url": "https://biz.chosun.com/policy/policy_sub/2026/09/30/DTQFQOY7K5FUNAIGUFG5I5CMTU/?outputType=amp"
+        },
+        {
+          "name": "뉴시스 · 9월 30일 마감",
+          "url": "https://files.newsis.com/view/NISX20260930_0003809191"
         }
       ],
-      "checkedAt": "2026-11-09"
+      "checkedAt": "2026-11-10",
+      "displayNote": "기존 재현 자료 1,334.20원을 10월 30일 주간 마감 보도 교차 확인값 1,334.30원으로 정정.",
+      "checkedSources": [
+        {
+          "name": "국내 증시 마감 재현 자료",
+          "url": "https://snowshagal.com/market/2026-10-30/"
+        },
+        {
+          "name": "연합뉴스 · 서울 외환시장 주간 마감",
+          "url": "https://www.yna.co.kr/view/AKR20261030142000002"
+        },
+        {
+          "name": "조선비즈 · 10월 30일 주간 마감",
+          "url": "https://biz.chosun.com/policy/policy_sub/2026/10/30/SAVYRD2DUNADLF7EEAOIU5RFLM/?outputType=amp"
+        },
+        {
+          "name": "조선비즈 · 9월 30일 주간 마감",
+          "url": "https://biz.chosun.com/policy/policy_sub/2026/09/30/DTQFQOY7K5FUNAIGUFG5I5CMTU/?outputType=amp"
+        },
+        {
+          "name": "뉴시스 · 9월 30일 마감",
+          "url": "https://files.newsis.com/view/NISX20260930_0003809191"
+        }
+      ]
     },
     {
       "id": "provided-m-4-4",
@@ -483,7 +518,7 @@
         "name": "산업통상부",
         "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
       },
-      "deltaText": "전년 동월 대비 +18.1%",
+      "deltaText": "9월 60.5억 달러 대비 약 +8.3% · 전년 동월 대비 +18.1%",
       "basis": "산업통상부 품목별 통관 수출",
       "meaning": "역대 10월 최고. 조업일수와 하이브리드 수출 영향",
       "impact": "차종별 생산 일정과 국내 부품 발주를 연결해 확인",
@@ -496,8 +531,17 @@
         {
           "name": "산업통상부 영문 발표",
           "url": "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2773/view"
+        },
+        {
+          "name": "산업통상부 · 2026년 9월 수출입 동향",
+          "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172254/view?mno=&pageIndex=4"
+        },
+        {
+          "name": "산업통상부 · 9월 자동차산업 동향",
+          "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172302/view?mno=&pageIndex=1"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-10"
     },
     {
       "id": "provided-m-6-16",
@@ -884,7 +928,7 @@
       "basis": "중국 배터리급 탄산리튬 현물 · SMM 10월 30일 평가 근삿값",
       "meaning": "배터리급 탄산리튬의 중국 현물 가격",
       "impact": "양극재 원가와 보유 재고 평가에 영향",
-      "deltaText": "9월 같은 규격·가격 계열의 월말 수치가 공개 조회에 표시되지 않아 비교 생략",
+      "deltaText": "9월 30일 SMM 호가표 가격란은 로그인 필요 · 동일 계열 전월비 보류",
       "frequency": "monthly",
       "period": "2026-10-30",
       "published": "2026-10-31",
@@ -897,9 +941,17 @@
         {
           "name": "Shanghai Metals Market (SMM)",
           "url": "https://news.metal.com/newscontent/104189818-smm-analysis-lithium-battery-q3-2026-profit-divergence"
+        },
+        {
+          "name": "SMM · 9월 30일 배터리급 탄산리튬 현물 호가표",
+          "url": "https://m.smm.cn/new-energy/content/104140611"
         }
       ],
       "checkedSources": [
+        {
+          "name": "SMM · 9월 30일 배터리급 탄산리튬 현물 호가표",
+          "url": "https://m.smm.cn/new-energy/content/104140611"
+        },
         {
           "name": "SMM 배터리급 탄산리튬 지수 일별표",
           "url": "https://www.metal.com/lithium/202212050001"
@@ -908,7 +960,8 @@
           "name": "SMM 9월 말 주간 현물 시장 설명",
           "url": "https://news.metal.com/newscontent/PI22EQ2ECCVHNUHJEXL36ADMSPZDWEBVGBOOWHQ-weekly-review-of-the-lithium-carbonate-market-spot-lithium-carbonate-price-center-moved-further-downward-during-928-930-smm-weekly-review"
         }
-      ]
+      ],
+      "displayNote": "9월 30일 SMM 날짜별 호가표는 공개돼 있으나 수치 열은 로그인 안내로 가려짐. 외부 보도에 나온 값은 현물 평가기관·거래 지역·호가 시각 차이로 10월 말 SMM 근삿값과 직접 비교하기 어려움."
     },
     {
       "id": "provided-m-8-29",
@@ -938,7 +991,7 @@
           "url": "https://tradedata.go.kr/cts/index.do"
         }
       ],
-      "displayNote": "관세청 품목별 수출입 통계 경로 재점검. 기존 수치가 합산한 HS 세부 품목 범위를 원문에서 특정할 수 없어 10월 합계를 연결하지 않음. 이차전지 전체 수출액은 별도.",
+      "displayNote": "관세청 품목별 조회와 무역협회 K-stat 경로 확인. LNCM(HSK 2841.90-9020), LCO(2841.90-9010) 등은 개별 품목. 기존 증권사 양극재 합계의 코드 범위가 명시되지 않아 동일 범위의 10월 합산 보류.",
       "checkedSources": [
         {
           "name": "관세청 수출입무역통계",
@@ -947,6 +1000,14 @@
         {
           "name": "한화투자증권 · 양극재 4월 수출액 코멘트",
           "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=649560"
+        },
+        {
+          "name": "관세청 2026년 HS 품목분류표",
+          "url": "https://www.data.go.kr/data/15049722/fileData.do"
+        },
+        {
+          "name": "한국무역협회 K-stat",
+          "url": "https://stat.kita.net/"
         }
       ]
     },
@@ -962,7 +1023,7 @@
         "name": "산업통상부",
         "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
       },
-      "deltaText": "전년 동월 대비 약 +38%",
+      "deltaText": "9월 7.2억 달러 · 10월 전년 동월 대비 약 +38%",
       "basis": "산업통상부 20대 수출 품목 표의 반올림값",
       "meaning": "이차전지 품목 전체 수출",
       "impact": "양극재 단독 수출·내수 생산과 별도",
@@ -971,8 +1032,18 @@
         {
           "name": "산업통상부",
           "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
+        },
+        {
+          "name": "산업통상부 · 2026년 9월 수출입 동향",
+          "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172254/view?mno=&pageIndex=4"
+        },
+        {
+          "name": "KDI 경제정보센터 · 10월 수출입 동향 배포",
+          "url": "https://eiec.kdi.re.kr/policy/materialView.do?num=288880"
         }
-      ]
+      ],
+      "checkedAt": "2026-11-10",
+      "displayNote": "9월 산업통상부 본문에서 7.2억 달러 확인. 10월 웹 요약표는 억 달러 단위 반올림 수치. 첨부 세부표의 원 단위 수치 확보 전까지 전월 증감률 보류."
     },
     {
       "id": "provided-m-8-31",
@@ -1024,7 +1095,7 @@
       "frequency": "monthly",
       "period": "2026-10-30",
       "published": "2026-10-30",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "source": {
         "name": "Investing.com · CME JKM 선물 일별 시세",
         "url": "https://za.investing.com/commodities/lng-japan-korea-marker-platts-futures-historical-data"
@@ -1037,6 +1108,21 @@
         {
           "name": "World of Energy · 10월 31일 정산가 대조",
           "url": "https://www.worldenergyflow.com/issues/2026-10-31/?lang=en"
+        }
+      ],
+      "displayNote": "10월 30일·23일은 12월물. 9월 말 인접 주간 공개 연속물은 11월물이므로 동일 12월물의 9월 30일 정산가 대조 전까지 전월비 보류.",
+      "checkedSources": [
+        {
+          "name": "Investing.com · CME JKM 선물 일별 시세",
+          "url": "https://za.investing.com/commodities/lng-japan-korea-marker-platts-futures-historical-data"
+        },
+        {
+          "name": "World of Energy · 10월 31일 정산가 대조",
+          "url": "https://www.worldenergyflow.com/issues/2026-10-31/?lang=en"
+        },
+        {
+          "name": "World of Energy · 9월 말 인접 주간 11월물 확인",
+          "url": "https://www.worldenergyflow.com/issues/2026-10-03/"
         }
       ]
     },
@@ -1121,12 +1207,23 @@
       "frequency": "monthly",
       "period": "2026-10-30",
       "published": "2026-10-30",
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-10",
       "source": {
         "name": "Investing.com · EEX EUA 선물 일별 시세",
         "url": "https://au.investing.com/commodities/european-union-allowance-eua-year-futures-historical-data"
       },
       "sources": [
+        {
+          "name": "Investing.com · EEX EUA 선물 일별 시세",
+          "url": "https://au.investing.com/commodities/european-union-allowance-eua-year-futures-historical-data"
+        },
+        {
+          "name": "Fundamental Analytics Carbon Services · 11월 4일 정산가 대조",
+          "url": "https://carbonfundamentalservices.com/eua-weekly-price-briefin-week-of-november-4/"
+        }
+      ],
+      "displayNote": "10월 30일 89.19유로는 EEX EUA 연말물 일별표에서 재확인. 공개 일별표에서 9월 30일 동일 12월물 값을 확보하지 못해 기존 주간 비교 표시.",
+      "checkedSources": [
         {
           "name": "Investing.com · EEX EUA 선물 일별 시세",
           "url": "https://au.investing.com/commodities/european-union-allowance-eua-year-futures-historical-data"
@@ -1146,7 +1243,7 @@
       "basis": "2026년 8월 말 민간 집계 참고값 · 원문 게시일 미표기",
       "meaning": "국내 K-RE100 참여기업 수의 민간 집계 참고값",
       "impact": "재생전력 조달 참여 저변 참고. 공단 공식 등록 현황과 대조 필요",
-      "deltaText": "공단 공식 10월 말 고유 기업 수와 민간 집계의 범위가 달라 비교 생략",
+      "deltaText": "공단 공식 10월 말 등록기업 합계와 대조 가능한 값 없음",
       "frequency": "snapshot",
       "checkedAt": "2026-11-10",
       "period": "2026-08-31",
@@ -1175,6 +1272,10 @@
         {
           "name": "OpenEnergy · 공단 자료 부분 집계",
           "url": "https://biz-energy.org/data-hub"
+        },
+        {
+          "name": "산업데이터 서비스 포털 · 공단 등록정보 메타데이터",
+          "url": "https://www.idx.or.kr/portal/data/search/1b407d91-694e-5919-8ccf-d8eb24c5c356"
         }
       ]
     }
@@ -2154,7 +2255,7 @@
         ],
         [
           "원/달러 환율",
-          "1,334.20원"
+          "1,334.30원"
         ],
         [
           "한은 경제전망",
@@ -2497,7 +2598,7 @@
       "notes": "기후에너지환경부 정책 원문, KRX 일자별 시세, 에너지공단 등록정보 및 재게시 범위 대조."
     }
   },
-  "revisionNote": "11월 10일 보강. Indxx 10월 말 종가와 KRX KAU26 양월 종가 반영, 중국 NEV 월간 분석치 정정, 10월 물가 심화 분석과 10월 뉴스 6건·정책 4건 및 산업활동 공표 일정 추가",
+  "revisionNote": "전월 비교 재감사. 서울 외환시장 주간 종가 정정 및 9월 대비, 자동차 수출 전월비, 이차전지 9월 공식 비교 기준 추가. 탄산리튬·양극재·LNG·EU 배출권·K-RE100의 조회 경로와 비교 제약 명시",
   "phase": "enriched",
   "firstPublishedAt": "2026-11-05",
   "updatedAt": "2026-11-10",
@@ -2566,6 +2667,11 @@
       "date": "2026-11-10",
       "phase": "enriched",
       "note": "11월 10일 보강. Indxx 10월 말 종가와 KRX KAU26 양월 종가 반영, 중국 NEV 월간 분석치 정정, 10월 물가 심화 분석과 10월 뉴스 6건·정책 4건 및 산업활동 공표 일정 추가"
+    },
+    {
+      "date": "2026-11-10",
+      "phase": "enriched",
+      "note": "전월 비교 재감사. 서울 외환시장 주간 종가 정정 및 9월 대비, 자동차 수출 전월비, 이차전지 9월 공식 비교 기준 추가. 탄산리튬·양극재·LNG·EU 배출권·K-RE100의 조회 경로와 비교 제약 명시"
     }
   ],
   "releaseReviews": [
