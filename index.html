@@ -5,13 +5,13 @@
   <meta name="description" content="경제·부동산·자동차·방산·AI·로봇·배터리·에너지 월간 동향과 대표 지표. 집계월, 발표일, 원문 출처를 함께 확인하세요.">
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta name="color-scheme" content="light"><title>월간 동향 대시보드</title>
-  <link rel="stylesheet" href="assets/style.css?v=20261106-r5"><script src="assets/app.js?v=20261109-sector-calendar" defer></script>
+  <link rel="stylesheet" href="assets/style.css?v=20261118-brief"><script src="assets/app.js?v=20261118-brief" defer></script>
   <script>
   window.addEventListener('error',function(event){
     if(event.target&&event.target.tagName==='SCRIPT'||event.filename&&event.filename.indexOf('/assets/app.js')!==-1){
       var box=document.getElementById('error'),loading=document.getElementById('loading');
       if(loading)loading.hidden=true;
-      if(box){box.hidden=false;box.textContent='화면 파일을 불러오지 못했습니다. 아래 최신 화면 열기를 눌러 주세요.';var a=document.createElement('a');a.href='?v=20261109-sector-calendar';a.textContent='최신 화면 열기';a.style.display='block';box.appendChild(a);}
+      if(box){box.hidden=false;box.textContent='화면 파일을 불러오지 못했습니다. 아래 최신 화면 열기를 눌러 주세요.';var a=document.createElement('a');a.href='?v=20261118-brief';a.textContent='최신 화면 열기';a.style.display='block';box.appendChild(a);}
     }
   },true);
   </script>
@@ -29,25 +29,31 @@
     <div class="sidebar-bottom"><span class="live-dot"></span> 공개 시장 브리핑<p>숫자는 출처와 함께,<br>분석은 사실과 구분해서.</p><a href="https://github.com/cblancere-stack/monthly-trend-dashboard" target="_blank" rel="noopener noreferrer">GitHub 저장소 ↗</a></div>
   </aside>
   <main>
-    <header class="topbar"><span>RESEARCH / MONTHLY BRIEF</span><div><label for="month-select">보고서 월</label><select id="month-select" aria-label="보고서 월"></select><button id="print-button" class="quiet-button" title="브라우저 인쇄 또는 PDF로 저장">인쇄 / PDF</button></div></header>
+    <header class="topbar"><div><label for="month-select">보고서 월</label><select id="month-select" aria-label="보고서 월"></select><button id="print-button" class="quiet-button" title="브라우저 인쇄 또는 PDF로 저장">인쇄 / PDF</button></div></header>
     <div id="loading" role="status">보고서를 불러오는 중입니다.<small style="display:block;margin-top:12px;font-size:12px">처음 접속하면 자료를 내려받는 데 잠시 걸릴 수 있습니다.</small></div><noscript><p role="alert">이 대시보드는 JavaScript가 필요합니다. 브라우저에서 JavaScript를 허용해 주세요.</p></noscript>
     <div id="error" role="alert" hidden></div>
     <div id="report" hidden>
       <section id="overview" class="hero">
-        <div class="eyebrow"><span class="tiny-line"></span> MONTHLY TREND REPORT <span id="edition" class="badge"></span></div>
-        <div class="hero-row"><div><h1 id="report-title"></h1><p class="hero-description">경제와 주요 산업의 변화, 수치와 공식 발표로 확인합니다.</p></div><div class="hero-meta"><span id="cutoff-label">자료 확인 기준</span><strong id="cutoff"></strong><small id="updated-at"></small></div></div>
-        <div class="summary"><span class="summary-label">이달의 핵심</span><p id="headline"></p></div>
+        <div class="hero-row"><div><h1 id="report-title"></h1><span id="edition" class="badge"></span></div><div class="hero-meta"><span id="cutoff-label">작성 기준일</span><strong id="cutoff"></strong><small id="updated-at"></small></div></div>
+        <div class="summary" id="month-brief"><h2 class="summary-label">이달의 핵심</h2><div class="summary-body"><p id="headline"></p><ul id="month-highlights" hidden></ul></div></div>
       </section>
-      <div class="filter-row"><div role="group" aria-label="분야 선택" id="filters"><button data-category="all" class="selected" aria-pressed="true">전체 보기</button><button data-category="realestate" aria-pressed="false">부동산</button><button data-category="ai" aria-pressed="false">AI</button><button data-category="robotics" aria-pressed="false">휴머노이드</button></div><span class="muted">발표월과 실적 기준월을 구분합니다</span></div>
-      <section id="sector-home"><div class="section-heading"><div><span class="section-number">01</span><h2>동향보고서 요약</h2></div><p>분야별 핵심 흐름과 모든 항목의 요약</p></div><p id="sector-home-note" class="notice"></p><div id="sector-home-grid" class="sector-home-grid"></div></section>
-      <section id="indicators"><div class="section-heading"><div><span class="section-number">01</span><h2>대표 지표</h2></div><p>큰 숫자 뒤의 의미까지 확인하세요</p></div><div class="notice" id="metric-notice"></div><div id="metric-grid" class="metric-grid"></div><div id="pending-panel" class="pending-panel" hidden><h3>원자료 연결 현황 </h3><div id="pending-list"></div></div></section>
-      <section id="briefing"><div class="section-heading"><div><span class="section-number">02</span><h2>주요 뉴스·현안</h2></div><p>산업별 공식 발표와 해석을 구분합니다</p></div><div id="news-grid" class="news-grid"></div></section>
+      <div class="filter-row"><div role="group" aria-label="분야 선택" id="filters"></div></div>
+      <section id="sector-home" aria-label="분야별 요약"><div id="sector-home-grid" class="sector-home-grid"></div></section>
+      <section id="sector-brief" aria-labelledby="sector-brief-title" hidden>
+        <div class="section-heading"><div><h2 id="sector-brief-title">이달의 분야별 판단</h2></div></div>
+        <dl id="sector-brief-body" class="sector-brief-body"></dl>
+      </section>
+      <div class="section-links" id="section-links" role="group" aria-label="이 분야의 상세 항목" hidden>
+        <a href="#indicators">대표 지표</a><a href="#briefing">주요 뉴스·현안</a><a href="#provided-policy">정부정책</a><a href="#supplement-section">심화 분석</a><a href="#calendar-section">다음 달 주요 일정</a><a href="#sources">자료 출처</a>
+      </div>
+      <section id="indicators"><div class="section-heading"><div><h2>대표 지표</h2></div></div><div class="notice" id="metric-notice"></div><div id="metric-grid" class="metric-grid"></div><div id="pending-panel" class="pending-panel" hidden><h3>원자료 연결 현황</h3><div id="pending-list"></div></div></section>
+      <section id="briefing"><div class="section-heading"><div><h2>주요 뉴스·현안</h2></div></div><div id="news-grid" class="news-grid"></div></section>
       <div id="provided-extra" hidden>
         <section id="provided-policy"><div class="section-heading"><div><h2>정부정책 · 내용과 해석</h2></div></div><div id="policy-grid" class="news-grid"></div></section>
         <section id="supplement-section" class="provided-section"><div class="section-heading"><div><h2>심화 분석·사업기회 요약</h2></div></div><div id="supplement-list" class="news-grid"></div></section>
 
       </div>
-      <section id="calendar-section" class="provided-section" hidden><div class="section-heading"><div><h2>다음 달 주요 일정</h2></div></div><p class="notice">공식 공지에서 확인한 일정입니다. 변경 사항은 주최기관의 안내를 확인하세요.</p><div id="calendar-table" class="calendar-table"></div></section>
+      <section id="calendar-section" class="provided-section" hidden><div class="section-heading"><div><h2>다음 달 주요 일정</h2></div></div><div id="calendar-table" class="calendar-table"></div></section>
       <section id="sources"><details class="source-disclosure"><summary class="source-toggle"><div class="section-heading"><div><span class="section-number">03</span><h2>자료 출처</h2></div><p>기사·통계·발표자료 원문</p></div><span class="source-toggle-hint">펼치기 / 접기</span></summary><div class="source-panel"><div id="source-table"></div></div></details><details class="methodology"><summary>데이터 운영 원칙</summary><ul id="data-notes" class="data-notes"></ul><ul><li>미확인 값을 추정해 채우지 않습니다.</li><li>발표가 늦거나 수집이 실패하면 기존 수치의 기준월과 상태를 표시합니다. 과거 보고서는 당시 자료로 보존합니다.</li><li>보고서 작성 기준일까지 공개된 통계와 대상 월의 사건을 구분하며, 실적 기준월은 지표별로 표시합니다.</li><li>전월 원자료가 없으면 증감률과 막대를 만들지 않습니다.</li><li>기관·지역·단위·평가 기준이 달라지면 기존 시계열에 연결하지 않습니다.</li><li>기업이 발표한 계획·성능 주장은 독립적으로 입증된 실적과 구분합니다.</li><li>자료를 자동 확인한 시각과 원문을 사람이 검토한 시각은 별도로 관리합니다.</li></ul></details></section>
       <footer><span>MONTHLY INTELLIGENCE</span><p>공개자료에 기초한 시장 동향 정보입니다. 출처를 함께 확인하세요.</p><a href="#overview">맨 위로 ↑</a></footer>
     </div>

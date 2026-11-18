@@ -5,7 +5,7 @@
   "id": "summary-2026-10",
   "asOf": "2026-11-10",
   "cutoff": "2026-11-10",
-  "headline": "반도체 주도로 수출 호조. 주택 거래의 지역 격차와 높은 에너지 원가 지속",
+  "headline": "반도체 중심 수출 호조, 수도권 거래 둔화와 원유 가격 상승",
   "metrics": [
     {
       "id": "provided-m-4-1",
@@ -78,7 +78,9 @@
           "url": "https://deja.q-ova.com/daily/2026-09-30"
         }
       ],
-      "checkedAt": "2026-11-09"
+      "checkedAt": "2026-11-09",
+      "observationLabel": "10월 말 종가",
+      "tone": "risk"
     },
     {
       "id": "provided-m-4-3",
@@ -138,7 +140,8 @@
           "name": "뉴시스 · 9월 30일 마감",
           "url": "https://files.newsis.com/view/NISX20260930_0003809191"
         }
-      ]
+      ],
+      "observationLabel": "10월 말 · 서울 외환시장 주간 종가"
     },
     {
       "id": "provided-m-4-4",
@@ -262,7 +265,8 @@
           "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?field_tdr_date_value_month=202609&type=daily_treasury_yield_curve"
         }
       ],
-      "checkedAt": "2026-11-09"
+      "checkedAt": "2026-11-09",
+      "observationLabel": "10월 말 · 미 재무부 일별 수익률"
     },
     {
       "id": "provided-m-4-8",
@@ -330,7 +334,9 @@
           "url": "https://alfred.stlouisfed.org/release?ob=pv&od=desc&rd=2026-09-30&rid=328"
         }
       ],
-      "checkedAt": "2026-11-09"
+      "checkedAt": "2026-11-09",
+      "observationLabel": "10월 말 종가",
+      "tone": "risk"
     },
     {
       "id": "provided-m-4-10",
@@ -363,7 +369,9 @@
           "url": "https://keei.re.kr/newsletter/view?mid=a10210020000&newsltr_sn=283"
         }
       ],
-      "checkedAt": "2026-11-09"
+      "checkedAt": "2026-11-09",
+      "observationLabel": "10월 말 일별 관측",
+      "tone": "risk"
     },
     {
       "id": "provided-m-5-11",
@@ -423,7 +431,8 @@
         "secondarySource": {
           "name": "WardenStone · KB 전국 아파트 지수 재게시",
           "url": "https://land.wardenstone.com/market/kb_apt_sale_idx"
-        }
+        },
+        "caption": "KB 전국 아파트 매매가격지수 · 9월 103.09 → 10월 103.42(전월비 +0.32%). 주택종합과 별도 집계"
       }
     },
     {
@@ -562,7 +571,8 @@
           "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172302/view?mno=&pageIndex=1"
         }
       ],
-      "checkedAt": "2026-11-10"
+      "checkedAt": "2026-11-10",
+      "tone": "positive"
     },
     {
       "id": "provided-m-6-16",
@@ -622,7 +632,8 @@
         "secondarySource": {
           "name": "리포트사이트 · 카이즈유 통계 요약 재게시",
           "url": "https://www.reportsite.co.kr/kndata/report?page=10"
-        }
+        },
+        "caption": "카이즈유 전국 신차 등록 · 10월 135,293대(전월비 +4.1%, 전년비 +9.6%). 판매 집계와 범위 차이"
       }
     },
     {
@@ -745,7 +756,8 @@
           "name": "우주항공청 공식 발표",
           "url": "https://www.kasa.go.kr/prog/plcyBrf/brief/kor/sub01_01_04/view.do?plcyBrfNo=477"
         }
-      ]
+      ],
+      "observationLabel": "2027년 정부예산안"
     },
     {
       "id": "provided-m-6-21",
@@ -774,7 +786,8 @@
           "name": "Korea JoongAng Daily",
           "url": "https://www.koreajoongangdaily.com/business/korean-interceptor-system-posts-96-success-rate-in-uae-defense-against-iranian-strike/12618152"
         }
-      ]
+      ],
+      "observationLabel": "2026년 3월 사례 · 업계 인용"
     },
     {
       "id": "provided-m-6-22",
@@ -876,7 +889,9 @@
         }
       ],
       "checkedAt": "2026-11-09",
-      "displayNote": "Chart view → Net Total Return → 1M → 10월 30일 선 위 툴팁에서 3,153.57 pt 확인. 전월 값은 동일 공식 차트의 9월 30일 관측치."
+      "displayNote": "Chart view → Net Total Return → 1M → 10월 30일 선 위 툴팁에서 3,153.57 pt 확인. 전월 값은 동일 공식 차트의 9월 30일 관측치.",
+      "observationLabel": "10월 말 · 원지수",
+      "tone": "risk"
     },
     {
       "id": "provided-m-7-25",
@@ -909,7 +924,9 @@
       ],
       "checkedAt": "2026-11-10",
       "publicationDateStatus": "market_close",
-      "displayNote": "공식 차트에서 PR 선택 후 종료일을 10월 30일과 9월 30일로 각각 지정. 두 날짜의 IAIQP 종가 확인."
+      "displayNote": "공식 차트에서 PR 선택 후 종료일을 10월 30일과 9월 30일로 각각 지정. 두 날짜의 IAIQP 종가 확인.",
+      "observationLabel": "10월 말 · 원지수",
+      "tone": "risk"
     },
     {
       "id": "provided-m-7-26",
@@ -1039,7 +1056,8 @@
           "url": "https://www.cnmn.com.cn/ShowNews1.aspx?id=474397"
         }
       ],
-      "displayNote": "9월과 10월 모두 CCMN의 동일 순도·현물·평균 호가 계열로 대조. 기존 SMM 약 90,000위안/톤은 별도 기관의 참고값."
+      "displayNote": "9월과 10월 모두 CCMN의 동일 순도·현물·평균 호가 계열로 대조. 기존 SMM 약 90,000위안/톤은 별도 기관의 참고값.",
+      "observationLabel": "10월 말 · 배터리급 현물 대체 계열"
     },
     {
       "id": "provided-m-8-29",
@@ -1091,7 +1109,8 @@
           "name": "UN Comtrade · 월별 품목별 무역통계",
           "url": "https://comtradeplus.un.org/en/trade-statistics?cmd=01"
         }
-      ]
+      ],
+      "observationLabel": "2026년 4월 · 이전 기준 참고"
     },
     {
       "id": "provided-m-8-30",
@@ -1129,7 +1148,8 @@
         }
       ],
       "checkedAt": "2026-11-10",
-      "displayNote": "산업통상부 요약표는 10월 약 7억 달러로 표시. 산업통상부 세부표를 인용한 공개 재게시 자료는 9월 7.2억 달러, 10월 7.4억 달러를 제시함. 10월 세부표 원문 다운로드가 실패해 7.4억 달러와 표시 금액 기준 전월비 약 +2.8%는 참고치로 구분함."
+      "displayNote": "산업통상부 요약표는 10월 약 7억 달러로 표시. 산업통상부 세부표를 인용한 공개 재게시 자료는 9월 7.2억 달러, 10월 7.4억 달러를 제시함. 10월 세부표 원문 다운로드가 실패해 7.4억 달러와 표시 금액 기준 전월비 약 +2.8%는 참고치로 구분함.",
+      "tone": "positive"
     },
     {
       "id": "provided-m-8-31",
@@ -1166,7 +1186,9 @@
           "url": "https://m.snmnews.com/news/articleView.html?idxno=576785"
         }
       ],
-      "checkedAt": "2026-11-09"
+      "checkedAt": "2026-11-09",
+      "observationLabel": "10월 말 일별 관측",
+      "tone": "risk"
     },
     {
       "id": "provided-m-8-32",
@@ -1230,8 +1252,10 @@
         "source": {
           "name": "세계은행 11월 Pink Sheet · 일본 LNG 수입가격 월평균",
           "url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-November-2026.pdf"
-        }
-      }
+        },
+        "caption": "세계은행 일본 LNG 수입가격 월평균 · 9월 16.26 → 10월 16.59달러/MMBtu. 선물과 별도 계열"
+      },
+      "observationLabel": "10월 말 · JKM 12월물 선물"
     },
     {
       "id": "provided-m-8-33",
@@ -1256,7 +1280,8 @@
           "url": "https://www.kpx.or.kr/smpMonthly.es?mid=a30303000000"
         }
       ],
-      "publicationDateStatus": "unknown"
+      "publicationDateStatus": "unknown",
+      "observationLabel": "10월 · 전국 통합 월평균"
     },
     {
       "id": "provided-m-8-34",
@@ -1299,7 +1324,8 @@
       ],
       "publicationDateStatus": "market_close",
       "displayNote": "한국거래소 시세조회에서 종목 KAU26 선택, 6개월 기간의 일자별 표에서 9월 30일·10월 30일 종가 대조.",
-      "checkedAt": "2026-11-10"
+      "checkedAt": "2026-11-10",
+      "observationLabel": "10월 말 · KAU26 종가"
     },
     {
       "id": "provided-m-8-35",
@@ -1355,8 +1381,10 @@
         "source": {
           "name": "EEX EU ETS1 · 2026년 1차 경매 원표",
           "url": "https://public.eex-group.com/eex/eua-auction-report/emission-spot-primary-market-auction-report-2026-data.xlsx"
-        }
-      }
+        },
+        "caption": "EEX 1차 경매 월 낙찰량 가중평균 · 9월 84.77 → 10월 85.72유로/tCO₂. 선물과 별도 계열"
+      },
+      "observationLabel": "10월 말 · EUA 12월물 선물"
     },
     {
       "id": "provided-m-8-36",
@@ -1405,7 +1433,8 @@
           "name": "한국에너지공단 · 참여 현황 CSV(2025년 6월 기준)",
           "url": "https://www.data.go.kr/data/15121996/fileData.do"
         }
-      ]
+      ],
+      "observationLabel": "2026년 8월 말 · 민간 집계"
     }
   ],
   "news": [
@@ -1424,7 +1453,8 @@
         "url": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?nttId=11066009&menuNo=201264"
       },
       "tag": "경제·사회·규제·정치",
-      "id": "oct-n-1"
+      "id": "oct-n-1",
+      "tone": "positive"
     },
     {
       "category": "macro",
@@ -1610,8 +1640,8 @@
     },
     {
       "category": "energy",
-      "published": "2026-10-22",
-      "dateLabel": "2026.10.22",
+      "published": "2026-10-21",
+      "dateLabel": "2026.10.22 개최",
       "headline": "석탄발전 폐지에 따른 고용 전환 논의",
       "facts": [
         "국회에서 노동계·정부·전문가가 참여한 고용 안정·일자리 전환 토론회 개최"
@@ -1619,11 +1649,20 @@
       "analysis": "발전설비 폐지와 지역 고용 대책 병행 검토 필요",
       "track": "특별지구 지정과 사업 집행 계획",
       "source": {
-        "name": "기후에너지환경부 · 정책브리핑",
-        "url": "https://m.korea.kr/briefing/pressReleaseList.do?repCode=A00019&repCodeType=%EC%A0%95%EB%B6%80%EB%B6%80%EC%B2%98"
+        "name": "기후에너지환경부 · 토론회 보도자료",
+        "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785965",
+        "published": "2026-10-21"
       },
       "tag": "에너지·ESG",
-      "id": "oct-n-12"
+      "id": "oct-n-12",
+      "eventDate": "2026-10-22",
+      "sources": [
+        {
+          "name": "에너지경제신문 · 토론회 개최 대조",
+          "url": "https://edata.ekn.kr/article/view/ekn202610220004",
+          "published": "2026-10-22"
+        }
+      ]
     },
     {
       "id": "oct-n-robot-public",
@@ -1673,7 +1712,8 @@
           "name": "연합뉴스",
           "url": "https://www.yna.co.kr/view/AKR20261029042600003"
         }
-      ]
+      ],
+      "tone": "positive"
     },
     {
       "id": "oct-review-n-1",
@@ -1744,7 +1784,8 @@
           "url": "https://www.yna.co.kr/view/AKR20261030107451527"
         }
       ],
-      "period": "2026-Q3"
+      "period": "2026-Q3",
+      "tone": "positive"
     },
     {
       "id": "oct-review-n-4",
@@ -1771,7 +1812,8 @@
           "url": "https://www.yna.co.kr/view/AKR20261019107300003"
         }
       ],
-      "period": "2026-Q3"
+      "period": "2026-Q3",
+      "tone": "risk"
     },
     {
       "id": "oct-review-n-5",
@@ -1798,7 +1840,8 @@
           "url": "https://www.yna.co.kr/amp/view/AKR20261029148951527"
         }
       ],
-      "period": "2026-Q3"
+      "period": "2026-Q3",
+      "tone": "risk"
     },
     {
       "id": "oct-review-n-6",
@@ -1866,7 +1909,8 @@
       "source": {
         "name": "삼성SDI 뉴스룸",
         "url": "https://news.samsungsdi.com/global/articleView?seq=468"
-      }
+      },
+      "tone": "positive"
     },
     {
       "id": "oct-review-n-9",
@@ -2200,6 +2244,59 @@
         {
           "name": "LG에너지솔루션 배터리인사이드",
           "url": "https://inside.lgensol.com/2026/10/lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98-%EB%AF%B8%EB%9E%98-%EB%B0%B0%ED%84%B0%EB%A6%AC-%EA%B8%B0%EC%88%A0-%EC%B0%BE%EB%8A%94%EB%8B%A4-bic-2026-%EA%B0%9C%EC%B5%9C/"
+        }
+      ]
+    },
+    {
+      "id": "oct-editorial-n-1",
+      "category": "realestate",
+      "published": "2026-10-20",
+      "eventDate": "2026-10-21",
+      "headline": "동자동 공공주택지구 지정·고시",
+      "facts": [
+        "국토부, 10월 20일 공급 계획 발표 및 21일 지구 지정·고시. 공공임대 1,000호·공공분양 1,150호 추진"
+      ],
+      "analysis": "서울 도심 공급 절차 진전. 착공은 2029년, 준공·입주는 2032년 목표",
+      "track": "지구계획 승인과 보상·이주, 민간 공동사업자 참여 절차 확인",
+      "source": {
+        "name": "국토교통부 · 정책브리핑",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973936",
+        "published": "2026-10-20"
+      },
+      "sources": [
+        {
+          "name": "국토교통부 · 고시 후 사업 안내",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148974084",
+          "published": "2026-10-22"
+        },
+        {
+          "name": "연합뉴스 · 발표 내용 대조",
+          "url": "https://www.yna.co.kr/view/AKR20261020064900003?input=1195m",
+          "published": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "id": "oct-editorial-n-2",
+      "category": "ai",
+      "published": "2026-10-22",
+      "eventDate": "2026-10-22",
+      "headline": "Anthropic, Agent Skills 표준 재단 이관",
+      "facts": [
+        "Anthropic, 에이전트 작업 절차를 공유하는 개방형 형식 Agent Skills를 리눅스재단 산하 AAIF에 기여"
+      ],
+      "analysis": "여러 에이전트에서 작업 절차를 재사용할 기반 확대",
+      "track": "플랫폼별 지원 범위와 사내 권한·감사 통제 적용 여부 확인",
+      "source": {
+        "name": "Anthropic 공식 발표",
+        "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+        "published": "2026-10-22"
+      },
+      "sources": [
+        {
+          "name": "Linux Foundation · 상대 기관 발표",
+          "url": "https://www.linuxfoundation.org/press/agentic-ai-foundation-announces-four-new-projects-agent-skills-open-responses-openenv-and-opensandbox",
+          "published": "2026-10-22"
         }
       ]
     }
@@ -2544,19 +2641,23 @@
       "stats": [
         [
           "수출액",
-          "1,152.8억 달러"
+          "1,152.8억 달러",
+          "10월 통관 잠정"
         ],
         [
           "코스피",
-          "5,730.74 pt"
+          "5,730.74 pt",
+          "10월 말 종가"
         ],
         [
           "원/달러 환율",
-          "1,334.30원"
+          "1,334.30원",
+          "10월 말 주간 종가"
         ],
         [
           "한은 경제전망",
-          "2026년 +3.3% / 2027년 +2.9%"
+          "2026년 +3.3% / 2027년 +2.9%",
+          "2026·2027년 전망"
         ]
       ],
       "issues": [
@@ -2577,25 +2678,30 @@
       "stats": [
         [
           "주택 매매가격",
-          "+0.34%"
+          "+0.34%",
+          "9월 · 전국 주택종합"
         ],
         [
           "주택 매매 거래량",
-          "48,997건"
+          "48,997건",
+          "9월 · 전국"
         ],
         [
           "주택 전세가격",
-          "+0.22%"
+          "+0.22%",
+          "10월 · 전국"
         ],
         [
           "준공 후 미분양",
-          "27,549호"
+          "27,549호",
+          "9월 · 전국"
         ]
       ],
       "issues": [
         "KB, 수도권 가격 상승과 매수 관망 동시 확인",
         "토지거래허가구역 조정·재지정 공고",
-        "주택공급 정례 브리핑 개시"
+        "주택공급 정례 브리핑 개시",
+        "동자동 공공주택지구 지정·고시"
       ],
       "opportunity": "착공·준공과 임차 수급의 지역 차이 검토",
       "risk": "수도권 거래 둔화와 전세 부담"
@@ -2610,15 +2716,23 @@
       "stats": [
         [
           "월간 자동차 수출액",
-          "65.5억 달러"
+          "65.5억 달러",
+          "10월 · 통관 기준"
         ],
         [
-          "글로벌 우주 경제 규모",
-          "4,290억 달러"
+          "중국 NEV 시장 침투율",
+          "67.5%",
+          "10월 · 승용차 소매"
         ],
         [
-          "상업 위성 지상 장비 시장",
-          "1,652억 달러"
+          "국내 방산 4사 합산 수주잔고",
+          "약 95.35조 원",
+          "3분기 말"
+        ],
+        [
+          "방산 4사 연결 합산 영업이익률",
+          "8.59%",
+          "3분기"
         ]
       ],
       "issues": [
@@ -2643,12 +2757,14 @@
       "message": "AI·빅데이터 원지수 −7.46%, 로봇·자동화 원지수 −6.64%. 제조 휴머노이드 현장 실증 승인",
       "stats": [
         [
-          "ROBO",
-          "3,153.57 pt"
+          "Indxx AI·빅데이터 지수",
+          "9,102.35 pt",
+          "10월 말 · 원지수"
         ],
         [
-          "Indxx AI·빅데이터 지수",
-          "9,102.35 pt"
+          "ROBO",
+          "3,153.57 pt",
+          "10월 말 · 원지수"
         ]
       ],
       "issues": [
@@ -2660,7 +2776,8 @@
         "OpenAI, GPT-6.1 Terra 공개",
         "제조·물류 휴머노이드 실증특례 승인",
         "산업부, K Connect AI 출범",
-        "서울 AI로봇쇼, 착용형·이동형 로봇 전시"
+        "서울 AI로봇쇼, 착용형·이동형 로봇 전시",
+        "Anthropic, Agent Skills 표준 재단 이관"
       ],
       "opportunity": "업무 연동·로봇 파일럿의 비용과 가동률 확인",
       "risk": "평가 기준 변경과 현장 실적 부족"
@@ -2675,19 +2792,23 @@
       "stats": [
         [
           "이차전지 수출액",
-          "약 7억 달러"
+          "약 7억 달러",
+          "10월 통관 잠정"
         ],
         [
           "두바이유 가격",
-          "118.70달러/배럴"
+          "118.70달러/배럴",
+          "10월 말 관측"
         ],
         [
           "계통한계가격",
-          "110.02원/kWh"
+          "110.02원/kWh",
+          "10월 전국 평균"
         ],
         [
           "탄산리튬 가격",
-          "93,500위안/톤"
+          "93,500위안/톤",
+          "10월 말 · 대체 계열"
         ]
       ],
       "issues": [
@@ -2707,12 +2828,21 @@
       "categories": [
         "macro"
       ],
-      "title": "경제·사회·규제·정치 사업 검토",
+      "title": "반도체 수출과 내수의 온도 차",
       "points": [
-        "수출 업종별 설비 발주 추적",
-        "반도체 편중과 유가 상승"
+        "수출의 반도체 비중 약 49%. 반도체 설비 발주와 비IT 수출의 회복 여부 분리 추적",
+        "9월 설비투자·소매판매는 전월 대비 증가. 10월 산업활동으로 반등 지속성 점검"
       ],
       "sources": [
+        {
+          "name": "산업통상부",
+          "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view",
+          "published": "2026-11-01"
+        },
+        {
+          "name": "국가데이터처",
+          "url": "https://www.mods.go.kr/board.es?act=view&bid=216&list_no=447747&mid=a10301050100"
+        },
         {
           "name": "한국은행",
           "url": "https://www.bok.or.kr/portal/bbs/B0000501/view.do?nttId=11066009&menuNo=201264"
@@ -2728,30 +2858,43 @@
       "categories": [
         "realestate"
       ],
-      "title": "부동산 사업 검토",
+      "title": "수도권 거래와 임차 수급",
       "points": [
-        "착공·준공과 임차 수급의 지역 차이 검토",
-        "수도권 거래 둔화와 전세 부담"
+        "9월 전국 거래 증가와 수도권 거래 감소 병존. 서울·수도권·지방의 거래량·준공 후 미분양 분리 추적",
+        "동자동 지구 지정 이후 지구계획·보상·발주 시점을 단계별 점검"
       ],
       "sources": [
         {
+          "name": "국토교통부 9월 주택통계 원문·첨부",
+          "url": "https://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95092539",
+          "published": "2026-10-30"
+        },
+        {
           "name": "KB국민은행",
           "url": "https://kbthink.com/realestate/insights/research/261015-1.html"
+        },
+        {
+          "name": "국토교통부 · 정책브리핑",
+          "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973936",
+          "published": "2026-10-20"
         }
       ]
     },
     {
       "id": "oct-s-3",
       "categories": [
-        "mobility",
-        "defense"
+        "mobility"
       ],
-      "title": "자동차·항공·우주·방산 사업 검토",
+      "title": "수출 반등과 부품 발주",
       "points": [
-        "하이브리드 부품 발주 및 위성 영상 처리 검토",
-        "조업일수 효과와 사업 수주 변동"
+        "10월 자동차 수출 전년비 +18.1%. 수출 금액 변화와 실물 판매 대수의 방향 대조",
+        "현대차는 3분기 이익 개선 요인으로 환율·원가·하이브리드 판매 비중을 제시. 차종별 부품 발주와 조업일수 민감도 점검"
       ],
       "sources": [
+        {
+          "name": "산업통상부",
+          "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
+        },
         {
           "name": "현대자동차",
           "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001298"
@@ -2759,6 +2902,23 @@
         {
           "name": "현대자동차",
           "url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001299"
+        }
+      ]
+    },
+    {
+      "id": "oct-editorial-s-defense",
+      "categories": [
+        "defense"
+      ],
+      "title": "신규 계약의 잔고·매출 반영",
+      "points": [
+        "방산 4사 3분기 말 잔고는 전분기 대비 감소. 신규 수주와 기존 납품에 따른 잔고 감소를 기업별로 구분",
+        "후속 공시의 납품 일정과 매출 인식 시점을 대조. 위성 영상 처리 사업은 협력 발표 이후의 발주·실증으로 진척 확인"
+      ],
+      "sources": [
+        {
+          "name": "헤럴드경제 · 3사 수주잔고 집계",
+          "url": "https://mbiz.heraldcorp.com/article/10925241"
         },
         {
           "name": "우주항공청",
@@ -2773,13 +2933,12 @@
     {
       "id": "oct-s-4",
       "categories": [
-        "ai",
-        "robotics"
+        "ai"
       ],
-      "title": "AI·휴머노이드·로보틱스 사업 검토",
+      "title": "기업용 에이전트 도입의 비교 기준",
       "points": [
-        "업무 연동·로봇 파일럿의 비용과 가동률 확인",
-        "평가 기준 변경과 현장 실적 부족"
+        "업무 앱 연동과 Agent Skills 표준 확대. 도입 검토 시 커넥터 지원·권한 분리·감사 로그 동시 확인",
+        "모델별 비용은 동일 과제·평가 버전·사용량에서 비교. 토큰 단가와 과제당 비용 구분"
       ],
       "sources": [
         {
@@ -2791,6 +2950,36 @@
           "url": "https://openai.com/research/index/release/"
         },
         {
+          "name": "Anthropic 공식 발표",
+          "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+          "published": "2026-10-22"
+        },
+        {
+          "name": "Artificial Analysis",
+          "url": "https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence"
+        }
+      ]
+    },
+    {
+      "id": "oct-editorial-s-robotics",
+      "categories": [
+        "robotics"
+      ],
+      "title": "실증과 현장 도입의 차이",
+      "points": [
+        "GXO의 거점 확대와 국내 실증 승인 사례 구분. 도입 대수·가동률·처리량 및 반복 발주 확인",
+        "ROBO는 금융시장 가격 신호로 활용. 장비 투자 검토에는 현장 작업시간과 안전·유지보수 비용 반영"
+      ],
+      "sources": [
+        {
+          "name": "Agility Robotics 공동 발표",
+          "url": "https://investors.agilityrobotics.com/news-releases/news-release-details/gxo-and-agility-robotics-expand-partnership-accelerate"
+        },
+        {
+          "name": "VettaFi · 공식 차트",
+          "url": "https://www.vettafi.com/indexing/index/robo"
+        },
+        {
           "name": "Boston Dynamics",
           "url": "https://bostondynamics.com/news/boston-dynamics-appoints-rohit-prasad-as-chief-executive-officer/"
         }
@@ -2799,22 +2988,59 @@
     {
       "id": "oct-s-5",
       "categories": [
-        "battery",
-        "energy"
+        "battery"
       ],
-      "title": "2차전지·에너지·ESG 사업 검토",
+      "title": "ESS 계약과 EV 배터리 원가",
       "points": [
-        "ESS 가동률과 전력 조달계약 조건 검토",
-        "세액공제 의존과 원유 가격 변동"
+        "삼성SDI 미국 ESS 1GWh 공급계약과 LG에너지솔루션의 비구속 공급 검토를 구분. 출하 일정·생산 가동률·세액공제 조건 점검",
+        "리튬 현물가격 하락의 원가 절감 효과와 판매단가 연동 시차를 별도 검토"
       ],
       "sources": [
         {
-          "name": "LG에너지솔루션",
-          "url": "https://inside.lgensol.com/2026/10/lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C/"
+          "name": "삼성SDI 뉴스룸",
+          "url": "https://news.samsungsdi.com/global/articleView?seq=468"
         },
         {
-          "name": "기후에너지환경부 · 정책브리핑",
-          "url": "https://m.korea.kr/briefing/pressReleaseList.do?repCode=A00019&repCodeType=%EC%A0%95%EB%B6%80%EB%B6%80%EC%B2%98"
+          "name": "LG에너지솔루션 뉴스룸",
+          "url": "https://www.lgensol.com/mobile/en/company/newsroom-detail?seq=8792"
+        },
+        {
+          "name": "장강유색금속망(CCMN) · 10월 30일 현물 호가",
+          "url": "https://pb.ccmn.cn/news/ZX003/202610/fb6478f02a28412192f2bf66003b8050.html"
+        },
+        {
+          "name": "LG에너지솔루션",
+          "url": "https://inside.lgensol.com/2026/10/lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C/"
+        }
+      ]
+    },
+    {
+      "id": "oct-editorial-s-energy",
+      "categories": [
+        "energy"
+      ],
+      "title": "원유·도매전력 비용의 방향 차이",
+      "points": [
+        "정유·석화·운송의 원유 비용과 전력 수요기업의 조달 조건을 분리 점검. 계통한계가격 하락과 개별 계약 단가 구분",
+        "KAU26 종가와 기업별 무상할당·필요 매입량을 함께 검토. 직접구매계약과 ESS 활용은 계약 조건별 판단"
+      ],
+      "sources": [
+        {
+          "name": "에너지경제연구원 · 한국석유공사",
+          "url": "https://keei.re.kr/"
+        },
+        {
+          "name": "전력거래소",
+          "url": "https://www.kpx.or.kr/smpMonthly.es?mid=a30303000000"
+        },
+        {
+          "name": "한국거래소 배출권시장 일자별 시세",
+          "url": "https://ets.krx.co.kr/contents/ETS/03/03010000/ETS03010000.jsp"
+        },
+        {
+          "name": "기후에너지환경부 · 토론회 보도자료",
+          "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785965",
+          "published": "2026-10-21"
         }
       ]
     },
@@ -2858,10 +3084,10 @@
       "notes": "관세청·산업통상부 통관표, 국가데이터처 산업활동·물가와 한국은행 발표 대조."
     },
     "realestate": {
-      "news": 2,
+      "news": 3,
       "policy": 2,
       "calendar": 1,
-      "notes": "국토교통부 주택통계·공급 브리핑, 금융위원회 공동 발표와 KB 데이터허브 경로 대조. KB 전국 아파트는 주택종합과 구분해 10월 참고값 추가."
+      "notes": "국토교통부 주택통계·공급 브리핑, 금융위원회 공동 발표와 KB 데이터허브 경로 대조. KB 전국 아파트는 주택종합과 구분해 10월 참고값 추가. 동자동 공공주택지구 지정·고시 추가."
     },
     "mobility": {
       "news": 4,
@@ -2876,10 +3102,10 @@
       "notes": "우주항공청·항우연·KAIST, 방위사업청·KAI 사업 발표 및 방산사 분기 공시 대조."
     },
     "ai": {
-      "news": 5,
+      "news": 6,
       "policy": 1,
       "calendar": 1,
-      "notes": "OpenAI 제품 발표·릴리스 노트, Indxx 동일 계열 차트와 산업통상부 표준 추진 발표 대조."
+      "notes": "OpenAI 제품 발표·릴리스 노트, Indxx 동일 계열 차트와 산업통상부 표준 추진 발표 대조. Anthropic, Agent Skills 표준 재단 이관 추가."
     },
     "robotics": {
       "news": 4,
@@ -2900,10 +3126,10 @@
       "notes": "기후에너지환경부 정책 원문, KRX 일자별 시세, 에너지공단 등록정보 및 재게시 범위 대조."
     }
   },
-  "revisionNote": "대체 통계 및 공식 발표 추가 대조. 10월 KB 전국 아파트·신차 등록 참고값, 뉴스 5건·정책 2건 추가. 원자료와 대체 출처의 교차 확인 절차 기록.",
+  "revisionNote": "월간 핵심·8개 분야 판단 및 심화분석 보강. 지표 기준·출처 표시 개선, 10월 누락 이슈 2건 추가. 석탄발전 토론회 발표일·개최일과 원문 정정. 통계 작성 기준일 유지.",
   "phase": "enriched",
   "firstPublishedAt": "2026-11-05",
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-18",
   "revisions": [
     {
       "date": "2026-11-05",
@@ -2989,6 +3215,11 @@
       "date": "2026-11-10",
       "phase": "enriched",
       "note": "대체 통계 및 공식 발표 추가 대조. 10월 KB 전국 아파트·신차 등록 참고값, 뉴스 5건·정책 2건 추가. 원자료와 대체 출처의 교차 확인 절차 기록."
+    },
+    {
+      "date": "2026-11-18",
+      "phase": "enriched",
+      "note": "월간 핵심·8개 분야 판단 및 심화분석 보강. 지표 기준·출처 표시 개선, 10월 누락 이슈 2건 추가. 석탄발전 토론회 발표일·개최일과 원문 정정. 통계 작성 기준일 유지."
     }
   ],
   "releaseReviews": [
@@ -3362,6 +3593,137 @@
           "result": "다른 집계 기준의 당월 참고값 병기"
         }
       ]
+    },
+    {
+      "checkedAt": "2026-11-18",
+      "window": {
+        "from": "2026-10-01",
+        "to": "2026-10-31"
+      },
+      "sections": [
+        {
+          "category": "realestate",
+          "scope": "외부 독자 검토에서 빠진 10월 공식 발표를 원문과 후속 안내 또는 공동 발표로 대조.",
+          "changes": [
+            {
+              "id": "oct-editorial-n-1",
+              "published": "2026-10-20",
+              "eventDate": "2026-10-21",
+              "period": null,
+              "source": {
+                "name": "국토교통부 · 정책브리핑",
+                "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148973936",
+                "published": "2026-10-20"
+              },
+              "previouslyIncluded": false,
+              "result": "추가"
+            }
+          ]
+        },
+        {
+          "category": "ai",
+          "scope": "외부 독자 검토에서 빠진 10월 공식 발표를 원문과 후속 안내 또는 공동 발표로 대조.",
+          "changes": [
+            {
+              "id": "oct-editorial-n-2",
+              "published": "2026-10-22",
+              "eventDate": "2026-10-22",
+              "period": null,
+              "source": {
+                "name": "Anthropic 공식 발표",
+                "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+                "published": "2026-10-22"
+              },
+              "previouslyIncluded": false,
+              "result": "추가"
+            }
+          ]
+        },
+        {
+          "category": "energy",
+          "scope": "석탄발전 고용 전환 토론회 보도자료와 당일 보도 대조.",
+          "changes": [
+            {
+              "id": "oct-n-12",
+              "published": "2026-10-21",
+              "eventDate": "2026-10-22",
+              "period": null,
+              "source": {
+                "name": "기후에너지환경부 · 토론회 보도자료",
+                "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156785965",
+                "published": "2026-10-21"
+              },
+              "previouslyIncluded": true,
+              "result": "부처 목록 링크를 개별 원문으로 교체하고 발표일과 개최일 분리"
+            }
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "overviewHighlights": [
+    {
+      "label": "수출과 시장",
+      "text": "10월 수출 전년비 +93.7%·전월비 −4.77%. 반도체 비중 약 49%, 코스피 월말 전월비 −16.19%"
+    },
+    {
+      "label": "주택과 수급",
+      "text": "9월 수도권 거래 감소. 10월 전국 전세가격 전월비 +0.22%, 상승폭 0.10%p 축소"
+    },
+    {
+      "label": "기업 조달비",
+      "text": "전월 대비 두바이유 월말 +11.78%, 도매전력 월평균 −7.56%. 원유·전력 비용 분리 점검"
+    }
+  ],
+  "sectorBriefs": {
+    "macro": {
+      "judgment": "반도체 중심 수출 호조와 금융시장 조정 병존",
+      "evidence": "10월 수출 1,152.8억 달러, 반도체 비중 약 49%. 코스피 월말 전월비 −16.19%",
+      "watch": "10월 산업활동에서 비IT 생산·소매판매 개선 기조 유지 여부 확인",
+      "leadNews": "oct-review-n-1"
+    },
+    "realestate": {
+      "judgment": "전국 거래 소폭 회복에도 수도권 거래 둔화와 전세 부담 지속",
+      "evidence": "9월 전국 거래 전월비 +1.3%, 수도권 거래 감소. 10월 전국 전세가격 전월비 +0.22%",
+      "watch": "서울·수도권·지방의 10월 거래량과 준공 후 미분양, 동자동 후속 지구계획 추적",
+      "leadNews": "oct-tenth-n-4"
+    },
+    "mobility": {
+      "judgment": "수출액 반등과 완성차 이익 개선. 부품 발주 회복 여부는 별도 점검",
+      "evidence": "10월 수출 65.5억 달러, 전년비 +18.1%. 현대차 3분기 영업이익 전년비 +5.5%",
+      "watch": "북미 판매 대수와 하이브리드 비중, 조업일수 및 환율 효과 분리 확인",
+      "policyNote": "10월 산업통상부 발표와 완성차 IR 대조 범위에서 자동차 전용 신규 시행 정책 수록 없음",
+      "leadNews": "oct-n-4"
+    },
+    "defense": {
+      "judgment": "신규 계약 발표에도 합산 수주잔고와 일부 주요 기업 이익 둔화",
+      "evidence": "3분기 방산 4사 수주잔고 약 95.35조 원, 6월 말 대비 −3.14%. 한화에어로스페이스·현대로템 3분기 영업이익 전년비 감소",
+      "watch": "신규 계약의 잔고 반영과 주요 납품 일정, 분기별 매출 인식 추적",
+      "leadNews": "oct-review-n-5"
+    },
+    "ai": {
+      "judgment": "모델 경쟁이 업무 앱 연동과 에이전트 표준으로 확대",
+      "evidence": "OpenAI·Oracle 앱 연동 협력 확대, Anthropic의 Agent Skills 표준 재단 이관 발표",
+      "watch": "권한 관리·감사 로그의 실제 제공 범위와 동일 과제 기준 성능·비용 비교",
+      "leadNews": "oct-editorial-n-2"
+    },
+    "robotics": {
+      "judgment": "물류 배치 확대와 국내 실증특례 진행. 상용화 속도 차이",
+      "evidence": "GXO·Agility, 미국 물류 거점 확대 발표. 국내 제조·물류 휴머노이드 실증특례 승인",
+      "watch": "거점별 가동률·처리량과 유상 도입·반복 발주 공개 여부 확인",
+      "leadNews": "oct-review-n-7"
+    },
+    "battery": {
+      "judgment": "ESS 공급계약 구체화와 리튬 현물가격 하락 병존",
+      "evidence": "삼성SDI 미국 ESS 1GWh 공급계약. 탄산리튬 대체 계열 10월 말 전월비 −22.57%",
+      "watch": "ESS 계약의 출하·가동 일정과 EV용 배터리의 판매량·판가를 구분해 확인",
+      "leadNews": "oct-review-n-8"
+    },
+    "energy": {
+      "judgment": "원유 상승과 국내 도매전력 하락으로 조달비 방향 차이 확대",
+      "evidence": "두바이유 10월 말 전월비 +11.78%, 전국 계통한계가격 10월 평균 전월비 −7.56%",
+      "watch": "유가 전가 시차, 전력 조달 계약의 가격연동 조건, KAU26 월말 종가 점검",
+      "leadNews": "oct-review-n-10"
+    }
+  }
 }

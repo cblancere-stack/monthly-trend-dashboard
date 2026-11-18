@@ -153,3 +153,56 @@ h1{font-size:30px;letter-spacing:-1.2px}
 @media(min-width:1101px){
   .metric-grid:not([data-count="1"]):not([data-count="2"]):not([data-count="3"]){grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
 }
+
+/* Monthly and sector briefings */
+[hidden]{display:none!important}
+.topbar{height:64px;justify-content:flex-end}
+.hero{padding-top:18px}
+.hero-row{margin:7px 0 16px;gap:12px}
+.hero-row .badge{display:inline-block;margin:2px 0 0}
+#month-brief{align-items:flex-start;padding:15px 20px;gap:16px}
+#month-brief .summary-label{margin:2px 0 0;padding-right:16px;line-height:1.65}
+.summary-body{min-width:0;flex:1}
+#month-brief #headline{font-size:17px;line-height:1.5;margin:0}
+#month-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px 14px;list-style:none;margin:11px 0 0;padding:10px 0 0;border-top:1px solid #ffffff40}
+#month-highlights li{font-size:13px;line-height:1.55;color:#fff}
+#month-highlights strong{display:block;margin-bottom:2px;color:#d8e8ff;font-size:11px}
+.filter-row{margin:17px 0 13px}
+.sector-summary-stats small{display:block;margin-top:2px;color:var(--muted);font-size:11px;line-height:1.4}
+#sector-brief{background:#fff;border:1px solid var(--border);border-top:3px solid var(--teal);border-radius:5px;padding:12px 15px;margin-bottom:12px}
+#sector-brief .section-heading{margin:0 0 8px}
+.sector-brief-body{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0}
+.sector-brief-body>div{padding:7px 10px;background:#f2f5fa;border-radius:3px}
+.sector-brief-body>div:first-child{background:#e9f1fc;color:var(--teal)}
+.sector-brief-body dt{font-weight:750;font-size:11px;color:var(--teal)}
+.sector-brief-body dd{margin:2px 0 0;font-size:14px;line-height:1.55}
+.sector-brief-body>div:first-child dd{font-weight:750}
+.section-links{display:flex;gap:5px 14px;flex-wrap:wrap;margin-bottom:14px;font-size:12px;color:var(--teal)}
+.section-links a{text-decoration:underline;text-underline-offset:3px}
+.metric-period{margin:2px 0 0;color:var(--muted);font-size:11px;font-weight:650;line-height:1.4}
+.summary-metric-card .provided-delta{background:#f0f3f7;color:#334155;line-height:1.5}
+.summary-metric-card .provided-delta.tone-positive,.news-grid .news-analysis.tone-positive{background:#e8f1fd;color:#174983}
+.summary-metric-card .provided-delta.tone-negative,.news-grid .news-analysis.tone-negative{background:#fbe3e5;color:#9f2430}
+.news-grid .news-analysis.tone-negative{border-left-color:#9f2430}
+.news-grid .news-analysis.tone-negative>strong{color:#9f2430}
+.metric-links,.metric-reference{margin-top:6px;color:var(--teal);font-size:11px;overflow-wrap:anywhere}
+.metric-links>a,.metric-reference>a,.related-sources a,.calendar-table a{text-decoration:underline;text-underline-offset:2px;color:var(--teal)}
+.metric-reference{background:#f0f5fc;border-left:2px solid #a4bce0;padding:5px 7px}
+.metric-reference p,.related-sources ul{margin:3px 0}
+.related-sources ul{padding-left:15px}
+.related-sources{font-size:11px;max-width:100%}
+.news-bottom{flex-wrap:wrap}
+.policy-note{margin:0;color:var(--muted);font-size:13px}
+.calendar-table td:nth-child(2){min-width:125px}
+@media(max-width:780px){
+  .topbar{height:54px}
+  #month-brief{gap:6px;padding:12px 14px}
+  #month-brief .summary-label{padding:0}
+  #month-highlights,.sector-brief-body{grid-template-columns:1fr}
+  #month-highlights strong{display:inline;margin-right:7px}
+}
+@media print{
+  #month-brief{background:#123d78!important;color:#fff!important}
+  #month-brief .summary-label,#month-brief #headline{color:#fff!important}
+  .section-links{display:none}
+}
