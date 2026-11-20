@@ -438,10 +438,15 @@
         {
           "name": "WardenStone · KB 전국 아파트 지수 재게시",
           "url": "https://land.wardenstone.com/market/kb_apt_sale_idx"
+        },
+        {
+          "name": "KB국민은행 · 11월 16일 주택시장 리뷰",
+          "url": "https://kbthink.com/realestate/insights/research/261116-1.html",
+          "published": "2026-11-16"
         }
       ],
-      "checkedAt": "2026-11-10",
-      "displayNote": "기존 9월 수치는 KB 전국 주택종합. 별도 비교로 KB 전국 아파트 매매가격은 10월 전월 대비 +0.32%. 재게시 월별 지수 9월 103.09 → 10월 103.42와 대조. 주택종합 범위의 10월 수치와 구분.",
+      "checkedAt": "2026-11-20",
+      "displayNote": "기존 9월 수치는 KB 전국 주택종합. 별도 비교로 KB 전국 아파트 매매가격은 10월 전월 대비 +0.32%. 재게시 월별 지수 9월 103.09 → 10월 103.42와 대조. 주택종합 범위의 10월 수치와 구분. 11월 10일 이후 확인한 KB 11월 16일 리뷰에서 10월 전국 주택종합 매매가격 전월비 +0.22%(9월 +0.34%에서 0.12%p 축소). 10월 전국 아파트만의 +0.32%와 범위 구분.",
       "checkedSources": [
         {
           "name": "KB부동산 데이터허브 · 주택종합 월간 시계열 메뉴",
@@ -657,9 +662,19 @@
         {
           "name": "리포트사이트 · 카이즈유 통계 요약 재게시",
           "url": "https://www.reportsite.co.kr/kndata/report?page=10"
+        },
+        {
+          "name": "산업통상부 · 11월 16일 자동차산업 동향 상세표",
+          "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/3d2661307ccef23dc1682442043bf408/9a9db098b587ee18b321c826f3707a49#page=3",
+          "published": "2026-11-16"
+        },
+        {
+          "name": "한국자동차모빌리티산업협회 · 10월 동향 잠정치",
+          "url": "https://www.kama.or.kr/NewsController?board_id=12395&boardmaster_id=industry&cmd=V&menunum=0004",
+          "published": "2026-11-16"
         }
       ],
-      "displayNote": "산업통상부 전체 내수 판매는 9월 실적 유지. 별도 대체 지표인 카이즈유 10월 신차 등록 135,293대, 전월 대비 +4.1%·전년 동월 대비 +9.6%. 11월 4일 공개 요약 기준. 판매와 등록의 기준 및 출처 구분.",
+      "displayNote": "산업통상부 전체 내수 판매는 9월 실적 유지. 별도 대체 지표인 카이즈유 10월 신차 등록 135,293대, 전월 대비 +4.1%·전년 동월 대비 +9.6%. 11월 4일 공개 요약 기준. 판매와 등록의 기준 및 출처 구분. 11월 16일 후속 공표: 전국 승용·상용 내수 판매 10월 137,166대, 9월 135,370대 대비 +1.3%·전년 동월 대비 +7.9%. 산업통상부 상세표와 KAMA 잠정 자료 대조.",
       "checkedSources": [
         {
           "name": "산업통상부",
@@ -670,7 +685,7 @@
           "url": "https://www.kama.or.kr/MainController"
         }
       ],
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-20",
       "relatedComparison": {
         "series": "카이즈유 전국 신차 등록",
         "period": "2026-10",
@@ -1011,54 +1026,82 @@
       "category": "ai",
       "title": "AI 성능 · AA Intelligence Index",
       "asOf": "2026-11-10",
-      "valueText": "52점",
-      "basis": "GPT-6.1 Sol (Max) · 9월 공개 AA Intelligence Index 평가",
+      "valueText": "55점",
+      "basis": "GPT-6.1 Sol (Max) · Artificial Analysis Intelligence Index v5",
       "meaning": "복수 과제를 종합한 특정 모델의 벤치마크 점수",
       "impact": "동일 평가 버전·추론 설정에서 모델 간 비교에 활용",
-      "deltaText": "동일 모델·평가 버전의 10월 재평가 수치 없이 9월 발표값 유지",
+      "deltaText": "동일 v5의 Terra (Max) 51점 · GPT‑6 Astra (Max) 57점",
       "frequency": "snapshot",
-      "period": "2026-09-29",
-      "published": "2026-09-29",
+      "period": "2026-10-27",
+      "published": "2026-10-27",
       "source": {
-        "name": "Artificial Analysis 모델별 평가표",
-        "url": "https://artificialanalysis.ai/models/releases/gpt-6-1-sol"
+        "name": "Artificial Analysis · v5 발표 원문",
+        "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5/",
+        "published": "2026-10-27"
       },
       "sources": [
         {
-          "name": "Artificial Analysis 모델별 평가표",
-          "url": "https://artificialanalysis.ai/models/releases/gpt-6-1-sol"
+          "name": "Artificial Analysis · v5 발표 원문",
+          "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5/",
+          "published": "2026-10-27"
+        },
+        {
+          "name": "Artificial Analysis · GPT-6.1 Sol 모델표",
+          "url": "https://artificialanalysis.ai/models/gpt-6-1-sol"
+        },
+        {
+          "name": "Artificial Analysis · GPT-6.1 Terra 모델표",
+          "url": "https://artificialanalysis.ai/models/gpt-6-1-terra"
         },
         {
           "name": "Artificial Analysis",
           "url": "https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence"
         }
       ],
-      "checkedAt": "2026-11-10"
+      "checkedAt": "2026-11-20",
+      "displayNote": "9월 29일 Sol (Max) 52점은 종전 평가 버전의 출시 당시 수치. v5는 평가 과제와 가중치를 바꿨으므로 점수 차이를 모델 성능 개선폭으로 계산하지 않음.",
+      "observationLabel": "10월 27일 공개 · GPT-6.1 Sol (Max) · AA v5"
     },
     {
       "id": "provided-m-7-27",
       "category": "ai",
       "title": "AI 비용 · Sol (max) 과제당 비용",
       "asOf": "2026-11-10",
-      "valueText": "0.72달러/과제",
-      "basis": "GPT-6.1 Sol (Max) · Artificial Analysis의 9월 모델별 과제당 평가비용",
+      "valueText": "1.27달러/과제",
+      "basis": "GPT-6.1 Sol (Max) · Artificial Analysis Intelligence Index v5",
       "meaning": "AA 벤치마크 과제당 해당 모델의 평가 비용",
       "impact": "서비스 실제 비용은 토큰량·캐시 조건에 따라 달라짐",
-      "deltaText": "동일 발표의 GPT-6 Sol 1.05달러 대비 약 31% 낮음",
+      "deltaText": "동일 v5의 Terra (Max) 0.96달러/과제",
       "frequency": "snapshot",
-      "period": "2026-09-29",
-      "published": "2026-09-29",
+      "period": "2026-10-27",
+      "published": "2026-10-27",
       "source": {
-        "name": "Artificial Analysis",
-        "url": "https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence"
+        "name": "Artificial Analysis · v5 발표 원문",
+        "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5/",
+        "published": "2026-10-27"
       },
       "sources": [
+        {
+          "name": "Artificial Analysis · v5 발표 원문",
+          "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5/",
+          "published": "2026-10-27"
+        },
+        {
+          "name": "Artificial Analysis · GPT-6.1 Sol 모델표",
+          "url": "https://artificialanalysis.ai/models/gpt-6-1-sol"
+        },
+        {
+          "name": "Artificial Analysis · GPT-6.1 Terra 모델표",
+          "url": "https://artificialanalysis.ai/models/gpt-6-1-terra"
+        },
         {
           "name": "Artificial Analysis",
           "url": "https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence"
         }
       ],
-      "checkedAt": "2026-11-10"
+      "checkedAt": "2026-11-20",
+      "displayNote": "9월 29일 Sol (Max) 0.72달러는 종전 평가 과제 기준. 평가 버전이 달라 비용 증감률을 계산하지 않음. 과제당 가중평균 평가 비용은 토큰 단가 및 실제 서비스 청구액과 별도.",
+      "observationLabel": "10월 27일 공개 · GPT-6.1 Sol (Max) · AA v5"
     },
     {
       "id": "provided-m-8-28",
@@ -1148,20 +1191,31 @@
       "category": "battery",
       "title": "양극재 수출액",
       "asOf": "2026-11-10",
-      "valueText": "5.0억 달러",
-      "basis": "2026년 4월 참고값 · 한국무역협회 자료를 인용한 증권사 집계",
-      "meaning": "국내 양극재 수출액의 공개 월간 집계",
-      "impact": "최근 양극재 수출 흐름 판단에는 동일 품목 기준의 9·10월 관세청 수치 필요",
-      "deltaText": "4월의 원문 전월비 +10% · 10월 동일 품목 합계 비교 생략",
+      "valueText": "5.4억 달러",
+      "basis": "10월 양극재 전체 · 산업통상 자료를 바탕으로 한 하나증권 집계",
+      "meaning": "양극재 수출 금액. NCM+NCA만 합산한 수치와 범위 구분",
+      "impact": "양극재 수출 금액은 전월비 감소, 중량은 +0.4%. 수출 단가와 품목 구성 분리 점검",
+      "deltaText": "전월 대비 −1.7% · 전년 동월 대비 +60.4% (하나증권 동일 집계)",
       "frequency": "monthly",
-      "checkedAt": "2026-11-10",
-      "period": "2026-04",
-      "published": "2026-05-19",
+      "checkedAt": "2026-11-20",
+      "period": "2026-10",
+      "published": "2026-11-09",
       "source": {
-        "name": "한화투자증권 · 양극재 4월 수출액 코멘트",
-        "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=649560"
+        "name": "하나증권 · 11월 9일 2차전지 Weekly, 19쪽",
+        "url": "https://file.hanaw.com/download/research/FileServer/WEB/industry/industry/2026/11/08/Battery_Weekly_2026.11.09.pdf#page=19",
+        "published": "2026-11-09"
       },
       "sources": [
+        {
+          "name": "하나증권 · 11월 9일 2차전지 Weekly, 19쪽",
+          "url": "https://file.hanaw.com/download/research/FileServer/WEB/industry/industry/2026/11/08/Battery_Weekly_2026.11.09.pdf#page=19",
+          "published": "2026-11-09"
+        },
+        {
+          "name": "하나증권 · 11월 16일 동일 집계 재수록",
+          "url": "https://file.hanaw.com/download/research/FileServer/WEB/industry/industry/2026/11/15/Battery_Weekly_2026.11.16.pdf#page=20",
+          "published": "2026-11-16"
+        },
         {
           "name": "한화투자증권 · 양극재 4월 수출액 코멘트",
           "url": "https://consensus.hankyung.com/analysis/downpdf?report_idx=649560"
@@ -1171,7 +1225,7 @@
           "url": "https://tradedata.go.kr/cts/index.do"
         }
       ],
-      "displayNote": "관세청 품목별 조회와 무역협회 K-stat 경로 확인. LNCM(HSK 2841.90-9020), LCO(2841.90-9010) 등은 개별 품목. 기존 증권사 양극재 합계의 코드 범위가 명시되지 않아 동일 범위의 10월 합산 보류. UN Comtrade의 국제 HS 분류 합계를 국내 HSK 10자리 품목 합계와 동일하게 취급할 수 없음.",
+      "displayNote": "11월 9일자 19쪽과 11월 16일 재수록 대조. 10월 NCM+NCA는 5.3억 달러로 전체 집계와 범위가 다름. 종전 한화투자증권 4월 5.0억 달러는 세부 코드 범위 대조 없이 이번 집계와 연결하지 않음.",
       "checkedSources": [
         {
           "name": "관세청 수출입무역통계",
@@ -1194,26 +1248,32 @@
           "url": "https://comtradeplus.un.org/en/trade-statistics?cmd=01"
         }
       ],
-      "observationLabel": "2026년 4월 · 이전 기준 참고"
+      "observationLabel": "10월 실적 · 하나증권 품목 집계"
     },
     {
       "id": "provided-m-8-30",
       "category": "battery",
       "title": "이차전지 수출액",
       "asOf": "2026-11-10",
-      "valueText": "약 7억 달러",
+      "valueText": "7.41억 달러",
       "period": "2026-10",
       "published": "2026-11-01",
       "source": {
-        "name": "산업통상부",
-        "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
+        "name": "산업통상부 · 10월 수출입동향 첨부, 11쪽",
+        "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/4b9e478693e904949a18e5ab0b8307e4/9a9db098b587ee18b321c826f3707a49#page=11",
+        "published": "2026-11-01"
       },
-      "deltaText": "9월 7.2억 달러 · 10월 전년 동월 대비 약 +38%",
-      "basis": "산업통상부 20대 수출 품목 표의 반올림값",
+      "deltaText": "전년 동월 대비 +38.4% · 전월 대비 약 +2.35%",
+      "basis": "전국 통관 수출 잠정 · 산업통상부 첨부 품목별 상세표(백만 달러)",
       "meaning": "이차전지 품목 전체 수출",
       "impact": "양극재 단독 수출·내수 생산과 별도",
       "frequency": "monthly",
       "sources": [
+        {
+          "name": "산업통상부 · 10월 수출입동향 첨부, 11쪽",
+          "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/4b9e478693e904949a18e5ab0b8307e4/9a9db098b587ee18b321c826f3707a49#page=11",
+          "published": "2026-11-01"
+        },
         {
           "name": "산업통상부",
           "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view"
@@ -1229,11 +1289,22 @@
         {
           "name": "알잘 수출입 · 산업통상부 세부표 전재",
           "url": "https://trade.aljal.kr/indicator/secondary-battery-export"
+        },
+        {
+          "name": "하나증권 · 11월 9일 2차전지 Weekly, 19쪽",
+          "url": "https://file.hanaw.com/download/research/FileServer/WEB/industry/industry/2026/11/08/Battery_Weekly_2026.11.09.pdf#page=19",
+          "published": "2026-11-09"
         }
       ],
-      "checkedAt": "2026-11-10",
-      "displayNote": "산업통상부 요약표는 10월 약 7억 달러로 표시. 산업통상부 세부표를 인용한 공개 재게시 자료는 9월 7.2억 달러, 10월 7.4억 달러를 제시함. 10월 세부표 원문 다운로드가 실패해 7.4억 달러와 표시 금액 기준 전월비 약 +2.8%는 참고치로 구분함.",
-      "tone": "positive"
+      "checkedAt": "2026-11-20",
+      "displayNote": "공식 첨부 11쪽 이차전지 행의 9월 724·10월 741백만 달러로 전월비 계산. Hana 자료와 7.4억 달러 수준 대조. 세부 증감률은 정부 표 우선 적용.",
+      "tone": "positive",
+      "history": {
+        "previousLabel": "9월",
+        "previousValue": "7.24억 달러",
+        "currentLabel": "10월",
+        "change": "전년비 +38.4% · 전월비 약 +2.35%"
+      }
     },
     {
       "id": "provided-m-8-31",
@@ -1499,7 +1570,7 @@
       "impact": "재생전력 조달 참여 저변 참고. 공단 공식 등록 현황과 대조 필요",
       "deltaText": "공단 공식 10월 말 등록기업 합계와 대조 가능한 값 없음",
       "frequency": "snapshot",
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-20",
       "period": "2026-08-31",
       "published": "2026-11-09",
       "publicationDateStatus": "unknown",
@@ -1517,7 +1588,7 @@
           "url": "https://www.data.go.kr/data/15093741/openapi.do"
         }
       ],
-      "displayNote": "공단 참여 현황 CSV는 2025년 6월 기준. 등록정보를 활용한 OpenEnergy 재집계는 11월 3일 스냅샷이며 일부 원자료 누락이 명시되어 있음. 10월 말 공단 전체 등록기업 누계와 대조할 수 없어 기존 민간 집계와 분리.",
+      "displayNote": "공단 등록정보 API와 거래 현황 CSV의 항목 확인. 거래 CSV는 계약·거래 집계이며 등록기업 누계는 별도. OpenEnergy는 11월 3일 자료로 일부 누락·중복 정리 범위를 명시해 10월 말 등록 총수로 사용 보류.",
       "checkedSources": [
         {
           "name": "한국에너지공단 K-RE100 등록정보 API",
@@ -2894,7 +2965,7 @@
       "stats": [
         [
           "이차전지 수출액",
-          "약 7억 달러",
+          "7.41억 달러",
           "10월 통관 잠정"
         ],
         [
@@ -3040,7 +3111,8 @@
       "title": "기업용 에이전트 도입의 비교 기준",
       "points": [
         "업무용 에이전트 도입 후보는 커넥터 지원, 권한 분리, 감사 로그로 우선 선별",
-        "비용 검토는 동일 과제·평가 버전·사용량으로 비교. 토큰 단가와 과제당 비용은 별도 평가"
+        "비용 검토는 동일 과제·평가 버전·사용량으로 비교. 토큰 단가와 과제당 비용은 별도 평가",
+        "10월 27일 AA v5에서 Sol (Max) 55점·1.27달러/과제, Terra (Max) 51점·0.96달러/과제. 사내 도입 비교 시 같은 평가 버전의 점수와 비용을 함께 검토."
       ],
       "sources": [
         {
@@ -3059,6 +3131,15 @@
         {
           "name": "Artificial Analysis",
           "url": "https://artificialanalysis.ai/articles/gpt-6-1-sol-replaces-gpt-6-sol-after-just-7-days-with-near-astra-intelligence"
+        },
+        {
+          "name": "Artificial Analysis · v5 발표 원문",
+          "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5/",
+          "published": "2026-10-27"
+        },
+        {
+          "name": "Artificial Analysis · GPT-6.1 Terra 모델표",
+          "url": "https://artificialanalysis.ai/models/gpt-6-1-terra"
         }
       ]
     },
@@ -3095,7 +3176,8 @@
       "title": "ESS 계약과 EV 배터리 원가",
       "points": [
         "ESS 수주를 출하·매출 계획에 반영하려면 납품 일정과 현지 공장 가동률 확인 필요. 비구속 협의 물량은 별도 관리",
-        "EV용 배터리 마진은 리튬 매입가격과 판매단가가 각각 언제 조정되는지에 따라 점검"
+        "EV용 배터리 마진은 리튬 매입가격과 판매단가가 각각 언제 조정되는지에 따라 점검",
+        "양극재는 전월 대비 수출 금액 −1.7%, 중량 +0.4%. 출하량과 판매단가를 분리해 평가."
       ],
       "sources": [
         {
@@ -3113,6 +3195,16 @@
         {
           "name": "LG에너지솔루션",
           "url": "https://inside.lgensol.com/2026/10/lg%EC%97%90%EB%84%88%EC%A7%80%EC%86%94%EB%A3%A8%EC%85%98-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C/"
+        },
+        {
+          "name": "하나증권 · 11월 9일 2차전지 Weekly, 19쪽",
+          "url": "https://file.hanaw.com/download/research/FileServer/WEB/industry/industry/2026/11/08/Battery_Weekly_2026.11.09.pdf#page=19",
+          "published": "2026-11-09"
+        },
+        {
+          "name": "산업통상부 · 10월 수출입동향 첨부, 11쪽",
+          "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/4b9e478693e904949a18e5ab0b8307e4/9a9db098b587ee18b321c826f3707a49#page=11",
+          "published": "2026-11-01"
         }
       ]
     },
@@ -3228,7 +3320,7 @@
       "notes": "기후에너지환경부 정책 원문, KRX 일자별 시세, 에너지공단 등록정보 및 재게시 범위 대조."
     }
   },
-  "revisionNote": "섹터별 핵심 지표 우선 배치, 동일 계열 지표 이력과 사업 진행 단계 표기, 심화분석의 실무 판단 보강.",
+  "revisionNote": "10월 AA v5 성능·비용과 양극재·이차전지 수출 수치 보강. 기준일 이후 확인한 주택·자동차 실적은 산출 기준에서 별도 표기.",
   "phase": "enriched",
   "firstPublishedAt": "2026-11-05",
   "updatedAt": "2026-11-20",
@@ -3327,6 +3419,11 @@
       "date": "2026-11-20",
       "phase": "enriched",
       "note": "섹터별 핵심 지표 우선 배치, 동일 계열 지표 이력과 사업 진행 단계 표기, 심화분석의 실무 판단 보강."
+    },
+    {
+      "date": "2026-11-20",
+      "phase": "enriched",
+      "note": "10월 AA v5 성능·비용과 양극재·이차전지 수출 수치 보강. 기준일 이후 확인한 주택·자동차 실적은 산출 기준에서 별도 표기."
     }
   ],
   "releaseReviews": [
@@ -3764,6 +3861,114 @@
               "result": "부처 목록 링크를 개별 원문으로 교체하고 발표일과 개최일 분리"
             }
           ]
+        }
+      ]
+    },
+    {
+      "checkedAt": "2026-11-20",
+      "window": {
+        "from": "2026-10-01",
+        "to": "2026-10-31"
+      },
+      "sections": [
+        {
+          "category": "ai",
+          "scope": "Artificial Analysis의 10월 27일 v5 발표와 모델표 대조",
+          "changes": []
+        },
+        {
+          "category": "battery",
+          "scope": "산업통상부 첨부 품목표와 하나증권 11월 9일·16일 양극재 집계 대조",
+          "changes": []
+        },
+        {
+          "category": "realestate",
+          "scope": "KB 11월 16일 리뷰와 국토교통부 통계누리 경로 대조",
+          "changes": []
+        },
+        {
+          "category": "mobility",
+          "scope": "11월 16일 산업통상부 국내 판매 상세표와 KAMA 잠정치 대조",
+          "changes": []
+        },
+        {
+          "category": "energy",
+          "scope": "K-RE100 공단 API·거래 CSV와 11월 3일 집계의 범위 대조",
+          "changes": []
+        }
+      ],
+      "statistics": [
+        {
+          "id": "provided-m-7-26",
+          "period": "2026-10-27",
+          "published": "2026-10-27",
+          "source": {
+            "name": "Artificial Analysis · v5 발표 원문",
+            "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5/",
+            "published": "2026-10-27"
+          },
+          "previouslyIncluded": true,
+          "result": "대표값 갱신"
+        },
+        {
+          "id": "provided-m-7-27",
+          "period": "2026-10-27",
+          "published": "2026-10-27",
+          "source": {
+            "name": "Artificial Analysis · v5 발표 원문",
+            "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5/",
+            "published": "2026-10-27"
+          },
+          "previouslyIncluded": true,
+          "result": "대표값 갱신"
+        },
+        {
+          "id": "provided-m-8-29",
+          "period": "2026-10",
+          "published": "2026-11-09",
+          "source": {
+            "name": "하나증권 · 11월 9일 2차전지 Weekly, 19쪽",
+            "url": "https://file.hanaw.com/download/research/FileServer/WEB/industry/industry/2026/11/08/Battery_Weekly_2026.11.09.pdf#page=19",
+            "published": "2026-11-09"
+          },
+          "previouslyIncluded": true,
+          "result": "대표값 갱신"
+        },
+        {
+          "id": "provided-m-8-30",
+          "period": "2026-10",
+          "published": "2026-11-01",
+          "source": {
+            "name": "산업통상부 · 10월 수출입동향 첨부, 11쪽",
+            "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/4b9e478693e904949a18e5ab0b8307e4/9a9db098b587ee18b321c826f3707a49#page=11",
+            "published": "2026-11-01"
+          },
+          "previouslyIncluded": true,
+          "result": "대표값 갱신"
+        },
+        {
+          "id": "provided-m-5-11",
+          "period": "2026-10",
+          "published": "2026-11-16",
+          "source": {
+            "name": "KB국민은행 · 11월 16일 주택시장 리뷰",
+            "url": "https://kbthink.com/realestate/insights/research/261116-1.html",
+            "published": "2026-11-16"
+          },
+          "previouslyIncluded": false,
+          "result": "기준일 이후 확인 자료 별도 표기"
+        },
+        {
+          "id": "provided-m-6-16",
+          "period": "2026-10",
+          "published": "2026-11-16",
+          "source": {
+            "name": "산업통상부 · 11월 16일 자동차산업 동향 상세표",
+            "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/3d2661307ccef23dc1682442043bf408/9a9db098b587ee18b321c826f3707a49#page=3",
+            "published": "2026-11-16"
+          },
+          "previouslyIncluded": false,
+          "result": "기준일 이후 발표 자료 별도 표기"
         }
       ]
     }
