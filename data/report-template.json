@@ -18,12 +18,15 @@
         "evidence": "판단을 뒷받침하는 수치 또는 공식 발표",
         "watch": "다음에 확인할 지표·일정·사업 단계",
         "leadNews": "분야 판단에 가장 중요한 뉴스의 ID",
+        "leadMetrics": ["판단의 근거가 되는 지표 ID부터 표시 순서대로 기록"],
+        "watchEvent": "다음 확인 사항에 연결할 calendar 항목의 event 값",
         "policyNote": "정책 항목이 없을 때의 조사 범위와 사유"
       }
     },
     "sectorSummaryStats": "[지표명, 표시값, 짧은 기준월·범위] 형태의 행",
     "metricObservationLabel": "월말 종가·월평균·선물물·민간 집계 등 숫자 위에 보여 줄 기간과 계열. 지표의 observationLabel에 기록",
     "relatedComparisonCaption": "범위가 다른 참고 수치의 이름·기간·단위. 지표의 relatedComparison.caption에 기록",
+    "metricHistory": "동일 계열에서 확인한 이전·현재 값 비교. 지표의 history에 previousLabel, previousValue, currentLabel, change를 기록. 현재값은 valueText를 사용",
     "tone": ["positive", "risk"]
   },
   "sectors": [

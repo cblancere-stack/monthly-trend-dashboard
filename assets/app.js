@@ -7,7 +7,7 @@ async function fetchJSON(path){
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),15000);
  try{const response=await fetch(path,{cache:'no-store',signal:controller.signal});if(!response.ok)throw new Error(`HTTP ${response.status}`);return await response.json();}finally{clearTimeout(timer);}
 }
-function showLoadError(message){const box=el('error');box.hidden=false;box.replaceChildren(node('p',message));const link=node('a','최신 화면 다시 열기');const url=new URL(location.href);url.searchParams.set('v','20261118-brief');link.href=url.href;link.className='quiet-button';box.append(link);}
+function showLoadError(message){const box=el('error');box.hidden=false;box.replaceChildren(node('p',message));const link=node('a','최신 화면 다시 열기');const url=new URL(location.href);url.searchParams.set('v','20261120-order');link.href=url.href;link.className='quiet-button';box.append(link);}
 
 const frequencyNames={monthly:'월간',annual:'연간',quarterly:'분기',snapshot:'확인 시점',decision:'정책 결정'};
 function node(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
@@ -55,7 +55,16 @@ function renderMonthlyBrief(home){
  if(!brief||home)return;
  for(const [label,text] of [['이달의 판단',brief.judgment],['판단 근거',brief.evidence],['다음 확인 사항',brief.watch]]){
   const row=node('div');
-  row.append(node('dt',label),node('dd',text));
+  const detail=node('dd',text);
+  if(label==='다음 확인 사항'&&brief.watchEvent){
+   const event=report.calendar?.find(item=>item.event===brief.watchEvent&&item.categories.includes(category));
+   if(event&&safeURL(event.source?.url)){
+    const link=sourceLink(event.source,`${event.date} · ${event.event} ↗`);
+    link.className='brief-event';
+    detail.append(link);
+   }
+  }
+  row.append(node('dt',label),detail);
   el('sector-brief-body').append(row);
  }
 }
@@ -105,9 +114,18 @@ function summaryMetric(m){
  const card=node('article',undefined,'metric-card summary-metric-card');
  const period=metricPeriod(m);
  card.append(node('h3',m.title));
- if(period)card.append(node('p',period,'metric-period'));
  card.append(node('div',m.valueText,'metric-value provided-value'));
- if(m.deltaText)card.append(node('div',m.deltaText,`provided-delta ${m.tone==='risk'?'tone-negative':m.tone==='positive'?'tone-positive':''}`));
+ if(period)card.append(node('p',period,'metric-period'));
+ if(m.history||m.deltaText){
+  const tone=m.tone==='risk'?'tone-negative':m.tone==='positive'?'tone-positive':'';
+  const comparison=node('div',undefined,`provided-delta ${tone}`);
+  if(m.history){
+   const {previousLabel,previousValue,currentLabel,change}=m.history;
+   comparison.append(node('div',`${previousLabel} ${previousValue} → ${currentLabel} ${m.valueText}`,'metric-history'));
+   if(change)comparison.append(node('small',change));
+  }else comparison.textContent=m.deltaText;
+  card.append(comparison);
+ }
  if(m.basis)card.append(node('div',m.basis,'metric-meta'));
  if(report.origin==='independent'&&m.period){
   const release=m.publicationDateStatus==='unknown'?'발표일 미표기':m.published?`발표 ${periodLabel(m.published)}`:'';
@@ -183,7 +201,11 @@ function renderCalendar(){
 }
 
 function renderSummary(){const metrics=report.metrics.filter(m=>m.category===category),news=report.news.filter(n=>n.category===category),policies=report.policies.filter(n=>n.category===category),supplements=report.supplements.filter(s=>s.categories.includes(category));
- const leadNews=report.sectorBriefs?.[category]?.leadNews;
+ const {leadMetrics=[],leadNews}=report.sectorBriefs?.[category]||{};
+ if(leadMetrics.length){
+  const ranks=new Map(leadMetrics.map((id,index)=>[id,index]));
+  metrics.sort((a,b)=>(ranks.get(a.id)??leadMetrics.length)-(ranks.get(b.id)??leadMetrics.length));
+ }
  if(leadNews){
   news.sort((a,b)=>Number(b.id===leadNews)-Number(a.id===leadNews)||(b.eventDate||b.published).localeCompare(a.eventDate||a.published));
  }

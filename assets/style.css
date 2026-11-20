@@ -206,3 +206,9 @@ h1{font-size:30px;letter-spacing:-1.2px}
   #month-brief .summary-label,#month-brief #headline{color:#fff!important}
   .section-links{display:none}
 }
+
+/* Consistent scan order for the value, observation basis and comparison. */
+.summary-metric-card .metric-period{margin:0 0 5px}
+.summary-metric-card .provided-delta{max-width:100%;overflow-wrap:anywhere}
+.provided-delta small{display:block;margin-top:2px;font-size:11px;font-weight:600}
+.brief-event{display:block;margin-top:4px;color:var(--teal);text-decoration:underline;text-underline-offset:2px;font-size:12px}
